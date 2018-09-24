@@ -17,49 +17,39 @@ module ALU_32_bit(a, b, operation, Result);
         begin 
             case (operation) 
             //Logic 
-                4'b00000: // AND
+                4'b0000: // AND
                 begin 
                     assign Result = a & b;
                 end       
 
-                4'b00001: // OR 
+                4'b0001: // OR 
                 begin 
                     assign Result = a | b;
                 end
 
-                4'b00010: // XOR
+                4'b0010: // XOR
                 begin 
                     assign Result = a ^ b;
                 end
 
-                4'b00011: // NAND
-                begin 
-                    assign Result = ~(a & b);
-                end
-
-                4'b00100: // NOR
+                4'b0011: // NOR
                 begin 
                     assign Result = ~(a | b);
                 end
-
-                4'b00101: // XNOR
-                begin 
-                    assign Result = ~(a ^ b);
-                end
                
             //Arithmethic Unsigned
-                4'b01000: // addition
+                4'b0100: // addition
                 begin 
                     assign {carryFlag, Result} = a + b;
                 end
 
-                4'b01010: // subtraction
+                4'b0101: // subtraction
                 begin 
                     assign {carryFlag, Result} = a - b;
                 end
             
             //Arithmethic Signed
-                4'b10000: // addition
+                4'b0110: // addition
                 begin 
                     assign Result = a + b;
                     assign overFlowFlag = (a[31]!= b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
@@ -67,7 +57,7 @@ module ALU_32_bit(a, b, operation, Result);
                     assign zeroFlag = (Result == 0) ? 1 : 0;
                 end
 
-                4'b10010: // subtraction
+                4'b0111: // subtraction
                 begin 
                     assign Result = a - b;
                     assign overFlowFlag = (a[31]!= b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
@@ -76,22 +66,22 @@ module ALU_32_bit(a, b, operation, Result);
                 end
 
             //Shifts
-                4'b01001: // SLL
+                4'b1000: // SLL
                 begin 
                     assign Result = a << 1;
                 end
                 
-                4'b0101: // SLLV
+                4'b1001: // SLLV
                 begin
                     assign {carryFlag, Result} = a << b;
                 end
                 
-                4'b01010: // SRL
+                4'b1010: // SRL
                 begin 
                     assign Result = a >> 1;
                 end
 
-                4'b0111: // SRLV
+                4'b1011: // SRLV
                 begin
                     assign Result = a >> b;
                 end
