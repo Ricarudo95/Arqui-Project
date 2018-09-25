@@ -1,116 +1,116 @@
-//Author: Roberto Y.  Guzmán Ortíz
+// //Author: Roberto Y.  Guzmán Ortíz
 
-module ALU32bit(output reg [31:0] result, output reg C_flag, N_flag, Z_flag, V_flag, input [4:0]opCode, input [31:0] a, b);
-  reg [31:0 ]temp1;
-  integer index;
-  integer counter = 0;
-  integer val = 0;
+// module ALU32bit(output reg [31:0] result, output reg C_flag, N_flag, Z_flag, V_flag, input [4:0]opCode, input [31:0] a, b);
+//   reg [31:0 ]temp1;
+//   integer index;
+//   integer counter = 0;
+//   integer val = 0;
 
-  always @(opCode,a, b)
-    case(opCode)
-      5'd0: // AND 
-        begin
-          assign result = a & b;
-        end
+//   always @(opCode,a, b)
+//     case(opCode)
+//       5'd0: // AND 
+//         begin
+//           assign result = a & b;
+//         end
 
-      5'd1: // OR
-        begin
-          assign result = a | b;
-        end
+//       5'd1: // OR
+//         begin
+//           assign result = a | b;
+//         end
 
-      5'd2: // XOR
-        begin
-          assign result = a ^ b;
-        end
+//       5'd2: // XOR
+//         begin
+//           assign result = a ^ b;
+//         end
 
-      5'd3: // NOR 
-        begin
-          assign result = ~(a | b);
-        end
+//       5'd3: // NOR 
+//         begin
+//           assign result = ~(a | b);
+//         end
 
-      5'd4: // SLL
-        begin
-          assign {C_flag,result} = a << 1;
-        end
+//       5'd4: // SLL
+//         begin
+//           assign {C_flag,result} = a << 1;
+//         end
 
-      5'd5: // SLLV
-        begin
-          assign {C_flag, result} = a << b;
-        end
+//       5'd5: // SLLV
+//         begin
+//           assign {C_flag, result} = a << b;
+//         end
 
-      5'd6: // SRL
-        begin
-          assign {C_flag, result} = a >> 1;
-        end
+//       5'd6: // SRL
+//         begin
+//           assign {C_flag, result} = a >> 1;
+//         end
 
-      5'd7: // SRLV
-        begin
-          assign {C_flag, result} = a >> b;
-        end
+//       5'd7: // SRLV
+//         begin
+//           assign {C_flag, result} = a >> b;
+//         end
 
-      5'd8: // ADDU: sum unsigned
-        begin
-          assign {C_flag,result} = a + b;
-        end
+//       5'd8: // ADDU: sum unsigned
+//         begin
+//           assign {C_flag,result} = a + b;
+//         end
 
-      5'd9: // SUBU: sub unsigned
-        begin 
-          assign {C_flag,result} = a - b;      
-        end
+//       5'd9: // SUBU: sub unsigned
+//         begin 
+//           assign {C_flag,result} = a - b;      
+//         end
 
-      5'd10: // ADD: addition signed
-        begin
-          assign result = $signed(a) + $signed(b);
-          assign V_flag = (a[31] != b[31])? 0 : (b[31] == result[31]) ? 0: 1 ;
-          assign N_flag = (result[31] == 1)? 1 : 0 ; 
-          assign Z_flag = (result == 0) ? 1 : 0;
-        end
+//       5'd10: // ADD: addition signed
+//         begin
+//           assign result = $signed(a) + $signed(b);
+//           assign V_flag = (a[31] != b[31])? 0 : (b[31] == result[31]) ? 0: 1 ;
+//           assign N_flag = (result[31] == 1)? 1 : 0 ; 
+//           assign Z_flag = (result == 0) ? 1 : 0;
+//         end
 
-      5'd11: // SUB: subtract signed
-        begin
-          temp1 = (~b  + 1'b1);
-          assign result = $signed(a) + $signed(temp1);
-          assign V_flag = (a[31]!= temp1[31])? 0 : (temp1[31] == result[31]) ? 0: 1 ;
-          assign N_flag = (result[31] == 1)? 1 : 0 ; 
-          assign Z_flag = (result == 0) ? 1 : 0;
-        end
-      5'd12:
-        begin
-          // SLT: if result of a < b then return 1 else 0.
-          assign result = ($signed(a) < $signed(b)) ? 1 : 0;
-        end
+//       5'd11: // SUB: subtract signed
+//         begin
+//           temp1 = (~b  + 1'b1);
+//           assign result = $signed(a) + $signed(temp1);
+//           assign V_flag = (a[31]!= temp1[31])? 0 : (temp1[31] == result[31]) ? 0: 1 ;
+//           assign N_flag = (result[31] == 1)? 1 : 0 ; 
+//           assign Z_flag = (result == 0) ? 1 : 0;
+//         end
+//       5'd12:
+//         begin
+//           // SLT: if result of a < b then return 1 else 0.
+//           assign result = ($signed(a) < $signed(b)) ? 1 : 0;
+//         end
 
-      5'd13:
-        begin
-          // SLTU: if result of a < b then return 1 else 0.
-          assign result = (a < b) ? 1 : 0;
-        end
+//       5'd13:
+//         begin
+//           // SLTU: if result of a < b then return 1 else 0.
+//           assign result = (a < b) ? 1 : 0;
+//         end
 
-      5'd14:
-         begin
-          // CLO: count of leading ones in a, return in "result" the number of leading ones;
-          counter = 0;
-          index = 0;
-          while (a[index] == 1'b1) begin
-            counter = counter + 1;
-            index = index + 1;
-          end
-          assign result = counter;
-        end
+//       5'd14:
+//          begin
+//           // CLO: count of leading ones in a, return in "result" the number of leading ones;
+//           counter = 0;
+//           index = 0;
+//           while (a[index] == 1'b1) begin
+//             counter = counter + 1;
+//             index = index + 1;
+//           end
+//           assign result = counter;
+//         end
 
-      5'd15:
-        begin
-          // CLZ: count of leading zeros in a, return in "result" the number of leading zeros.
-          counter = 0;
-          index = 0;
-          while (a[index] == 1'b0) begin
-            counter = counter + 1;
-            index = index + 1;
-          end
-          assign result = counter;
-        end
-    endcase
-endmodule
+//       5'd15:
+//         begin
+//           // CLZ: count of leading zeros in a, return in "result" the number of leading zeros.
+//           counter = 0;
+//           index = 0;
+//           while (a[index] == 1'b0) begin
+//             counter = counter + 1;
+//             index = index + 1;
+//           end
+//           assign result = counter;
+//         end
+//     endcase
+// endmodule
 
 //MAIN MODULE
 module main ();
@@ -119,7 +119,7 @@ module main ();
   
   //inputs
   reg [31:0] r1, r2;
-  reg [4:0] code;
+  reg [3:0] code;
 
   //outputs
   wire  [31:0] result;
@@ -135,7 +135,7 @@ module main ();
   parameter sim_time = 1900;
 
   // ALU module initialization
-  ALU32bit testALU(result, carry, negative, zero, overflow, code, r1, r2);
+  ALU_32_bit testALU(result, carry, negative, zero, overflow, code, r1, r2);
 
   initial #sim_time $finish;
   /////////////////////VARIABLE DECLARATION/////////////////////
