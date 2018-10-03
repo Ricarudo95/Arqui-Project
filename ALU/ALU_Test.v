@@ -79,8 +79,8 @@ module main ();
   end
 
   initial begin
-    $display ("time         operation          a          b          carry        opCode         N-Z-C-V                     binary                        decimal");
-    $monitor ("%4d        %s         %h    %h        %b           %b            %b%b%b%b            %b          %d", $time, operation, a, b, carry, op, neg, zero, carry, over, ans, ans);
+    $display ("time      operation       a       b        carry      opCode     N-Z-C-V       binary                      decimal");
+    $monitor ("%4d     %s      %h  %h        %b         %b     %b%b%b%b      %b      %d", $time, operation, a, b, carry, op, neg, zero, carry, over, ans, ans);
   end
 
 endmodule
