@@ -1,7 +1,7 @@
 module main ();
 
   reg [31:0] a, b;
-  reg [3:0] op;
+  reg [4:0] op; // changed from 3 to 4
 
   wire  [31:0] ans;
   wire carry;
@@ -9,7 +9,7 @@ module main ();
   wire zero;
   wire over;
   reg [8*6:1] operation;
-  parameter timer = 1900;
+  parameter timer = 2000;
 
   ALU test(ans, carry, neg, zero, over, op, a, b); //ALU
 
@@ -17,39 +17,31 @@ module main ();
 
   initial begin
     operation = "AND"; a = 32'h0; b = 32'd0; op = 5'd0;
-    #10 operation = "AND"; a = 32'h00000000; b = 32'hFFFFFFFF; 
-    #10 operation = "AND"; a = 32'hFFFFFFFF; b = 32'h00000000;
-    #10 operation = "AND"; a = 32'hFFFFFFFF; b = 32'hFFFFFFFF;
+    #10 operation = "AND";
     #10 $display("");
 
     operation = "OR"; a = 32'h0; b = 32'd0; op = 5'd1;
-    #10 operation = "OR"; a = 32'h00000000; b = 32'hFFFFFFFF; 
-    #10 operation = "OR"; a = 32'hFFFFFFFF; b = 32'h00000000;
-    #10 operation = "OR"; a = 32'hFFFFFFFF; b = 32'hFFFFFFFF;
+    #10 operation = "OR";
     #10 $display("");
 
     operation = "XOR"; a = 32'h0; b = 32'd0; op = 5'd2;
-    #10 operation = "XOR"; a = 32'h00000000; b = 32'hFFFFFFFF; 
-    #10 operation = "XOR"; a = 32'hFFFFFFFF; b = 32'h00000000;
-    #10 operation = "XOR"; a = 32'hFFFFFFFF; b = 32'hFFFFFFFF;
+    #10 operation = "XOR";
     #10 $display("");
 
     operation = "NOR"; a = 32'h0; b = 32'd0; op = 5'd3;
-    #10 operation = "NOR"; a = 32'h00000000; b = 32'hFFFFFFFF; 
-    #10 operation = "NOR"; a = 32'hFFFFFFFF; b = 32'h00000000;
-    #10 operation = "NOR"; a = 32'hFFFFFFFF; b = 32'hFFFFFFFF;
+    #10 operation = "NOR";
     #10 $display("");
     
     operation = "ADDU"; a = 32'h7; b = 32'd3; op = 5'd4;
     #10 $display("");
 
-    operation = "SUBU"; a = 32'h2; b = 32'd1; op = 5'd5;
+    operation = "SUBU"; a = 32'd9; b = 32'd10; op = 5'd5;
     #10 $display("");
     
     operation = "ADD"; a = 32'h9; b = 32'd1; op = 5'd6;
     #10 $display("");
 
-    operation = "SUB"; a = 32'h9; b = 32'd3; op = 5'd7;
+    operation = "SUB"; a = 32'd9; b = 32'd10; op = 5'd7;
     #10 $display("");
 
     operation = "SLL"; a = 32'h1; b = 32'd1; op = 5'd8;
@@ -74,6 +66,12 @@ module main ();
     #10 $display("");
 
     operation = "CLZ"; a = 32'h1; b = 32'd1; op = 5'd15;
+    #10 $display("");
+
+    operation = "SRA"; a = 32'h1; b = 32'd1; op = 5'd16;
+    #10 $display("");
+
+    operation = "SRAV"; a = 32'h100; b = 32'd1; op = 5'd17;
     #10 $display("");
 
   end

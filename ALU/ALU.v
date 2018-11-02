@@ -1,7 +1,7 @@
 module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a, b); 
     input [31:0] a; 
     input [31:0] b; 
-    input [3:0] operation;
+    input [4:0] operation;
     
     output reg carryFlag;
     output reg negativeFlag;
@@ -19,39 +19,41 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
         begin 
             case (operation) 
             //Logic 
-                4'b0000: // AND
+                5'b00000: // AND
                 begin 
                     Result = a & b;
                 end       
 
-                4'b0001: // OR 
+                5'b00001: // OR 
                 begin 
                     Result = a | b;
                 end
 
-                4'b0010: // XOR
+                5'b00010: // XOR
                 begin 
                     Result = a ^ b;
                 end
 
-                4'b0011: // NOR
+                5'b00011: // NOR
                 begin 
                     Result = ~(a | b);
                 end
                
             //Arithmethic Unsigned
-                4'b0100: // addition
+                5'b00100: // addition
                 begin 
                     {carryFlag, Result} = a + b;
+                    overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
 
-                4'b0101: // subtraction
+                5'b00101: // subtraction
                 begin 
                     {carryFlag, Result} = a - b;
+                    overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
             
             //Arithmethic Signed
-                4'b0110: // addition
+                5'b00110: // addition
                 begin
                     Result = $signed(a) + $signed(b);
                     overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
@@ -59,7 +61,7 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
                     zeroFlag = (Result == 0) ? 1 : 0;
                 end
 
-                4'b0111: // subtraction
+                5'b00111: // subtraction
                 begin
                     tempVar = (~b  + 1'b1);
                     Result = $signed(a) + $signed(tempVar);
@@ -69,27 +71,27 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
                 end
 
             //Shifts
-                4'b1000: // SLL
+                5'b01000: // SLL
                 begin 
                     Result = a << 1;
                 end
                 
-                4'b1001: // SLLV
+                5'b01001: // SLLV
                 begin
                     {carryFlag, Result} = a << b;
                 end
                 
-                4'b1010: // SRL
+                5'b01010: // SRL
                 begin 
                     Result = a >> 1;
                 end
 
-                4'b1011: // SRLV
+                5'b01011: // SRLV
                 begin
                     Result = a >> b;
                 end
 
-                4'b1100: // SLT 0 == true 1 == false because of verilog
+                5'b01100: // SLT 0 == true 1 == false because of verilog
                 begin
                     if ((a < b) == 0) begin
                         Result = 1;
@@ -98,7 +100,7 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
                     end
                 end
 
-                4'b1101: // SLTU
+                5'b01101: // SLTU
                 begin
                     if ((a < b) == 0) begin
                         Result = 1;
@@ -107,7 +109,7 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
                     end
                 end
 
-                4'b1110: // CLO
+                5'b01110: // CLO
                 begin
                     for(index = 31; index >= 0; index = index-1) begin  
                         if(a[index] == 1'b0) begin
@@ -122,7 +124,7 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
                 end
                 
 
-                4'b1111: // CLZ
+                5'b01111: // CLZ
                 begin
                     for(index = 31; index >= 0; index = index-1) begin  
                         if(a[index] == 1'b1) begin
@@ -134,6 +136,16 @@ module ALU(Result, carryFlag, negativeFlag, overFlowFlag, zeroFlag, operation, a
                         end
                     end
                     Result = counter;
+                end
+
+                5'b10000: // SRA
+                begin 
+                    Result = a >>> 1;
+                end
+
+                5'b10001: // SRAV
+                begin
+                    Result = a >>> b;
                 end
 
             endcase 
