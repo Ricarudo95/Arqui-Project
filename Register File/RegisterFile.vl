@@ -27,19 +27,13 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 		Registers[11] <= 32'd0;
 		Registers[13] <= 32'd0;
 		Registers[14] <= 32'd0;
-		Registers[15] <= 32'd0;
-		
-
-
-
-		
+		Registers[15] <= 32'd0;		
 	end
-	
 	
 	always @(posedge Clk)
 	begin
 		
-		if (Write == 1) 
+		if (Write == 1 && C_Address != 4'd0) 
 		begin
 			Registers[C_Address] <= C_Data;
 		end

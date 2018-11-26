@@ -1,0 +1,33 @@
+imescale 1ns / 1ps /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// // Company: // // Engineer: Michael Gidaro, Erick Johnson // // Create Date: 4/26/13 // Design Name: CPU // Module Name: control unit // Project Name: // Target Devices: // Tool versions: // Description: Handles all control signal for the cpu // // Dependencies: // // Revision: Erick Johnson // // // Additional Comments: // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// module control_unit ( rst, instruction, data_mem_wren, reg_file_wren, reg_file_dmux_select, reg_file_rmux_select, alu_mux_select, alu_control, alu_zero, alu_shamt, pc_control ); //-------------------------- // local parameters //-------------------------- //-------------------------- // Input Ports //-------------------------- // < Enter Input Ports > input rst; input [31:26] instruction; //get opcode input alu_zero; //-------------------------- // Output Ports //-------------------------- // < Enter Output Ports > output [3:0] data_mem_wren; output reg_file_wren; output reg_file_dmux_select; // Refers to the mux that //feeds the wdata bus of the register file output reg_file_rmux_select; // Refers to the mux that feeds the waddr bus //of the register file output alu_mux_select; // Refers to the mux that feeds the operand1 //bus of the alu output [3:0] alu_control; output [4:0] alu_shamt; output [3:0] pc_control; //-------------------------- // Bidirectional Ports //--------------------------
+ 
+ // < Enter Bidirectional Ports in Alphabetical Order > // None /////////////////////////////////////////////////////////////////// // Begin Design /////////////////////////////////////////////////////////////////// //------------------------------------------------- // Signal Declarations: local params //------------------------------------------------- local parameter FETCH1 = 4'b0001; local parameter FETCH2 = 4'b0010; local parameter FETCH3 = 4'b0011; local parameter FETCH4 = 4'b0100; local parameter DECODE = 4'b0101; local parameter MEMORY_ADDRESS = 4'b0110; local parameter LOAD_READ = 4'b0111; local parameter LOAD_WRITE = 4'b1000; local parameter STORE_WRITE = 4'b1001; local parameter ARITHMETIC_EXECUTE = 4'b1010; local parameter ARITHMETIC_WRITE = 4'b1011; local parameter BEQ_EXECUTE = 4'b1100; local parameter J_EXECUTE = 4'b1101; local parameter LOAD = 6'b100000; local parameter STORE = 6'b101000; local parameter ARITHMETIC = 6'b0; local parameter BRANCH = 6'b000100; local parameter JUMP = 6'b000010; //------------------------------------------------- // Signal Declarations: reg //------------------------------------------------- reg [3:0] state, reg [3:0] next_state, //------------------------------------------------- // Signal Declarations: wire //------------------------------------------------- //--------------------------------------------------------------- // Combinatorial Logic //--------------------------------------------------------------- always @(posedge clk) if(rst) state <= FETCH1; else state <= nextstate; always @(*) begin case(state) FETCH1: nextstate <= FETCH2; FETCH2: nextstate <= FETCH3; FETCH3: nextstate <= FETCH4; FETCH4: nextstate <= DECODE; DECODE: case(instruction) LOAD: nextstate <= MEMORY_ADDRESS; STORE: nextstate <= MEMORY_ADDRESS; ARITHMETIC: nextstate <= ARITHMETIC_EXECUTE; BRANCH: nextstate <= BEQ_EXECUTE; JUMP: nextstate <= J_EXECUTE; default: nextstate <= FETCH1; endcase MEMORY_ADDRESS: case(instruction) LOAD: nextstate <= LOAD_READ; STORE: nextstate <= STORE_WRITE; default: nextstate <= FETCH1; endcase LOAD_READ: nextstate <= LOAD_WRITE;
+ 
+ LOAD_WRITE: nextstate <= FETCH1; STORE_WRITE: nextstate <= FETCH1; ARITHMETIC_EXECUTE: nextstate <= ARITHMETIC_WRITE; ARITHMETIC_WRITE: nextstate <= FETCH1; BEQ_EXECUTE: nextstate <= FETCH1; J_EXECUTE: nextstate <= FETCH1; default: nextstate <= FETCH1; endcase end always @(*) begin reg_file_wren <= 0; reg_file_rmux_select <= 0;
+data_mem_wren <= 4’b0000;
+ alu_mux_select <= 0; reg_file_dmux_select <= 0;
+alu_control <= 4’b0000;
+ 
+alu_shamt <= 5’b00000;
+ 
+pc_control <= 4’b0000;
+ case(state) FETCH1: begin
+wren <= 4’b0000;
+ alu_mux_select,
+pc_control <= 4’b0000;
+ end FETCH2: begin
+wren <= 4’b0001;
+ alu_mux_select <= 1;
+pc_control <= 4’b0000;
+ end FETCH3: begin
+wren <= 4’b0011;
+ alu_mux_select <= 1;
+pc_control <= 4’b0000;
+ end FETCH4: begin
+wren <= 4’b1111;
+ alu_mux_select <= 1;
+pc_control <= 4’b0000;
+ end DECODE: alu_mux_select <= 0;
+BEQ_EXECUTE: pc_control <= 4’b0011;
+ 
+J_EXECUTE: pc_control <= 4’b0001;
+ endcase end endmodule
