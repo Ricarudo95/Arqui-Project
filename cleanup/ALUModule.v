@@ -1,7 +1,10 @@
-module ALU(Result, zeroFlag, operation, a, b); 
+module ALU(Result, zeroFlag, operation, a, b, opCode); 
     input [31:0] a; 
     input [31:0] b; 
+    //Function Code
     input [5:0] operation;
+    //OpCode 
+    input [1:0] opCode;
     
     // output reg carryFlag;
     // output reg negativeFlag;
@@ -17,43 +20,43 @@ module ALU(Result, zeroFlag, operation, a, b);
 
     always@(a or b or operation) 
         begin 
-            case (operation) 
+            case (operation and opCode) 
             //Logic 
-                6'b000000: // AND
+                6'b100100 and 2'b00: // AND
                 begin 
                     Result = a & b;
                 end       
 
-                6'b000001: // OR 
+                6'b100101 and 2'b00: // OR 
                 begin 
                     Result = a | b;
                 end
 
-                6'b000010: // XOR
+                6'b100110 and 2'b00: // XOR
                 begin 
                     Result = a ^ b;
                 end
 
-                6'b000011: // NOR
+                6'b100111 and 2'b00: // NOR
                 begin 
                     Result = ~(a | b);
                 end
                
             //Arithmethic Unsigned
-                6'b000100: // addition
+                6'b100001 and 2'b00: // addition
                 begin 
                     //{carryFlag, Result} = a + b;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
 
-                6'b000101: // subtraction
+                6'b100011 and 2'b00: // subtraction
                 begin 
                     //{carryFlag, Result} = a - b;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
             
             //Arithmethic Signed
-                6'b000110: // addition
+                6'b100000 and 2'b00: // addition
                 begin
                     Result = $signed(a) + $signed(b);
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
@@ -61,7 +64,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                     zeroFlag = (Result == 0) ? 1 : 0;
                 end
 
-                6'b000111: // subtraction
+                6'b100010 and 2'b00: // subtraction
                 begin
                     tempVar = (~b  + 1'b1);
                     Result = $signed(a) + $signed(tempVar);
@@ -71,27 +74,27 @@ module ALU(Result, zeroFlag, operation, a, b);
                 end
 
             //Shifts
-                6'b001000: // SLL
+                6'b000000 and 2'b00: // SLL
                 begin 
                     Result = a << 1;
                 end
                 
-                6'b001001: // SLLV
+                6'b000100 and 2'b00: // SLLV
                 begin
                     //{carryFlag, Result} = a << b;
                 end
                 
-                6'b001010: // SRL
+                6'b000010 and 2'b00: // SRL
                 begin 
                     Result = a >> 1;
                 end
 
-                6'b001011: // SRLV
+                6'b000110 and 2'b00: // SRLV
                 begin
                     Result = a >> b;
                 end
 
-                6'b001100: // SLT 0 == true 1 == false because of verilog
+                6'b101010 and 2'b00: // SLT 0 == true 1 == false because of verilog
                 begin
                     if ((a < b) == 0) begin
                         Result = 1;
@@ -100,7 +103,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                     end
                 end
 
-                6'b001101: // SLTU
+                6'b101011 and 2'b00: // SLTU
                 begin
                     if ((a < b) == 0) begin
                         Result = 1;
@@ -109,7 +112,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                     end
                 end
 
-                6'b001110: // CLO
+                6'b100001 and 2'b01: // CLO
                 begin
                     for(index = 31; index >= 0; index = index-1) begin  
                         if(a[index] == 1'b0) begin
@@ -124,7 +127,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                 end
                 
 
-                6'b001111: // CLZ
+                6'b100000 and 2'b01: // CLZ
                 begin
                     for(index = 31; index >= 0; index = index-1) begin  
                         if(a[index] == 1'b1) begin
@@ -138,12 +141,12 @@ module ALU(Result, zeroFlag, operation, a, b);
                     Result = counter;
                 end
 
-                6'b010000: // SRA
+                6'b000011 and 2'b00: // SRA
                 begin 
                     Result = a >>> 1;
                 end
 
-                6'b010001: // SRAV
+                6'b000111 and 2'b00: // SRAV
                 begin
                     Result = a >>> b;
                 end
@@ -151,97 +154,3 @@ module ALU(Result, zeroFlag, operation, a, b);
             endcase 
         end
 endmodule
-
-module aluCtrl (output reg [5:0] result, input [4:0] aluOp, input [5:0]funcIn);
-
-  always @(aluOp, funcIn)
-    case (aluOp)
-      
-      6'b000000: assign result = funcIn;
-
-      ///////////////////////EXCEPTIONS///////////////////////////////////
-      6'b000001: //functions for CLO and CLZ
-        
-        if (funcIn == 6'b100001) begin
-          result = 6'b111000;
-        end else if (funcIn == 6'b100000) begin
-          result = 6'b000111;
-        end
-      ///////////////////////EXCEPTIONS///////////////////////////////////
-
-      ///////////////////////IMMEDIATES///////////////////////////////////
-      6'b000010: // ADDI and ADDIU
-        assign result = 6'b100000; // simply use ADD function regardless of result
-      
-      6'b000011: // SLTI and SLTIU
-        assign result = 6'b100000; // (rs < imm16) ? rt = 1 : rt = 0; ...  for comparison operation, subtract values
-      
-      6'b000100: // ANDI
-        assign result = 6'b100100; // use AND function
-      
-      6'b000101: // ORI
-        assign result = 6'b100101; // use OR function
-      
-      6'b000110: // XORI
-        assign result = 6'b100110; // use XOR function
-      
-      // 6'000111: // LUI, primeros rt[31:16] = imm16 ..... rt[15:0] = 0
-      //   assign result = 6'b100110; // use LUI function
-      ///////////////////////IMMEDIATES///////////////////////////////////
-
-      ///////////////////////STORE AND LOADS///////////////////////////////////
-
-      6'b001000: // LW
-        assign result = 6'b100000; // load value in memory [rs + imm16]
-      
-      // 6'b01000: // LH
-      //   assign result = 6'b100000; // load half word with sign extention in memory [rs + imm16]
-      
-      6'b001001: // LHU
-        assign result = 6'b100000; // load half word with NO sign extention in memory [rs + imm16]
-      
-      6'b001010: // LB
-        assign result = 6'b100000; // load byte in memory with sign extended [rs + imm16]
-      6'b001011: // LBU
-        assign result = 6'b100000; // load byte in memory NO sign extended [rs + imm16]
-
-      6'b001100: // SD 
-        assign result = 6'b100000; // STORE double word in memory [rs + imm16]
-      
-      6'b001101: // SW
-        assign result = 6'b100000; // STORE word in memory [rs + imm16]
-      
-      6'b001110: // SH
-        assign result = 6'b100000; // STORE half word in memory [rs + imm16]
-
-      6'b001111: // SB
-        assign result = 6'b100000; // STORE byte in memory [rs + imm16]
-      
-      6'b010000: // B
-        assign result = 6'd52; // BRANCH
-      
-      // 6'b10001: // BAL
-      //   assign result = 6'b100000; // 
-
-      // 6'b10010: // BEQ
-      //   assign result = 6'b100000; // 
-
-      // 6'b10011: // BGEZ
-      //   assign result = 6'b100000; // 
-
-      // 6'b10100: // BGEZAL
-      //   assign result = 6'b100000; // 
-
-      6'b010101: // BGTZ
-        assign result = 6'd50; // 
-
-      6'b010110: // BLEZ
-        assign result = 6'd54; // 
-      
-      6'b010111: // BLTZ
-        assign result = 6'b100000; // 
-
-    default: assign result = funcIn;
-    endcase
-endmodule
-
