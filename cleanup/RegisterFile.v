@@ -1,7 +1,7 @@
 module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data, B_Data);
 
 	/* Please fill in the implementation here... */ 
-	input [3:0] A_Address,B_Address,C_Address;
+	input [4:0] A_Address,B_Address,C_Address;
 	input [31:0] C_Data;
 	input Write, Clk;
 	
@@ -9,7 +9,7 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 	
 	
 	//reg [31:0] Registers = new reg[32];
-	reg [15:0] Registers [0:31];
+	reg [31:0] Registers [0:31];
 	
 	
 	initial begin
@@ -19,7 +19,7 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 	always @(posedge Clk)
 	begin
 		
-		if (Write == 1 && C_Address != 4'd0) 
+		if (Write == 1 && C_Address != 5'd0) 
 		begin
 			Registers[C_Address] <= C_Data;
 		end
