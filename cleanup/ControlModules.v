@@ -10,7 +10,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 2'b00;
+                opCode = 3'b000;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -23,18 +23,7 @@ module control(
                 reg_dst = 1;
                 reg_write = 1;
                 alu_src = 0;
-                opCode = 5'b00000;
-                RAMEnable = 0;
-                RW = 0;
-                mem_to_reg = 0;
-                jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
-
-                reg_dst = 1;
-                reg_write = 1;
-                alu_src = 0;
-                opCode = 2'b00;
+                opCode = 3'b000;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -45,191 +34,156 @@ module control(
                 reg_dst = 1;
                 reg_write = 1;
                 alu_src = 0;
-                opCode = 5'b00001;
-                RAMEnable = 0;
-                RW = 0;
+                opCode = 3'b100;
+                memRead = 0;
+                memWrite = 0;
                 mem_to_reg = 0;
                 jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
+                branch = 0;
                 end  
+
         6'b000010: begin // JMP 
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 5'b00000;
-                RAMEnable = 0;
-                RW = 0;
+                opCode = 3'b000;
+                memRead = 0;
+                memWrite = 0;
                 mem_to_reg = 0;
-                jump = 1;  
-                branch = 0;  
-                HILO = 2'b00;
-
-                end 
+                jump = 0;  
+                branch = 0;
+                end  
 
         6'b101011: begin // SW
-                reg_dst = 0;
-                reg_write = 1;
-                alu_src = 1;
-                opCode = 5'b01101;
-                RAMEnable = 1;
-                RW = 0;
-                mem_to_reg = 1;
+                reg_write = 0;
+                alu_src = 0;
+                opCode = 3'b101;
+                memRead = 0;
+                memWrite = 1;
+                mem_to_reg = 0;
                 jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
- 
+                branch = 0;
+                
                 end
 
-        6'b101001: begin // SH 
-                reg_dst = 0;
-                reg_write = 1;
-                alu_src = 1;
-                opCode = 5'b01110;
-                RAMEnable = 1;
-                RW = 0;
-                mem_to_reg = 1;
-                jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
-                end
+        // 6'b101001: begin // SH 
+        //         reg_write = 0;
+        //         alu_src = 0;
+        //         opCode = 3'b101;
+        //         memRead = 0;
+        //         memWrite = 1;
+        //         mem_to_reg = 0;
+        //         jump = 0;  
+        //         branch = 0;
+        //         end
 
         6'b101000: begin // SB
-                reg_dst = 0;
-                reg_write = 1;
-                alu_src = 1;
-                opCode = 5'b01111;
-                RAMEnable = 1;
-                RW = 0;
-                mem_to_reg = 1;
+                reg_write = 0;
+                alu_src = 0;
+                opCode = 3'b101;
+                memRead = 0;
+                memWrite = 1;
+                mem_to_reg = 0;
                 jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
+                branch = 0;
                 end
       
         6'b100011: begin // LW: Load Word
-                reg_dst = 0;
                 reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b01000;
-                RAMEnable = 1;
-                RW = 1;
-                mem_to_reg = 1;
-                jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
-                end
-
-        6'b100001: begin // LH: Load Half Word Signed extended
-                reg_dst = 0;
-                reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b01000;
-                RAMEnable = 1;
-                RW = 1;
-                mem_to_reg = 1;
-                jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
-                end
-
-        6'b100101: begin // LHU: Load Half Word Zero Extended
-                reg_dst = 0;
-                reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b01001;
-                RAMEnable = 1;
-                RW = 1;
-                mem_to_reg = 1;
-                jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
-                end
-
-        6'b100000: begin // LB: Load Byte
-                reg_dst = 0;
-                reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b01010;
-                RAMEnable = 1;
-                RW = 1;
-                mem_to_reg = 1;
-                jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
-                end
-
-        6'b000100: begin // B
-                reg_dst = 0;
-                reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b10000;
-                RAMEnable = 0;
-                RW = 0;
+                alu_src = 0;
+                opCode = 3'b101;
+                memRead = 0;
+                memWrite = 1;
                 mem_to_reg = 0;
                 jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
+                branch = 0;
+                end
+
+        // 6'b100001: begin // LH: Load Half Word Signed extended
+        //         reg_dst = 0;
+        //         reg_write = 0;
+        //         alu_src = 1;
+        //         opCode = 5'b01000;
+        //         RAMEnable = 1;
+        //         RW = 1;
+        //         mem_to_reg = 1;
+        //         jump = 0;  
+        //         branch = 0;  
+        //         HILO = 2'b00;
+        //         end
+
+        // 6'b100101: begin // LHU: Load Half Word Zero Extended
+        //         reg_dst = 0;
+        //         reg_write = 0;
+        //         alu_src = 1;
+        //         opCode = 5'b01001;
+        //         RAMEnable = 1;
+        //         RW = 1;
+        //         mem_to_reg = 1;
+        //         jump = 0;  
+        //         branch = 0;  
+        //         HILO = 2'b00;
+        //         end
+
+        6'b100000: begin // LB: Load Byte
+                reg_write = 0;
+                alu_src = 0;
+                opCode = 3'b101;
+                memRead = 0;
+                memWrite = 1;
+                mem_to_reg = 0;
+                jump = 0;  
+                branch = 0;
+                end
+
+        6'b000100: begin // BEQ
+                reg_dst = 0;
+                reg_write = 0;
+                alu_src = 0;
+                opCode = 3'b001;
+                memRead = 0;
+                memWrite = 0;
+                mem_to_reg = 0;
+                jump = 0;  
+                branch = 1;
+                end
+
+        6'b000001: begin // BEQZ
+                reg_dst = 0;
+                reg_write = 0;
+                alu_src = 0;
+                opCode = 3'b001;
+                memRead = 0;
+                memWrite = 0;
+                mem_to_reg = 0;
+                jump = 0;  
+                branch = 1;
                 end
 
         6'b000110: begin // BLEZ
                 reg_dst = 0;
                 reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b10110;
-                RAMEnable = 0;
-                RW = 0;
+                alu_src = 0;
+                opCode = 3'b010;
+                memRead = 0;
+                memWrite = 0;
                 mem_to_reg = 0;
                 jump = 0;  
-                branch = 1;  
-                HILO = 2'b00;
+                branch = 1;
                 end
 
         6'b000111: begin // BGTZ
-                reg_dst = 0;
+                 reg_dst = 0;
                 reg_write = 0;
-                alu_src = 1;
-                opCode = 5'b10101;
-                RAMEnable = 0;
-                RW = 0;
+                alu_src = 0;
+                opCode = 3'b011;
+                memRead = 0;
+                memWrite = 0;
                 mem_to_reg = 0;
                 jump = 0;  
-                branch = 1;  
-                HILO = 2'b00;
+                branch = 1;
                 end
-
-      // 6'b000100: begin // B
-      //           reg_dst = 0;  
-      //           mem_to_reg = 0;  
-      //           alu_op = 2'b11;  
-      //           jump = 0;  
-      //           branch = 1;  
-      //           mem_read_write = 0;   
-      //           alu_src = 1;  
-      //           reg_write = 0;  
-      //           end
-
-      //  6'b000100: begin // SH
-      //           reg_dst = 0;  
-      //           mem_to_reg = 0;  
-      //           alu_op = 2'b11;  
-      //           jump = 0;  
-      //           branch = 1;  
-      //           mem_read_write = 0;   
-      //           alu_src = 1;  
-      //           reg_write = 0;  
-      //           end 
-
-      //  6'b000100: begin // SB
-      //           reg_dst = 0;  
-      //           mem_to_reg = 0;  
-      //           alu_op = 2'b11;  
-      //           jump = 0;  
-      //           branch = 1;  
-      //           mem_read_write = 0;   
-      //           alu_src = 1;  
-      //           reg_write = 0;  
-      //           end                   
+            
 
       default: begin  
                 reg_dst = 2'b01;  
