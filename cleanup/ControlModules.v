@@ -1,10 +1,8 @@
 module control( 
   input[5:0] opcode,  
-  input reset, MOC,
-  output reg reg_dst, mem_to_reg,
-  output reg[5:0] alu_fnc,
-  output reg[1:0] HILO,
-  output reg MOV, RAMEnable, jump, branch, RW, alu_src, reg_write);  
+  input reset,
+  output reg reg_dst, reg_write, aluSrc, memRead, memWrite, mem_to_reg,  jump, branch, 
+  output reg[1:0] opCode);  
 
  always @(*)  
  begin  
@@ -100,7 +98,7 @@ module control(
                 HILO = 2'b00;
                 end
       
-        6'b100011: begin // LW 
+        6'b100011: begin // LW: Load Word
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
@@ -113,7 +111,7 @@ module control(
                 HILO = 2'b00;
                 end
 
-        6'b100011: begin // LH 
+        6'b100001: begin // LH: Load Half Word Signed extended
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
@@ -126,7 +124,7 @@ module control(
                 HILO = 2'b00;
                 end
 
-        6'b100101: begin // LHU
+        6'b100101: begin // LHU: Load Half Word Zero Extended
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
@@ -139,7 +137,7 @@ module control(
                 HILO = 2'b00;
                 end
 
-        6'b100000: begin // LB
+        6'b100000: begin // LB: Load Byte
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
@@ -244,8 +242,6 @@ module instructMemTest1(output reg [31:0] Instruction, input Enable, input[31:0]
 	reg [7:0] Mem[0:511];
 
         initial begin
-
-
 		Mem[0] <= 8'b00100100; //ADDIU
                 Mem[1] <= 8'b00000001;
                 Mem[2] <= 8'b00000000;

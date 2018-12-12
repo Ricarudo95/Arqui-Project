@@ -28,9 +28,9 @@ module mips_cpu( input clk,reset,  output[31:0] pc_out, alu_result);
     ////////// STATE FLAGS ////////////
     wire reg_dst;
     wire reg_write;
-    wire alu_src;
-    wire memWrite;
-    wire memRead; //RW
+    wire aluSource;
+    wire memRead;
+    wire memWrite; //RW
     wire mem_to_reg;
     wire jump;  
     wire branch;  
@@ -49,12 +49,12 @@ ProgramCounter programCounter(next, pcOut, Reset, Clk, 1'b1);
 instructMem instruction(instruction, clk, pcOut);
 
 //Control Unit
-control controlUnit( instruction[31:26], reset, reg_dst, mem_to_reg, opCode, jump, branch, alu_src, reg_write, memRead, memWrite);
+control controlUnit( instruction[31:26], reset, reg_dst, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch,opCode);
 
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used
 mux4 RegisterMux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux32 aluInMux(aluMuxOut, alu_src, regOutB, signExtOut);
+mux32 aluMux(aluMuxOut, aluSource, regOutB, signExtOut);
 mux32 muxRAM(ramMuxOut, mem_to_reg, aluOut, RAMout);
 mux32 branchMux(branchMuxOut, andOut, pcAdd4, branchAddOut);
 //change muxFout name to next, muxEout to branchMuxOut, addAout to PCAdd4
