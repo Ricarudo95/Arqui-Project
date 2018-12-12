@@ -34,7 +34,7 @@ module mips_cpu( input clk,reset,  output[31:0] pc_out, alu_result);
     wire mem_to_reg;
     wire jump;  
     wire branch;  
-    wire opCode [1:0];
+    wire aluCode [2:0];
     //wire [1:0] HILO;
     //wire MOC;
     //wire MOV;
@@ -49,7 +49,7 @@ ProgramCounter programCounter(next, pcOut, Reset, Clk, 1'b1);
 instructMemTest1 instruction(instruction, clk, pcOut);
 
 //Control Unit
-control controlUnit( instruction[31:26], reset, reg_dst, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch,opCode);
+control controlUnit( instruction[31:26], reset, reg_dst, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch,aluCode);
 
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used
@@ -64,7 +64,7 @@ mux32 jumpMux(jumpMuxOut, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out});
 RegisterFile RegisterFile(muxAout, instruction[20:16], muxBout, muxDout, mem_to_reg, clk, outA, outB );
 
 //ALU Modules
-ALU alu(aluOut, zFlag, instruction[5:0], outA, signExtOut, instruction[31:30]);
+ALU alu(aluOut, zFlag, instruction[5:0], outA, signExtOut, aluCode);
 
 //RAM Module
 RAM ram(RAMout, MOC, RAMEnable, MOV, RW, outB, aluOut);
