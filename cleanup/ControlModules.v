@@ -30,6 +30,16 @@ module control(
                 jump = 0;  
                 branch = 0;  
                 HILO = 2'b00;
+
+                reg_dst = 1;
+                reg_write = 1;
+                alu_src = 0;
+                opCode = 2'b00;
+                memRead = 0;
+                memWrite = 0;
+                mem_to_reg = 0;
+                jump = 0;  
+                branch = 0;
                 end  
         6'b011100: begin // CLO, CLZ
                 reg_dst = 1;

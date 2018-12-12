@@ -20,11 +20,13 @@ module ALU(Result, zeroFlag, operation, a, b, opCode);
 
     always@(a or b or operation) 
         begin
+        
             if(opCode==2'b10)
             begin 
                 Result = a + b;
                 //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
             end
+
             else
             begin            
                 case (operation)
