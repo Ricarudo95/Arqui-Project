@@ -1,7 +1,7 @@
 module control( 
-  input[5:0] opcode,  
+  input[1:0] opcode,  
   input reset,
-  output reg reg_dst, reg_write, aluSrc, memRead, memWrite, mem_to_reg,  jump, branch, 
+  output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, 
   output reg[1:0] opCode);  
 
  always @(*)  
@@ -10,13 +10,12 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                alu_fnc = 5'b00000;
-                RAMEnable = 0;
-                RW = 0;
+                opCode = 2'b00;
+                memRead = 0;
+                memWrite = 0;
                 mem_to_reg = 0;
                 jump = 0;  
-                branch = 0;  
-                HILO = 2'b00;
+                branch = 0;
       end  
       else begin  
         case(opcode)   
@@ -24,7 +23,7 @@ module control(
                 reg_dst = 1;
                 reg_write = 1;
                 alu_src = 0;
-                alu_fnc = 5'b00000;
+                opCode = 5'b00000;
                 RAMEnable = 0;
                 RW = 0;
                 mem_to_reg = 0;
@@ -36,7 +35,7 @@ module control(
                 reg_dst = 1;
                 reg_write = 1;
                 alu_src = 0;
-                alu_fnc = 5'b00001;
+                opCode = 5'b00001;
                 RAMEnable = 0;
                 RW = 0;
                 mem_to_reg = 0;
@@ -48,7 +47,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                alu_fnc = 5'b00000;
+                opCode = 5'b00000;
                 RAMEnable = 0;
                 RW = 0;
                 mem_to_reg = 0;
@@ -62,7 +61,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 1;
                 alu_src = 1;
-                alu_fnc = 5'b01101;
+                opCode = 5'b01101;
                 RAMEnable = 1;
                 RW = 0;
                 mem_to_reg = 1;
@@ -76,7 +75,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 1;
                 alu_src = 1;
-                alu_fnc = 5'b01110;
+                opCode = 5'b01110;
                 RAMEnable = 1;
                 RW = 0;
                 mem_to_reg = 1;
@@ -89,7 +88,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 1;
                 alu_src = 1;
-                alu_fnc = 5'b01111;
+                opCode = 5'b01111;
                 RAMEnable = 1;
                 RW = 0;
                 mem_to_reg = 1;
@@ -102,7 +101,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b01000;
+                opCode = 5'b01000;
                 RAMEnable = 1;
                 RW = 1;
                 mem_to_reg = 1;
@@ -115,7 +114,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b01000;
+                opCode = 5'b01000;
                 RAMEnable = 1;
                 RW = 1;
                 mem_to_reg = 1;
@@ -128,7 +127,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b01001;
+                opCode = 5'b01001;
                 RAMEnable = 1;
                 RW = 1;
                 mem_to_reg = 1;
@@ -141,7 +140,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b01010;
+                opCode = 5'b01010;
                 RAMEnable = 1;
                 RW = 1;
                 mem_to_reg = 1;
@@ -154,7 +153,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b10000;
+                opCode = 5'b10000;
                 RAMEnable = 0;
                 RW = 0;
                 mem_to_reg = 0;
@@ -167,7 +166,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b10110;
+                opCode = 5'b10110;
                 RAMEnable = 0;
                 RW = 0;
                 mem_to_reg = 0;
@@ -180,7 +179,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 1;
-                alu_fnc = 5'b10101;
+                opCode = 5'b10101;
                 RAMEnable = 0;
                 RW = 0;
                 mem_to_reg = 0;
@@ -225,7 +224,7 @@ module control(
       default: begin  
                 reg_dst = 2'b01;  
                 mem_to_reg = 2'b00;  
-                alu_fnc = 2'b00;  
+                opCode = 2'b00;  
                 jump = 1'b0;  
                 branch = 1'b0;  
                 RW= 1'b0;  
@@ -247,7 +246,7 @@ module instructMemTest1(output reg [31:0] Instruction, input Enable, input[31:0]
                 Mem[2] <= 8'b00000000;
                 Mem[3] <= 8'b00101100;
 
-                Mem[4] <= 8'10010000; //LBU
+                Mem[4] <= 8'b10010000; //LBU
                 Mem[5] <= 8'b00100010;
                 Mem[6] <= 8'b00000000;
                 Mem[7] <= 8'b00000000;

@@ -1,4 +1,4 @@
-module RAM( clk, read, write, address, output_destination, word_to_be_written)
+module RAM( clk, read, write, address, output_destination, word_to_be_written);
  
 //parameters
  

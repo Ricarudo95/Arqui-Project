@@ -46,7 +46,7 @@ ProgramCounter programCounter(next, pcOut, Reset, Clk, 1'b1);
 
 //reg [511:0] PC = 512'd0;
 //Intruction Memory
-instructMem instruction(instruction, clk, pcOut);
+instructMemTest1 instruction(instruction, clk, pcOut);
 
 //Control Unit
 control controlUnit( instruction[31:26], reset, reg_dst, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch,opCode);
