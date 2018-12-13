@@ -4,8 +4,9 @@ module control( input clk,
   output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, unSign, 
   output reg[2:0] aluCode);  
 
- always @*  
+ always @* 
  begin  
+        $display("\n\n-------New Instruction Loaded-------------");
       if(reset == 1'b1) begin // no Op 
                 reg_dst = 0;
                 reg_write = 0;

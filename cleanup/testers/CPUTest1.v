@@ -57,14 +57,14 @@ module CPUTester1();
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;
                 if(index <= 17) begin
-                $display("\n---------TEST BENCH 1-----------\n");
+                
                 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
                 $display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
                 $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 $display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
-                $display("\nOffset: %d", CPU_Test1.signExt.ins );
-                $display("\n---------END OF TEST BENCH 1-----------\n");
+                $display("\nOffset: %d\n\n", CPU_Test1.signExt.ins );
+                
                 end
                
             end
