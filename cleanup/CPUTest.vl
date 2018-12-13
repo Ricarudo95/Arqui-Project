@@ -4,12 +4,13 @@ module CPUTester();
         // To Build: vvp results/CPUTestbench.vvp
 
     reg reset = 1'b0, clk;
+    integer index;
 
 
 
     mipsCPUData1 CPU_Test1(clk, reset);
     mipsCPUData2 CPU_Test2(clk, reset);
-    mipsCPUData2 CPU_Test3(clk, reset);
+    mipsCPUData3 CPU_Test3(clk, reset);
 
 
 
@@ -90,9 +91,60 @@ module CPUTester();
             CPU_Test3.RAM_Mux,
             CPU_Test3.Branch_Mux
             );
-        
-      
 
+            for(index = 1; index <= 130; index = index+1) begin  
+                clk =0; #5 clk = 1;
+                if(index <= 17) begin
+                $display("\n---------TEST BENCH 1-----------\n");
+                $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+                $display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
+                $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+                $display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
+                $display("\nOffset: %d", CPU_Test1.signExt.ins );
+                $display("\n---------END OF TEST BENCH 1-----------\n");
+                end
+                if(index <= 57) begin
+                $display("\n---------TEST BENCH 2-----------\n");
+                $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
+                $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
+                $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
+                $display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
+                $display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
+                $display("\nOffset: %d", CPU_Test2.signExt.ins );
+                $display("\n---------END OF TEST BENCH 2-----------\n");
+                end
+                if(index <= 129) begin
+                $display("\n---------TEST BENCH 3-----------\n");
+                $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
+                $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
+                $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
+                $display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
+                $display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
+                $display("\nOffset: %d", CPU_Test3.signExt.ins );               
+                $display("\n---------END OF TEST BENCH 3-----------\n");
+                end 
+            end
+/*
+clk =0; #5 clk = 1;
+$display("\n---------TEST BENCH 1-----------\n");
+$display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+$display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+$display("\nIntrction Type: Imidiate");
+$display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
+$display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+$display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
+$display("\nOffset: %d", CPU_Test1.signExt.ins );
+
+$display("\n---------TEST BENCH 2-----------\n");
+$display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
+$display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
+$display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
+
+$display("\n---------TEST BENCH 3-----------\n");
+$display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
+$display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
+$display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
 
 clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
@@ -107,22 +159,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0; #5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -135,22 +179,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -163,22 +199,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -191,22 +219,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -219,22 +239,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -247,22 +259,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -275,22 +279,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -303,22 +299,14 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
 
-#5 clk =0;#5 clk = 1;
+clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -331,31 +319,13 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\n---------TEST BENCH 2-----------\n");
 $display("\nProgram Counter: %d", CPU_Test2.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test2.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test2.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test2.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test2.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test2.signExt.ins );
 
 $display("\n---------TEST BENCH 3-----------\n");
 $display("\nProgram Counter: %d", CPU_Test3.Program_Counter.PCResult );
 $display("\nCurrent Instruction: %b", CPU_Test3.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
 $display("\nOperation Code: %b", CPU_Test3.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test3.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test3.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test3.signExt.ins );
-
-#5 clk =0;#5 clk = 1;
-$display("\n---------TEST BENCH 1-----------\n");
-$display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
-$display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
-$display("\nIntrction Type: Imidiate");
-$display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
-$display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
-$display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
-$display("\nOffset: %d", CPU_Test1.signExt.ins );
-
+*/
     end
 
 endmodule
