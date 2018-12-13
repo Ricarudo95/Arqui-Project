@@ -1,12 +1,8 @@
- // To Compile: iverilog -o results/CPUTestbench3.vvp testers/CPUTest3 CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
+ // To Compile: iverilog -o results/CPUTestbench3.vvp testers/CPUTest3.v CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
  // To Build: vvp results/CPUTestbench3.vvp
 
 module CPUTester3();
     
-        // To Compile: iverilog -o results/CPUTestbench.vvp CPUTest.vl CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
-        // To Build: vvp results/CPUTestbench.vvp
-
-    reg reset = 1'b0, clk;
     integer index;
 
     mipsCPUData3 CPU_Test1(clk, reset);

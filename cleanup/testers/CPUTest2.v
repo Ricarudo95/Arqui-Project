@@ -1,11 +1,8 @@
- // To Compile: iverilog -o results/CPUTestbench2.vvp testers/CPUTest2 CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
+ // To Compile: iverilog -o results/CPUTestbench2.vvp testers/CPUTest2.v CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
  // To Build: vvp results/CPUTestbench2.vvp
 
 module CPUTester2();
     
-        // To Compile: iverilog -o results/CPUTestbench.vvp CPUTest.vl CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
-        // To Build: vvp results/CPUTestbench.vvp
-
     reg reset = 1'b0, clk;
     integer index;
 
@@ -55,14 +52,12 @@ module CPUTester2();
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;
                 if(index <= 51) begin
-                $display("\n---------TEST BENCH 1-----------\n");
                 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
                 $display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
                 $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 $display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
                 $display("\nOffset: %d", CPU_Test1.signExt.ins );
-                $display("\n---------END OF TEST BENCH 1-----------\n");
                 end
                
             end

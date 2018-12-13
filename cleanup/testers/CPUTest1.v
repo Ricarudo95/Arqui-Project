@@ -5,9 +5,6 @@
 
 module CPUTester1();
     
-        // To Compile: iverilog -o results/CPUTestbench.vvp CPUTest.vl CPU.v ALUModule.v ControlModules.v MuxModules.v RamModules.v RegisterFile.v UtilModules.v
-        // To Build: vvp results/CPUTestbench.vvp
-
     reg reset = 1'b0, clk;
     integer index;
 
