@@ -4,7 +4,7 @@ module control( input clk,
   output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, unSign, 
   output reg[2:0] aluCode);  
 
- always @*  
+ always @(posedge clk)  
  begin  
       if(reset == 1'b1) begin // no Op 
                 reg_dst = 0;
@@ -17,6 +17,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign = 0;
+                $display("Current Instruction: Reset");
       end  
       else begin  
         case(opcode)   
@@ -31,6 +32,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign = 0;
+                $display("Current Instruction: Aritmetic");
                 end  
         6'b011100: begin // CLO, CLZ
                 reg_dst = 1;
@@ -43,6 +45,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
+                $display("Current Instruction: CLO, CLZ");
                 end  
 
         6'b000010: begin // JMP 
@@ -56,6 +59,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
+                $display("Current Instruction: JUMP");
                 end  
 
         6'b101011: begin // SW
@@ -68,19 +72,8 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
-                
+                $display("Current Instruction: Save Word");
                 end
-
-        // 6'b101001: begin // SH 
-        //         reg_write = 0;
-        //         alu_src = 0;
-        //         opCode = 3'b101;
-        //         memRead = 0;
-        //         memWrite = 1;
-        //         mem_to_reg = 0;
-        //         jump = 0;  
-        //         branch = 0;
-        //         end
 
         6'b101000: begin // SB
                 reg_write = 0;
@@ -92,6 +85,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
+                $display("Current Instruction: Save Byte");
                 end
       
         6'b100011: begin // LW: Load Word
@@ -104,33 +98,9 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
+                $display("Current Instruction: Load Word");
                 end
 
-        // 6'b100001: begin // LH: Load Half Word Signed extended
-        //         reg_dst = 0;
-        //         reg_write = 0;
-        //         alu_src = 1;
-        //         opCode = 5'b01000;
-        //         RAMEnable = 1;
-        //         RW = 1;
-        //         mem_to_reg = 1;
-        //         jump = 0;  
-        //         branch = 0;  
-        //         HILO = 2'b00;
-        //         end
-
-        // 6'b100101: begin // LHU: Load Half Word Zero Extended
-        //         reg_dst = 0;
-        //         reg_write = 0;
-        //         alu_src = 1;
-        //         opCode = 5'b01001;
-        //         RAMEnable = 1;
-        //         RW = 1;
-        //         mem_to_reg = 1;
-        //         jump = 0;  
-        //         branch = 0;  
-        //         HILO = 2'b00;
-        //         end
 
         6'b100000: begin // LB: Load Byte
                 reg_write = 0;
@@ -142,6 +112,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
+                $display("Current Instruction: Load Byte");
                 end
 
         6'b100100: begin // LBU: Load Byte Unsigned
@@ -154,6 +125,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=1;
+                $display("Current Instruction: Load Byte Unsigned");
                 end
 
         6'b000100: begin // BEQ
@@ -167,6 +139,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 1;
                 unSign=0;
+                $display("Current Instruction: Branch if Equal");
                 end
 
         6'b000001: begin // BEQZ
@@ -180,6 +153,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 1;
                 unSign=0;
+                $display("Current Instruction: Branch if Equal to Zero");
                 end
 
         6'b000110: begin // BLEZ
@@ -193,6 +167,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 1;
                 unSign=0;
+                $display("Current Instruction: Branch if Less Than Zero");
                 end
 
         6'b000111: begin // BGTZ
@@ -206,6 +181,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 1;
                 unSign=0;
+                $display("Current Instruction: Branch if Greater Than Zero");
                 end
         
         6'b001001: begin // add Imidiate unsigned
@@ -219,6 +195,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=1;
+                $display("Current Instruction: ADDIU");
                 end
 
         6'b001000: begin // add Imidiate signed
@@ -232,6 +209,7 @@ module control( input clk,
                 jump = 0;  
                 branch = 0;
                 unSign=0;
+                $display("Current Instruction: ADDI");
                 end
         
 
