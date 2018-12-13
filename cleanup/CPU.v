@@ -18,7 +18,7 @@ module mipsCPUData1(clk,reset);
     wire [4:0] regMuxOut; 
 
     //ALU
-    wire [31:0] aluB; 
+    wire [31:0] aluB;
     wire [31:0] aluOut;
     wire zFlag;
     wire [5:0] func;
