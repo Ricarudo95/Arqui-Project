@@ -57,7 +57,7 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 		end
 	end
 	
-	always @(negedge Clk)
+	always @*
 	begin
 		A_Data <= Registers[A_Address];
 		B_Data <= Registers[B_Address];

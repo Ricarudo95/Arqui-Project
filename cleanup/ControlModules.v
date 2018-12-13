@@ -1,7 +1,7 @@
 module control( input clk,
   input[5:0] opcode,  
   input reset,
-  output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, 
+  output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, unSign, 
   output reg[2:0] aluCode);  
 
  always @*  
@@ -16,6 +16,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign = 0;
       end  
       else begin  
         case(opcode)   
@@ -26,9 +27,10 @@ module control( input clk,
                 aluCode = 3'b000;
                 memRead = 0;
                 memWrite = 0;
-                mem_to_reg = 0;
+                mem_to_reg = 1;
                 jump = 0;  
                 branch = 0;
+                unSign = 0;
                 end  
         6'b011100: begin // CLO, CLZ
                 reg_dst = 1;
@@ -40,6 +42,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
                 end  
 
         6'b000010: begin // JMP 
@@ -52,6 +55,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
                 end  
 
         6'b101011: begin // SW
@@ -63,6 +67,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
                 
                 end
 
@@ -86,6 +91,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
                 end
       
         6'b100011: begin // LW: Load Word
@@ -97,6 +103,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
                 end
 
         // 6'b100001: begin // LH: Load Half Word Signed extended
@@ -134,6 +141,19 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
+                end
+
+        6'b100100: begin // LBU: Load Byte Unsigned
+                reg_write = 0;
+                alu_src = 0;
+                aluCode = 3'b101;
+                memRead = 0;
+                memWrite = 1;
+                mem_to_reg = 0;
+                jump = 0;  
+                branch = 0;
+                unSign=1;
                 end
 
         6'b000100: begin // BEQ
@@ -146,6 +166,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 1;
+                unSign=0;
                 end
 
         6'b000001: begin // BEQZ
@@ -158,6 +179,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 1;
+                unSign=0;
                 end
 
         6'b000110: begin // BLEZ
@@ -170,6 +192,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 1;
+                unSign=0;
                 end
 
         6'b000111: begin // BGTZ
@@ -182,6 +205,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 1;
+                unSign=0;
                 end
         
         6'b001001: begin // add Imidiate
@@ -194,6 +218,7 @@ module control( input clk,
                 mem_to_reg = 1;
                 jump = 0;  
                 branch = 0;
+                unSign=1;
                 end
 
       default: begin  
@@ -206,6 +231,7 @@ module control( input clk,
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
+                unSign=0;
                 end  
       endcase  
       end  
@@ -227,17 +253,17 @@ module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC
                 Mem[6] <= 8'b00000000;
                 Mem[7] <= 8'b00000000;
 
-                Mem[8] <= 8'b00100100; //LBU
+                Mem[8] <= 8'b00100100; //ADDIU
                 Mem[9] <= 8'b00100100;
                 Mem[10] <= 8'b00000000;
                 Mem[11] <= 8'b00100100;
 
-                Mem[12] <= 8'b00000000; //ADDU
+                Mem[12] <= 8'b00000000; //ADD
                 Mem[13] <= 8'b00000000;
                 Mem[14] <= 8'b00101000;
                 Mem[15] <= 8'b00100001;
 
-                Mem[16] <= 8'b00000000; //ADDU
+                Mem[16] <= 8'b00000000; //ADD
                 Mem[17] <= 8'b10100010;
                 Mem[18] <= 8'b00101000;
                 Mem[19] <= 8'b00100001;
@@ -288,6 +314,7 @@ module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC
                 Mem[43] <= 8'b00000000;
 
 	end
+        assign Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
 endmodule
 
 module instructMemTest2(output [31:0] Instruction, input Enable, input[31:0]  PC);
