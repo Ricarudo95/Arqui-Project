@@ -1,4 +1,4 @@
-module ALU(Result, zeroFlag, operation, a, b, aluCode); 
+module ALU(Result, zeroFlag, operation, a, b); 
     input [31:0] a; 
     input [31:0] b; 
     //Function Code
