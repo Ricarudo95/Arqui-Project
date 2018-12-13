@@ -93,12 +93,21 @@ module CPUTester();
         
       
 
-$display("Current Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+
 clk =0; #5 clk = 1;
-$display("Current Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
-#5 clk =0; #5 clk = 1;#5 
-clk =0;#5 clk = 1;#5
-clk =0;#5 clk = 1;#5
+$display("\n---------TEST BENCH 1-----------\n");
+$display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+$display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+$display("\nIntrction Type: Imidiate");
+$display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
+$display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+$display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
+$display("\nOffset: %d", CPU_Test1.signExt.ins );
+
+#5 clk =0; #5 clk = 1;
+$display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+#5 clk =0;#5 clk = 1;
+#5 clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
