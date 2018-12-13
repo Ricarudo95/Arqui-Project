@@ -40,7 +40,7 @@ reg [bus_width-1:0] mem [0:words_no-1];
   end
 endmodule
 
- //Loading Memory
+//Loading Memory
 module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC);
 
 	reg [7:0] Mem[0:511];
