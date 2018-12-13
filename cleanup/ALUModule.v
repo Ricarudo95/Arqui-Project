@@ -24,19 +24,19 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
 
             3'b001: //equals
                 begin
-                    Result = (a == b) ? 1: 0 ;
+                    Result = ($signed(a) == $signed(b)) ? 1: 0 ;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
 
             3'b010: //Less than
                 begin
-                    Result = (a < b) ? 1: 0 ;
+                    Result = ($signed(a) < $signed(b)) ? 1: 0 ;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end    
 
             3'b011: //Greater than
                 begin
-                    Result = (a > b) ? 1: 0 ;
+                    Result = ($signed(a) > $signed(b)) ? 1: 0 ;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
 
