@@ -93,9 +93,10 @@ module CPUTester();
         
       
 
-$display("Current Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
 clk =0; #5 clk = 1;
 $display("Current Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+$display("Current Instruction2: %b", CPU_Test2.Instruction_Memory.Instruction );
+$display("Current Instruction3: %b", CPU_Test3.Instruction_Memory.Instruction );
 #5 clk =0; #5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
