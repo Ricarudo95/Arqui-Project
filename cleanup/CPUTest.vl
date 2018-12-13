@@ -3,14 +3,6 @@ module CPUTester();
     reg reset = 1'b0, clk;
 
 
-    // CPU #() DUT (.A_Address(A_Address),
-    //                         .B_Address(B_Address),
-    //                         .C_Address(C_Address),
-    //                         .C_Data(Input_C),
-    //                         .Write(E),
-    //                         .Clk(clk),
-    //                         .A_Data(Output_A),
-    //                         .B_Data(Output_B));
 
     mipsCPU CPU(clk, reset);
 
@@ -37,8 +29,16 @@ module CPUTester();
 
             //RAM Variables
             CPU.ram,
+
             //Adder Variables
             CPU.addFour,
+            CPU.adder,
+
+            //Shift 2 and Sign Sxtend Variables
+            CPU.signExt,
+            CPU.shftJump,
+            CPU.shftLeft,
+            CPU.simpleAND,
 
             //Mux Variables
             CPU.Jump_Mux,
@@ -46,61 +46,68 @@ module CPUTester();
             CPU.Register_Mux,
             CPU.RAM_Mux,
             CPU.Branch_Mux
-
-
             );
         
-        
-        // $monitor("Clock: %b Reset: %b instruction: %b ", clk, reset, dut.instruction);
-        
       
 
-        
-        clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5       
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
-        clk =0;#5 clk = 1;#5 
-        clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
 
       
-        clk =0;#5 clk = 1;#5;
+clk =0;#5 clk = 1;#5;
         
     
        
