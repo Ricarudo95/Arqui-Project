@@ -208,7 +208,7 @@ module control( input clk,
                 unSign=0;
                 end
         
-        6'b001001: begin // add Imidiate
+        6'b001001: begin // add Imidiate unsigned
                 reg_dst = 0;
                 reg_write = 1;
                 alu_src = 1;
@@ -258,12 +258,12 @@ module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC
                 Mem[10] <= 8'b00000000;
                 Mem[11] <= 8'b00100100;
 
-                Mem[12] <= 8'b00000000; //ADD
+                Mem[12] <= 8'b00000000; //ADDU
                 Mem[13] <= 8'b00000000;
                 Mem[14] <= 8'b00101000;
                 Mem[15] <= 8'b00100001;
 
-                Mem[16] <= 8'b00000000; //ADD
+                Mem[16] <= 8'b00000000; //ADDU
                 Mem[17] <= 8'b10100010;
                 Mem[18] <= 8'b00101000;
                 Mem[19] <= 8'b00100001;
