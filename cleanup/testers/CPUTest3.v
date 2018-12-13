@@ -3,13 +3,15 @@
 
 module CPUTester3();
     
+    reg reset = 1'b0, clk;
     integer index;
+    integer f;
 
     mipsCPUData3 CPU_Test1(clk, reset);
 
     initial begin
         // To record the workbench we create a file to be read by GTKWave demostrating all inputs and outputs at any given time.
-        $dumpfile("results/CPUFileTest1.vcd");
+        $dumpfile("results/CPUFileTest3.vcd");
         $dumpvars(0,clk, reset,
             //Prohram Counter Variables 
             CPU_Test1.Program_Counter,
@@ -48,20 +50,29 @@ module CPUTester3();
             CPU_Test1.Branch_Mux
             );
 
+            f = $fopen("output3.txt","w");
+
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;
-                if(index <= 20) begin
-                $display("\n---------TEST BENCH 1-----------\n");
+                if(index <= 51) begin
                 $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
                 $display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
                 $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 $display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
                 $display("\nOffset: %d", CPU_Test1.signExt.ins );
-                $display("\n---------END OF TEST BENCH 1-----------\n");
+
+                $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+                $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
+                $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+                $fwrite(f,"\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
+                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
                 end
                
             end
+
+            $fclose(f);
 
     end
 

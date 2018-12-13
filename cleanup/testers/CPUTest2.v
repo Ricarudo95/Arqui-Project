@@ -5,6 +5,7 @@ module CPUTester2();
     
     reg reset = 1'b0, clk;
     integer index;
+    integer f;
 
     mipsCPUData2 CPU_Test1(clk, reset);
 
@@ -49,6 +50,8 @@ module CPUTester2();
             CPU_Test1.Branch_Mux
             );
 
+            f = $fopen("output2.txt","w");
+
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;
                 if(index <= 51) begin
@@ -58,9 +61,18 @@ module CPUTester2();
                 $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 $display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
                 $display("\nOffset: %d", CPU_Test1.signExt.ins );
+
+                $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+                $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
+                $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+                $fwrite(f,"\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
+                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
                 end
                
             end
+
+            $fclose(f);
 
     end
 

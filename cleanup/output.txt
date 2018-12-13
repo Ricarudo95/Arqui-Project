@@ -1,0 +1,408 @@
+
+Program Counter:          0
+Current Instruction: 00100100000001010000000100000000
+Operation Code: 001001
+Register S Address:  0
+Register T Adresss:  5
+Offset:   256
+
+
+Program Counter:          4
+Current Instruction: 00000000101000000000000000110000
+Operation Code: 000000
+Register S Address:  5
+Register T Adresss:  0
+Offset:    48
+
+
+Program Counter:          8
+Current Instruction: 00100100000010100000000001011000
+Operation Code: 001001
+Register S Address:  0
+Register T Adresss: 10
+Offset:    88
+
+
+Program Counter:         12
+Current Instruction: 00100100000001000000000001011000
+Operation Code: 001001
+Register S Address:  0
+Register T Adresss:  4
+Offset:    88
+
+
+Program Counter:         16
+Current Instruction: 10101101010001010000000000000000
+Operation Code: 101011
+Register S Address: 10
+Register T Adresss:  5
+Offset:     0
+
+
+Program Counter:         20
+Current Instruction: 00100101010010100000000000000100
+Operation Code: 001001
+Register S Address: 10
+Register T Adresss: 10
+Offset:     4
+
+
+Program Counter:         24
+Current Instruction: 10001100100011001111111111111100
+Operation Code: 100011
+Register S Address:  4
+Register T Adresss: 12
+Offset: 65532
+
+
+Program Counter:         28
+Current Instruction: 10001100100010111111111111111000
+Operation Code: 100011
+Register S Address:  4
+Register T Adresss: 11
+Offset: 65528
+
+
+Program Counter:         32
+Current Instruction: 00000001100010110001000000100000
+Operation Code: 000000
+Register S Address: 12
+Register T Adresss: 11
+Offset:  4128
+
+
+Program Counter:         36
+Current Instruction: 10101101010001010000000000000000
+Operation Code: 101011
+Register S Address: 10
+Register T Adresss:  5
+Offset:     0
+
+
+Program Counter:         40
+Current Instruction: 00100101010010100000000000000100
+Operation Code: 001001
+Register S Address: 10
+Register T Adresss: 10
+Offset:     4
+
+
+Program Counter:         44
+Current Instruction: 01000000000000000000000000011000
+Operation Code: 010000
+Register S Address:  0
+Register T Adresss:  0
+Offset:    24
+
+
+Program Counter:         48
+Current Instruction: 10101101010001010000000000000000
+Operation Code: 101011
+Register S Address: 10
+Register T Adresss:  5
+Offset:     0
+
+
+Program Counter:         52
+Current Instruction: 00100101010010100000000000000100
+Operation Code: 001001
+Register S Address: 10
+Register T Adresss: 10
+Offset:     4
+
+
+Program Counter:         56
+Current Instruction: 11000000000000000000000000000000
+Operation Code: 110000
+Register S Address:  0
+Register T Adresss:  0
+Offset:     0
+
+
+Program Counter:         60
+Current Instruction: 10101101010001010000000000000000
+Operation Code: 101011
+Register S Address: 10
+Register T Adresss:  5
+Offset:     0
+
+
+Program Counter:         64
+Current Instruction: 00000000000000000000000000000000
+Operation Code: 000000
+Register S Address:  0
+Register T Adresss:  0
+Offset:     0
+
+
+Program Counter:         68
+Current Instruction: 00000000000000000000000000000000
+Operation Code: 000000
+Register S Address:  0
+Register T Adresss:  0
+Offset:     0
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
+
+Program Counter:         72
+Current Instruction: 00010000000000001111111111111111
+Operation Code: 000100
+Register S Address:  0
+Register T Adresss:  0
+Offset: 65535
+
