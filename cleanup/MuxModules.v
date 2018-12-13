@@ -34,14 +34,13 @@ module mux32 (output reg [31:0] result, input s, input [31:0] zero, one);
   end
 endmodule
 
-module mux4inputs (output reg [31:0] result, input [1:0] s, input [31:0] zero, one, two, three);
+module mux4inputs (output reg [31:0] result, input [1:0] s, input [31:0] zero, one, two);
   always @* 
   begin
   case (s)
     2'b00: result = zero;
     2'b01: result =  one;
     2'b10: result = two;
-    2'b11: result = three;
     default: result = zero;
   endcase
   end
