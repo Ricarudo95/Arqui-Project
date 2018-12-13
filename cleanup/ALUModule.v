@@ -1,4 +1,4 @@
-module ALU(Result, zeroFlag, operation, a, b); 
+module ALU(Result, zeroFlag, operation, a, b, mar); 
     input [31:0] a; 
     input [31:0] b; 
     //Function Code
@@ -11,6 +11,7 @@ module ALU(Result, zeroFlag, operation, a, b);
     output reg overFlowFlag;
     output reg zeroFlag;
     output reg [31:0] Result; 
+    output reg [31:0] mar;
     
 
     integer index;
@@ -101,10 +102,6 @@ module ALU(Result, zeroFlag, operation, a, b);
                 //begin            
                     case (operation)
                     //Move
-                        6'b111111: // return B
-                            begin 
-                                Result = b;
-                            end
                         6'b001011: // MOVN
                             begin 
                                 if(b != 0)
@@ -212,19 +209,19 @@ module ALU(Result, zeroFlag, operation, a, b);
                             end
                         end
 
-                        6'b100001: // CLO
-                        begin
-                            for(index = 31; index >= 0; index = index-1) begin  
-                                if(a[index] == 1'b0) begin
-                                    var = 1;
-                                    index = -1;
-                                end 
-                                if(var == 0) begin
-                                    counter = counter + 1;
-                                end
-                            end
-                            Result = counter;
-                        end
+                        // 6'b100001: // CLO
+                        // begin
+                        //     for(index = 31; index >= 0; index = index-1) begin  
+                        //         if(a[index] == 1'b0) begin
+                        //             var = 1;
+                        //             index = -1;
+                        //         end 
+                        //         if(var == 0) begin
+                        //             counter = counter + 1;
+                        //         end
+                        //     end
+                        //     Result = counter;
+                        // end
                         
 
                     
