@@ -16,7 +16,7 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
     integer index;
     integer counter = 0;
     integer var = 0;
-    reg [31:0 ]tempVar;
+    reg [31:0]tempVar;
 
     always@(a or b or operation) 
         begin

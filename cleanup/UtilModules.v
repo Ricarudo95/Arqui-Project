@@ -1,9 +1,8 @@
 //File Contaning all add modules
 
-module addplus4 (output reg [31:0] result, input [31:0] pc);
-  reg [31:0] four = 32'd4;
-  always @(pc)
-    result = pc + four;
+module addplus4 (output [31:0] result, input [31:0] pc);
+  
+  assign result = pc + 4;
 endmodule
 
 module adder (output reg [31:0] result, input [31:0] entry1, entry0);

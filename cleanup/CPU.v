@@ -7,7 +7,7 @@ module mipsCPU(clk,reset);
 ////////////// CIRCUIT CONNECTIONS ///////////////
 
     //Program Counter And Intructions
-    reg[31:0] next;
+    wire[31:0] next;
     wire [31:0] pcOut; 
     wire [31:0] instruction;
     
@@ -56,26 +56,27 @@ module mipsCPU(clk,reset);
 /////////////////////////COMPONENTS////////////////////////////////////
 
 //Program Counter
-ProgramCounter programCounter(next, pcOut, Reset, Clk, 1'b1);
+ProgramCounter Program_Counter(next, pcOut, reset, clk);
 
 //reg [511:0] PC = 512'd0;
 //Intruction Memory
-instructMemTest1 instructionMem(instruction, clk, pcOut);
+instructMemTest1 Instruction_Memory(instruction, clk, pcOut);
 
 //Control Unit
-control controlUnit(instruction[31:26], reset, reg_dst, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch, aluCode);
+control Control_Unit(clk, instruction[31:26], reset, reg_dst, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch, aluCode);
 
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used
-mux4 RegisterMux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux32 aluMux(aluMuxOut, aluSource, regOutB, signExtOut);
-mux32 muxRAM(ramMuxOut, mem_to_reg, aluOut, ramOut);
-mux32 branchMux(branchMuxOut, andOut, pcAdd4, branchAddOut);
-//change muxFout name to next, muxEout to branchMuxOut, addAout to PCAdd4
-mux32 jumpMux(jumpMuxOut, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out}); 
+
+
+mux4 Register_Mux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
+mux32 ALU_Mux(aluMuxOut, aluSource, regOutB, signExtOut);
+mux32 RAM_Mux(ramMuxOut, mem_to_reg, aluOut, ramOut);
+mux32 Branch_Mux(branchMuxOut, andOut, pcAdd4, branchAddOut);
+mux32 Jump_Mux(next, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out}); 
 
 //Register File
-RegisterFile RegisterFile(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, regOutA, regOutB );
+RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, regOutA, regOutB );
 
 //ALU Modules
 ALU alu(aluOut, zFlag, instruction[5:0], regOutA, signExtOut, aluCode);

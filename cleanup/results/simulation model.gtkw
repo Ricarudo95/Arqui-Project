@@ -1,0 +1,136 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Thu Dec 13 02:56:35 2018
+[*]
+[dumpfile] "C:\Users\Ricarudo\Repositories\Arqui-Project\cleanup\results\CPUFileTest.vcd"
+[dumpfile_mtime] "Thu Dec 13 02:40:37 2018"
+[dumpfile_size] 18105
+[savefile] "C:\Users\Ricarudo\Repositories\Arqui-Project\cleanup\results\simulation model.gtkw"
+[timestart] 0
+[size] 2560 1377
+[pos] -347 -347
+*-5.000000 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] CPUTester.
+[treeopen] CPUTester.CPU.
+[sst_width] 197
+[signals_width] 325
+[sst_expanded] 1
+[sst_vpaned_height] 426
+@28
+CPUTester.clk
+@c00200
+-CONTROL FLAGS
+@200
+-CONTROL FLAGS
+@22
+CPUTester.CPU.Control_Unit.opcode[5:0]
+@28
+CPUTester.CPU.Control_Unit.aluCode[2:0]
+CPUTester.CPU.Control_Unit.reg_dst
+CPUTester.CPU.Control_Unit.alu_src
+CPUTester.CPU.Control_Unit.mem_to_reg
+CPUTester.CPU.Control_Unit.reg_write
+CPUTester.CPU.Control_Unit.branch
+CPUTester.CPU.Control_Unit.jump
+CPUTester.CPU.Control_Unit.memRead
+CPUTester.CPU.Control_Unit.memWrite
+@1401200
+-CONTROL FLAGS
+@200
+-
+@c00200
+-INSTRUCTION MEMORY
+@22
+CPUTester.CPU.Instruction_Memory.Instruction[31:0]
+CPUTester.CPU.Instruction_Memory.PC[31:0]
+@1401200
+-INSTRUCTION MEMORY
+@c00200
+-PROGRAM COUNTER
+@22
+CPUTester.CPU.Program_Counter.PCNext[31:0]
+CPUTester.CPU.Program_Counter.PCResult[31:0]
+@1401200
+-PROGRAM COUNTER
+@200
+-
+@c00200
+-PLUS 4 ADDER
+@22
+CPUTester.CPU.addFour.pc[31:0]
+CPUTester.CPU.addFour.result[31:0]
+@1401200
+-PLUS 4 ADDER
+@c00201
+-JUMP MUX
+@22
+CPUTester.CPU.Jump_Mux.zero[31:0]
+CPUTester.CPU.Jump_Mux.one[31:0]
+CPUTester.CPU.Jump_Mux.result[31:0]
+@28
+CPUTester.CPU.Jump_Mux.s
+@1401201
+-JUMP MUX
+@200
+-
+@c00200
+-REGISTER MUX
+@22
+CPUTester.CPU.Register_Mux.zero[4:0]
+CPUTester.CPU.Register_Mux.one[4:0]
+CPUTester.CPU.Register_Mux.result[4:0]
+@28
+CPUTester.CPU.Register_Mux.s
+@1401200
+-REGISTER MUX
+@c00200
+-REGISTER FILE
+@22
+CPUTester.CPU.Register_File.A_Address[4:0]
+CPUTester.CPU.Register_File.B_Address[4:0]
+CPUTester.CPU.Register_File.C_Address[4:0]
+CPUTester.CPU.Register_File.A_Data[31:0]
+CPUTester.CPU.Register_File.B_Data[31:0]
+CPUTester.CPU.Register_File.C_Data[31:0]
+@1401200
+-REGISTER FILE
+@200
+-
+@c00200
+-ALU MUX
+@22
+CPUTester.CPU.Jump_Mux.zero[31:0]
+CPUTester.CPU.Jump_Mux.one[31:0]
+CPUTester.CPU.Jump_Mux.result[31:0]
+@28
+CPUTester.CPU.Jump_Mux.s
+@1401200
+-ALU MUX
+@c00200
+-ALU
+@22
+CPUTester.CPU.alu.operation[5:0]
+@28
+CPUTester.CPU.alu.aluCode[2:0]
+@22
+CPUTester.CPU.alu.Result[31:0]
+CPUTester.CPU.alu.a[31:0]
+CPUTester.CPU.alu.b[31:0]
+@28
+CPUTester.CPU.alu.zeroFlag
+@1401200
+-ALU
+@200
+-
+@c00200
+-RAM
+@22
+CPUTester.CPU.ram.address[31:0]
+CPUTester.CPU.ram.dataIn[31:0]
+CPUTester.CPU.ram.output_destination[31:0]
+@200
+-
+@1401200
+-RAM
+[pattern_trace] 1
+[pattern_trace] 0

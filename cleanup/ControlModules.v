@@ -1,10 +1,10 @@
-module control( 
+module control( input clk,
   input[5:0] opcode,  
   input reset,
   output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, 
   output reg[2:0] aluCode);  
 
- always @(*)  
+ always @*  
  begin  
       if(reset == 1'b1) begin // no Op 
                 reg_dst = 0;
@@ -183,7 +183,18 @@ module control(
                 jump = 0;  
                 branch = 1;
                 end
-            
+        
+        6'b001001: begin // add Imidiate
+                reg_dst = 0;
+                reg_write = 1;
+                alu_src = 1;
+                aluCode = 3'b101;
+                memRead = 0;
+                memWrite = 0;
+                mem_to_reg = 1;
+                jump = 0;  
+                branch = 0;
+                end
 
       default: begin  
                 reg_dst = 0;
@@ -201,7 +212,7 @@ module control(
  end  
 endmodule  
 
-module instructMemTest1(output reg [31:0] Instruction, input Enable, input[31:0]  PC);
+module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC);
 
 	reg [7:0] Mem[0:511];
 
@@ -284,16 +295,14 @@ module instructMemTest1(output reg [31:0] Instruction, input Enable, input[31:0]
 
 
 
-	always @(Enable) //Whenever Enable and/or MOV is active
-	if(Enable)
-        Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
+        assign Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
 endmodule
 
 
-module ProgramCounter(PCNext, PCResult, Reset, Clk,PCWrite);
+module ProgramCounter(PCNext, PCResult, Reset, Clk);
 
 	input       [31:0]  PCNext;
-	input               Reset, Clk,PCWrite;
+	input               Reset, Clk;
 
 	output reg  [31:0]  PCResult;
 
@@ -307,15 +316,13 @@ module ProgramCounter(PCNext, PCResult, Reset, Clk,PCWrite);
     always @(posedge Clk)
     begin
     	if (Reset == 1)
-    	begin
+    	        begin
     		PCResult <= 32'h00000000;
-    	end
+    	        end
     	else
-    	begin
-			if (PCWrite == 1) begin
-				PCResult <= PCNext;
-			end
-    	end
+    	        begin
+		PCResult <= PCNext;	
+    	        end
 
 		$display("PC=%h",PCResult);
     end
