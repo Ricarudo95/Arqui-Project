@@ -1,8 +1,8 @@
 module control( 
-  input[1:0] opcode,  
+  input[5:0] opcode,  
   input reset,
   output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, 
-  output reg[1:0] opCode);  
+  output reg[2:0] aluCode);  
 
  always @(*)  
  begin  
@@ -10,7 +10,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b000;
+                aluCode = 3'b000;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -23,7 +23,7 @@ module control(
                 reg_dst = 1;
                 reg_write = 1;
                 alu_src = 0;
-                opCode = 3'b000;
+                aluCode = 3'b000;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -34,7 +34,7 @@ module control(
                 reg_dst = 1;
                 reg_write = 1;
                 alu_src = 0;
-                opCode = 3'b100;
+                aluCode = 3'b100;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -46,7 +46,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b000;
+                aluCode = 3'b000;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -57,7 +57,7 @@ module control(
         6'b101011: begin // SW
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b101;
+                aluCode = 3'b101;
                 memRead = 0;
                 memWrite = 1;
                 mem_to_reg = 0;
@@ -80,7 +80,7 @@ module control(
         6'b101000: begin // SB
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b101;
+                aluCode = 3'b101;
                 memRead = 0;
                 memWrite = 1;
                 mem_to_reg = 0;
@@ -91,7 +91,7 @@ module control(
         6'b100011: begin // LW: Load Word
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b101;
+                aluCode = 3'b101;
                 memRead = 0;
                 memWrite = 1;
                 mem_to_reg = 0;
@@ -128,7 +128,7 @@ module control(
         6'b100000: begin // LB: Load Byte
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b101;
+                aluCode = 3'b101;
                 memRead = 0;
                 memWrite = 1;
                 mem_to_reg = 0;
@@ -140,7 +140,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b001;
+                aluCode = 3'b001;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -152,7 +152,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b001;
+                aluCode = 3'b001;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -164,7 +164,7 @@ module control(
                 reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b010;
+                aluCode = 3'b010;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -176,7 +176,7 @@ module control(
                  reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
-                opCode = 3'b011;
+                aluCode = 3'b011;
                 memRead = 0;
                 memWrite = 0;
                 mem_to_reg = 0;
@@ -186,14 +186,15 @@ module control(
             
 
       default: begin  
-                reg_dst = 2'b01;  
-                mem_to_reg = 2'b00;  
-                opCode = 2'b00;  
-                jump = 1'b0;  
-                branch = 1'b0;  
-                RW= 1'b0;  
-                alu_src = 1'b0;  
-                reg_write = 1'b1;  
+                reg_dst = 0;
+                reg_write = 0;
+                alu_src = 0;
+                aluCode = 3'b000;
+                memRead = 0;
+                memWrite = 0;
+                mem_to_reg = 0;
+                jump = 0;  
+                branch = 0;
                 end  
       endcase  
       end  

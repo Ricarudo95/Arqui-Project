@@ -1,4 +1,4 @@
-module RAM( clk, read, write, address, output_destination, word_to_be_written);
+module RAM( clk, read, write, address, output_destination, dataIn);
  
 //parameters
  
@@ -10,10 +10,10 @@ parameter address_width=5;
  
 input  clk;
 input  read;
-input  write;
-input  dataIn;
-input  address;
-output output_destination;
+input   write;
+input[31:0]   dataIn;
+input[31:0]   address;
+output reg [31:0]  output_destination;
   
 //memory declaration
  
