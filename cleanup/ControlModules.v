@@ -183,7 +183,7 @@ module control( input clk,
                 end
 
         6'b000111: begin // BGTZ
-                 reg_dst = 0;
+                reg_dst = 0;
                 reg_write = 0;
                 alu_src = 0;
                 aluCode = 3'b011;

@@ -46,3 +46,11 @@ module shftLeft(output reg [31:0] result, input [31:0] in);
   result = in << 2;
 
 endmodule
+
+module register(output reg [31:0] result, input [31:0] in, input load);
+  reg [31:0] hold; 
+  always @(in)
+  hold = (load == in)? in : hold;
+  result <= hold;
+
+endmodule
