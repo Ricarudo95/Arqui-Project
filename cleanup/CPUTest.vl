@@ -7,7 +7,8 @@ module CPUTester();
 
 
 
-    mipsCPU CPU(clk, reset);
+    mipsCPUData1 CPU_Test1(clk, reset);
+    mipsCPUData2 CPU_Test2(clk, reset);
 
 
 
@@ -16,39 +17,40 @@ module CPUTester();
         $dumpfile("results/CPUFileTest.vcd");
         $dumpvars(0,clk, reset,
             //Prohram Counter Variables 
-            CPU.Program_Counter,
+            CPU_Test1.Program_Counter,
+            CPU_Test2.Program_Counter,
             
             //Instruction Memory Variables
-            CPU.Instruction_Memory, 
+            CPU_Test1.Instruction_Memory, 
 
             //Control Unit Variables
-            CPU.Control_Unit, 
+            CPU_Test1.Control_Unit, 
 
             // ALU MOdule Variables
-            CPU.alu,
+            CPU_Test1.alu,
 
             //Register File Variables
-            CPU.Register_File,
+            CPU_Test1.Register_File,
 
             //RAM Variables
-            CPU.ram,
+            CPU_Test1.ram,
 
             //Adder Variables
-            CPU.addFour,
-            CPU.adder,
+            CPU_Test1.addFour,
+            CPU_Test1.adder,
 
             //Shift 2 and Sign Sxtend Variables
-            CPU.signExt,
-            CPU.shftJump,
-            CPU.shftLeft,
-            CPU.simpleAND,
+            CPU_Test1.signExt,
+            CPU_Test1.shftJump,
+            CPU_Test1.shftLeft,
+            CPU_Test1.simpleAND,
 
             //Mux Variables
-            CPU.Jump_Mux,
-            CPU.ALU_Mux,
-            CPU.Register_Mux,
-            CPU.RAM_Mux,
-            CPU.Branch_Mux
+            CPU_Test1.Jump_Mux,
+            CPU_Test1.ALU_Mux,
+            CPU_Test1.Register_Mux,
+            CPU_Test1.RAM_Mux,
+            CPU_Test1.Branch_Mux
             );
         
       
