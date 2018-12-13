@@ -225,9 +225,13 @@ module control( input clk,
   
 endmodule  
 
+<<<<<<< HEAD
 
 
 module ProgramCounter(PCNext, PCResult, Reset, Clk, Load);
+=======
+module ProgramCounter(PCNext, PCResult, Reset, Clk);
+>>>>>>> 875afbb3d4e2a6e211ea89457f48128b43f32f50
 
 	input       [31:0]  PCNext;
 	input               Reset, Clk, Load;
