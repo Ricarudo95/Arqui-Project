@@ -84,8 +84,8 @@ module control( input clk,
 
         6'b101000: begin // SB
                 reg_write = 0;
-                alu_src = 0;
-                aluCode = 3'b101;
+                alu_src = 1;
+                aluCode = 3'b110;
                 memRead = 0;
                 memWrite = 1;
                 mem_to_reg = 0;
@@ -145,11 +145,11 @@ module control( input clk,
                 end
 
         6'b100100: begin // LBU: Load Byte Unsigned
-                reg_write = 0;
+                reg_write = 1;
                 alu_src = 0;
                 aluCode = 3'b101;
-                memRead = 0;
-                memWrite = 1;
+                memRead = 1;
+                memWrite = 0;
                 mem_to_reg = 0;
                 jump = 0;  
                 branch = 0;
@@ -220,6 +220,20 @@ module control( input clk,
                 branch = 0;
                 unSign=1;
                 end
+
+        6'b001000: begin // add Imidiate signed
+                reg_dst = 0;
+                reg_write = 1;
+                alu_src = 1;
+                aluCode = 3'b101;
+                memRead = 0;
+                memWrite = 0;
+                mem_to_reg = 1;
+                jump = 0;  
+                branch = 0;
+                unSign=0;
+                end
+        
 
       default: begin  
                 reg_dst = 0;
@@ -298,20 +312,20 @@ module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC
                 Mem[42] <= 8'b00000000;
                 Mem[43] <= 8'b00000000;
 
-                Mem[40] <= 8'b00011001; // BLEZ
-                Mem[41] <= 8'b00000101;
-                Mem[42] <= 8'b00000111;
-                Mem[43] <= 8'b00000100;
+                Mem[44] <= 8'b00011001; // BLEZ
+                Mem[45] <= 8'b00000101;
+                Mem[46] <= 8'b00000111;
+                Mem[47] <= 8'b00000100;
 
-                Mem[40] <= 8'b00010000; //B
-                Mem[41] <= 8'b00000000;
-                Mem[42] <= 8'b11111111;
-                Mem[43] <= 8'b11111111;
+                Mem[48] <= 8'b00010000; //B
+                Mem[49] <= 8'b00000000;
+                Mem[50] <= 8'b11111111;
+                Mem[51] <= 8'b11111111;
 
-                Mem[40] <= 8'b00000000; //sll
-                Mem[41] <= 8'b00000000;
-                Mem[42] <= 8'b00000000;
-                Mem[43] <= 8'b00000000;
+                Mem[52] <= 8'b00000000; //sll
+                Mem[53] <= 8'b00000000;
+                Mem[54] <= 8'b00000000;
+                Mem[55] <= 8'b00000000;
 
 	end
         assign Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
@@ -362,7 +376,7 @@ module ProgramCounter(PCNext, PCResult, Reset, Clk);
 		PCResult <= PCNext;	
     	        end
 
-		$display("PC=%h",PCResult);
+		$display("PC=%d",PCResult);
     end
 
 endmodule

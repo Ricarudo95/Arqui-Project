@@ -11,10 +11,10 @@ module adder (output reg [31:0] result, input [31:0] entry1, entry0);
   result = entry0 + entry1 ;
 endmodule
 
-module AND (output reg result, input J, Z_flag);
+module AND (output reg result, input branch, Z_flag);
 
-  always @(J, Z_flag)
-  result = J & Z_flag;
+  always @(branch, Z_flag)
+  result = branch & Z_flag;
 endmodule
 
 module shftLeft28(output reg [27:0] result, input [25:0] in);

@@ -61,6 +61,14 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 	begin
 		A_Data <= Registers[A_Address];
 		B_Data <= Registers[B_Address];
+		// $display("\n\n~Recorded Change~ \n");
+		// $display("Register 1 - Current Value: %d", Registers[1]);
+		// $display("Register 2 - Current Value: %d", Registers[2]);
+		// $display("Register 3 - Current Value: %d", Registers[3]);
+		// $display("Register 4 - Current Value: %d", Registers[4]);
+		// $display("Register 5 - Current Value: %d", Registers[5]);
+		// $display("Register 6 - Current Value: %d", Registers[6]);
+		// $display("Register 7 - Current Value: %d", Registers[7]);
 	end
 	
 	

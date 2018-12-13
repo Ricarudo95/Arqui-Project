@@ -28,9 +28,17 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
 
             3'b001: //equals
                 begin
-                    Result = ($signed(a) == $signed(b)) ? 1: 0;
-                    zeroFlag = (Result == 0) ? 1 : 0;
-                    //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                    $display("Ran through comparator");
+                    if($signed(a) == $signed(b))
+                    begin
+                        zeroFlag = 1'd1;
+                        $display("The values are equal!");
+                    end
+                    else
+                    begin
+                        zeroFlag = 1'd0;
+                        $display("The values are not equal");
+                    end
                 end
 
             3'b010: //Less than
@@ -90,7 +98,6 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                     Result = $signed(a) + $signed(b);
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
-                    zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                 end
 
             3'b000: //Arithmetic

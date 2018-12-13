@@ -92,7 +92,7 @@ shftLeft28 shftJump(shftLeft28Out, instruction[25:0]);
 shftLeft shftLeft(shftLeftOut,signExtOut);
 addplus4 addFour(pcAdd4, pcOut);
 adder adder(branchAddOut, pcAdd4, shftLeftOut);
-AND simpleAND(andOut, zFlag, branch);
+AND simpleAND(andOut, branch, zFlag );
 
 
 ////////// MONITOR ////////////
