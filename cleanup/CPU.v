@@ -48,7 +48,7 @@ module mipsCPUData1(clk,reset);
 
 
 ////////// STATE FLAGS ////////////
-    wire moc;
+    wire MOC;
 
     wire irLoad;
     wire pcLoad;
@@ -77,7 +77,7 @@ ProgramCounter Program_Counter(next, pcOut, reset, clk, pcLoad);
 instructMemTest1 Instruction_Memory(instruction, clk, pcOut);
 
 //Control Unit
-control Control_Unit(clk, instruction[31:26], reset, rfSource, reg_write, aluSource, memRead, memWrite, mem_to_reg,jump, branch, unSign, aluCode);
+control Control_Unit(clk, reset, MOC, instruction[31:26], irLoad, pcLoad, npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad, mdrLoad, mdrSource, pcSelect, aluSource, aluCode);
 
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used
