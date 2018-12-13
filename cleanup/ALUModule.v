@@ -101,6 +101,10 @@ module ALU(Result, zeroFlag, operation, a, b);
                 //begin            
                     case (operation)
                     //Move
+                        6'b111111: // return B
+                            begin 
+                                Result = b;
+                            end
                         6'b001011: // MOVN
                             begin 
                                 if(b != 0)

@@ -283,7 +283,7 @@ control Control_Unit(clk, instruction[31:26], reset, reg_dst, reg_write, aluSour
 
 
 mux4 Register_Mux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux4inputs ALU_Mux(aluMuxOut, aluSource, regOutB, signExtOut, MDROut);
+mux4inputs ALU_Mux(aluMuxOut, aluSource, regOutB, signExtOut, MDROut, 32'd0);
 mux32 RAM_Mux(ramMuxOut, mem_to_reg, ramOut, aluOut);
 mux32 Branch_Mux(branchMuxOut, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(next, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out}); 
