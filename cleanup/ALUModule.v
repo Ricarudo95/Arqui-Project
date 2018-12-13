@@ -4,11 +4,11 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
     //Function Code
     input [5:0] operation;
     //aluCode 
-    input [2:0] aluCode;
+    //input [2:0] aluCode;
     
-    // output reg carryFlag;
-    // output reg negativeFlag;
-    // output reg overFlowFlag;
+    output reg carryFlag;
+    output reg negativeFlag;
+    output reg overFlowFlag;
     output reg zeroFlag;
     output reg [31:0] Result; 
     
@@ -24,7 +24,7 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
 
     always@(a or b or operation) 
         begin
-        case (aluCode)
+        /*case (aluCode)
 
             3'b001: //equals
                 begin
@@ -95,10 +95,10 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                     Result = $signed(a) + $signed(b);
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
-                end
+                end*/
 
-            3'b000: //Arithmetic
-                begin            
+            //3'b000: //Arithmetic
+                //begin            
                     case (operation)
                     //Move
                         6'b001011: // MOVN
@@ -141,22 +141,22 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                     //Arithmethic Unsigned
                         6'b100001: // addition
                         begin
-                            Result = a + b;
-                            //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                            {carryFlag, Result} = a + b;
+                            overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                         end
 
                         6'b100011: // subtraction
                         begin 
-                            //{carryFlag, Result} = a - b;
-                            //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                            {carryFlag, Result} = a - b;
+                            overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                         end
                     
                     //Arithmethic Signed
                         6'b100000: // addition
                         begin
                             Result = $signed(a) + $signed(b);
-                            //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
-                            //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
+                            overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                            negativeFlag = (Result[31] == 1)? 1 : 0 ; 
                             zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                         end
 
@@ -164,8 +164,8 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                         begin
                             tempVar = (~b  + 1'b1);
                             Result = $signed(a) + $signed(tempVar);
-                            //overFlowFlag = (a[31]!= tempVar[31])? 0 : (tempVar[31] == Result[31]) ? 0: 1 ;
-                            //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
+                            overFlowFlag = (a[31]!= tempVar[31])? 0 : (tempVar[31] == Result[31]) ? 0: 1 ;
+                            negativeFlag = (Result[31] == 1)? 1 : 0 ; 
                             zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                         end
 
@@ -235,7 +235,7 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                         end
 
                     endcase                
-                end
+                //end
         endcase
     end
 endmodule
