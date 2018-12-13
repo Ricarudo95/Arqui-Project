@@ -44,8 +44,7 @@ module mipsCPUData1(clk,reset);
     wire reg_dst;
     wire reg_write;
     wire aluSource;
-    wire memRead;
-    wire memWrite; //RW
+    wire rw;
     wire mem_to_reg;
     wire jump;  
     wire branch; 
@@ -84,7 +83,7 @@ RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ra
 ALU alu(aluOut, zFlag, instruction[5:0], regOutA, aluMuxOut, aluCode);
 
 //RAM Module
-RAM ram(clk, memRead, memWrite, aluOut, ramOut, regOutB);
+RAM ram(clk, memRead, memWrite, aluOut, ramOut, regOutB, rw, mar);
 
 
 //Util Modules
@@ -104,7 +103,7 @@ AND simpleAND(andOut, branch, zFlag );
 
 endmodule  
 
-module mipsCPUData2(clk,reset);  
+/*module mipsCPUData2(clk,reset);  
 
     input  clk;
     input reset;
@@ -195,7 +194,7 @@ RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ra
 ALU alu(aluOut, zFlag, instruction[5:0], regOutA, aluMuxOut, aluCode);
 
 //RAM Module
-RAM ram(clk, memRead, memWrite, aluOut, ramOut, regOutB);
+RAM ram(clk, aluOut, ramOut, regOutB,rw, MDROut);
 
 
 //Util Modules
@@ -213,9 +212,9 @@ AND simpleAND(andOut, branch, zFlag );
 // $monitor("Intructions [B]", instruction);
 // end
 
-endmodule  
+endmodule  */
 
-module mipsCPUData3(clk,reset);  
+/*module mipsCPUData3(clk,reset);  
 
     input  clk;
     input reset;
@@ -318,4 +317,4 @@ AND simpleAND(andOut, branch, zFlag );
 // $monitor("Intructions [B]", instruction);
 // end
 
-endmodule  
+endmodule  */
