@@ -242,36 +242,6 @@ module control( input clk,
  end  
 endmodule  
 
-module instructMemTest1(output [31:0] Instruction, input Enable, input[31:0]  PC);
-
-	reg [7:0] Mem[0:511];
-
-        initial begin
-		$readmemb("Input/testcode_mips1.txt", Mem);
-	end
-        assign Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
-endmodule
-
-module instructMemTest2(output [31:0] Instruction, input Enable, input[31:0]  PC);
-
-	reg [7:0] Mem[0:511];
-
-        initial begin
-		$readmemb("Input/testcode_mips2.txt", Mem);
-	end
-        assign Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
-endmodule
-
-module instructMemTest3(output [31:0] Instruction, input Enable, input[31:0]  PC);
-
-	reg [7:0] Mem[0:511];
-
-        initial begin
-		$readmemb("Input/testcode_mips3.txt", Mem);
-	end
-        assign Instruction = {Mem[PC], Mem[PC+1], Mem[PC+2], Mem[PC+3]};
-endmodule
-
 module ProgramCounter(PCNext, PCResult, Reset, Clk);
 
 	input       [31:0]  PCNext;
