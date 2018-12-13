@@ -1,27 +1,38 @@
 module control( input clk,
-  input[5:0] opcode,  
+  input[5:0] opCode,  
   input reset,
-  output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, unSign, 
-  output reg[2:0] aluCode);  
+  output reg regWrite, flagLoad, instRegLoad, marLoad, mdrLoad, RW, MOV, regSrc, mem_to_reg,  jump, branch,
+  output reg[1:0] aluSrc; 
+  output reg[5:0] aluCode);  
 
+ initial begin
+        regWrite=0;
+        flagLoad=0;
+        instRegLoad = 0;
+        marLoad=0;
+        mdrLoad=0;
+        RW=0;
+        MOV=0;
+        regSrc=0;
+        aluSrc=2'b11;
+        mem_to_reg=0;
+        jump= 0
+        branch = 0;
+        aluCode=6'b111111;
+ end
+ 
  always @* 
  begin  
-        $display("\n\n-------New Instruction Loaded-------------");
-      if(reset == 1'b1) begin // no Op 
-                reg_dst = 0;
-                reg_write = 0;
-                alu_src = 0;
-                aluCode = 3'b000;
-                memRead = 0;
-                memWrite = 0;
-                mem_to_reg = 0;
-                jump = 0;  
-                branch = 0;
-                unSign = 0;
-                $display("Current Instruction: Reset");
-      end  
-      else begin  
-        case(opcode)   
+        $display("State 1: Loading MAR")
+        marLoad=1;
+
+        $display("State 2: Reading From Memory")
+        RW=1;
+
+        $display("State 1: Loading Instruction")
+        instRegLoad=1;
+
+        case(opCode)   
         6'b000000: begin // ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
                 reg_dst = 1;
                 reg_write = 1;
