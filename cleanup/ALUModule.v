@@ -78,6 +78,14 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
 
+            3'b110: //add immediate signed
+                begin
+                    Result = $signed(a) + $signed(b);
+                    //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                    //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
+                    zeroFlag = (Result == 0) ? 1 : 0;
+                end
+
             3'b000: //Arithmetic
                 begin            
                     case (operation)
