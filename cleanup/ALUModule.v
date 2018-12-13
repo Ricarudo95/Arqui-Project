@@ -18,6 +18,10 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
     integer var = 0;
     reg [31:0]tempVar;
 
+    initial begin
+    zeroFlag = 1'b0;
+    end
+
     always@(a or b or operation) 
         begin
         case (aluCode)
@@ -32,14 +36,14 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
             3'b010: //Less than
                 begin
                     Result = ($signed(a) < $signed(b)) ? 1: 0;
-                    zeroFlag = (Result == 0) ? 1 : 0;
+                    zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end    
 
             3'b011: //Greater than
                 begin
                     Result = ($signed(a) > $signed(b)) ? 1: 0;
-                    zeroFlag = (Result == 0) ? 1 : 0;
+                    zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                 end
 
@@ -86,7 +90,7 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                     Result = $signed(a) + $signed(b);
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
-                    zeroFlag = (Result == 0) ? 1 : 0;
+                    zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                 end
 
             3'b000: //Arithmetic
@@ -149,7 +153,7 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                             Result = $signed(a) + $signed(b);
                             //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                             //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
-                            zeroFlag = (Result == 0) ? 1 : 0;
+                            zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                         end
 
                         6'b100010: // subtraction
@@ -158,7 +162,7 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                             Result = $signed(a) + $signed(tempVar);
                             //overFlowFlag = (a[31]!= tempVar[31])? 0 : (tempVar[31] == Result[31]) ? 0: 1 ;
                             //negativeFlag = (Result[31] == 1)? 1 : 0 ; 
-                            zeroFlag = (Result == 0) ? 1 : 0;
+                            zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                         end
 
                     //Shifts
