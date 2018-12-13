@@ -121,7 +121,12 @@ module mipsCPUData2(clk,reset);
     wire [31:0] regOutA; 
     wire [31:0] regOutB;
     wire [4:0] regMuxOut; 
+    //NEW
     wire [31:0] MDROut;
+    wire [31:0] PC;
+    wire [31:0] MAR;
+    wire [31:0] NPC;
+    wire [31:0] IR;
 
     //ALU
     wire [31:0] aluMuxOut; 
