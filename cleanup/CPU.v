@@ -12,14 +12,16 @@ module mipsCPUData1(clk,reset);
     wire [31:0] instruction;
     
     //Register
+    wire [31:0] aluA;
     wire [31:0] regOutA; 
     wire [31:0] regOutB;
     wire [4:0] regMuxOut; 
 
     //ALU
-    wire [31:0] aluMuxOut; 
+    wire [31:0] aluB; 
     wire [31:0] aluOut;
     wire zFlag;
+    wire [5:0] func;
 
     //Ram
     wire [31:0] ramOut;
@@ -55,7 +57,7 @@ module mipsCPUData1(clk,reset);
     wire mdrLoad;
     wire mdrSource;
     wire pcSelect;
-    wire [1:0] aluSource;
+    wire aluSource;
     wire [5:0] aluCode;
 
 
@@ -74,19 +76,19 @@ control Control_Unit(clk, instruction[31:26], reset, reg_dst, reg_write, aluSour
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used
 
-
+mux6 funcMux(func, immediate, instruction[5:0], aluCode);
 mux4 Register_Mux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux32 ALU_Mux(aluMuxOut, aluSource, regOutB, signExtOut);
+mux32 ALU_Mux(aluB, aluSource, regOutB, signExtOut);
 mux32 RAM_Mux(ramMuxOut, mem_to_reg, ramOut, aluOut);
 mux32 Branch_Mux(branchMuxOut, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(next, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out});
  
 
 //Register File
-RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, regOutA, regOutB );
+RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, aluA, regOutB );
 
 //ALU Modules
-ALU alu(aluOut, zFlag, instruction[5:0], regOutA, aluMuxOut, aluCode);
+ALU alu(aluOut, zFlag, instruction[5:0], aluA, aluB);
 
 //RAM Module
 RAM ram(clk, memRead, memWrite, aluOut, ramOut, regOutB, rw, mar);
@@ -123,7 +125,7 @@ endmodule
     wire [31:0] instruction;
     
     //Register
-    wire [31:0] regOutA; 
+    wire [31:0] aluA; 
     wire [31:0] regOutB;
     wire [4:0] regMuxOut; 
     //NEW
@@ -134,7 +136,7 @@ endmodule
     wire [31:0] IR;
 
     //ALU
-    wire [31:0] aluMuxOut; 
+    wire [31:0] aluB; 
     wire [31:0] aluOut;
     wire zFlag;
 
@@ -188,16 +190,16 @@ control Control_Unit(clk, instruction[31:26], reset, reg_dst, reg_write, aluSour
 
 
 mux4 Register_Mux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux32 ALU_Mux(aluMuxOut, aluSource, regOutB, signExtOut);
+mux32 ALU_Mux(aluB, aluSource, regOutB, signExtOut);
 mux32 RAM_Mux(ramMuxOut, mem_to_reg, ramOut, aluOut);
 mux32 Branch_Mux(branchMuxOut, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(next, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out}); 
 
 //Register File
-RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, regOutA, regOutB );
+RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, aluA, regOutB );
 
 //ALU Modules
-ALU alu(aluOut, zFlag, instruction[5:0], regOutA, aluMuxOut, aluCode);
+ALU alu(aluOut, zFlag, instruction[5:0], aluA, aluB, aluCode);
 
 //RAM Module
 RAM ram(clk, aluOut, ramOut, regOutB,rw, MDROut);
@@ -234,12 +236,12 @@ endmodule  */
     wire [31:0] instruction;
     
     //Register
-    wire [31:0] regOutA; 
+    wire [31:0] aluA; 
     wire [31:0] regOutB;
     wire [4:0] regMuxOut; 
 
     //ALU
-    wire [31:0] aluMuxOut; 
+    wire [31:0] aluB; 
     wire [31:0] aluOut;
     wire zFlag;
 
@@ -293,16 +295,16 @@ control Control_Unit(clk, instruction[31:26], reset, reg_dst, reg_write, aluSour
 
 
 mux4 Register_Mux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux4inputs ALU_Mux(aluMuxOut, aluSource, regOutB, signExtOut, MDROut, 32'd0);
+mux4inputs ALU_Mux(aluB, aluSource, regOutB, signExtOut, MDROut, 32'd0);
 mux32 RAM_Mux(ramMuxOut, mem_to_reg, ramOut, aluOut);
 mux32 Branch_Mux(branchMuxOut, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(next, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out}); 
 
 //Register File
-RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, regOutA, regOutB );
+RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, ramMuxOut, mem_to_reg, clk, aluA, regOutB );
 
 //ALU Modules
-ALU alu(aluOut, zFlag, instruction[5:0], regOutA, aluMuxOut, aluCode);
+ALU alu(aluOut, zFlag, instruction[5:0], aluA, aluB, aluCode);
 
 //RAM Module
 RAM ram(clk, memRead, memWrite, aluOut, ramOut, regOutB);

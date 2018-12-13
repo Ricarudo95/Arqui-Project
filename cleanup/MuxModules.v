@@ -20,6 +20,16 @@ module mux4 (output reg [4:0] result, input s, input [4:0] zero, one);
     end
 endmodule
 
+module mux6 (output reg [5:0] result, input s, input [5:0] zero, one);
+
+  always @*
+    if (s == 0) begin
+      result = zero;
+    end else begin
+      result = one;
+    end
+endmodule
+
 module mux32 (output reg [31:0] result, input s, input [31:0] zero, one);
   always @* 
   begin
