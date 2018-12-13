@@ -4,7 +4,7 @@ module control( input clk,
   output reg reg_dst, reg_write, alu_src, memRead, memWrite, mem_to_reg,  jump, branch, unSign, 
   output reg[2:0] aluCode);  
 
- always @(posedge clk)  
+ always @*  
  begin  
       if(reset == 1'b1) begin // no Op 
                 reg_dst = 0;

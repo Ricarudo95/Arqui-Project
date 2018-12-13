@@ -92,7 +92,7 @@ module CPUTester();
             CPU_Test3.Branch_Mux
             );
 
-            for(index = 1; index <= 130; index = index+1) begin  
+            for(index = 1; index <= 51; index = index+1) begin  
                 clk =0; #5 clk = 1;
                 if(index <= 17) begin
                 $display("\n---------TEST BENCH 1-----------\n");
