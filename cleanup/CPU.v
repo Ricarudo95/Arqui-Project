@@ -6,8 +6,13 @@ module mipsCPUData1(clk,reset);
 
 ////////////// CIRCUIT CONNECTIONS ///////////////
 
+    //MDR
+    wire [31:0] mdrData;
+    //MAR
+    wire [31:0] memAdress;
+
     //Program Counter And Intructions
-    wire[31:0] next;
+    wire [31:0] next;
     wire [31:0] pcOut; 
     wire [31:0] instruction;
     
@@ -24,8 +29,8 @@ module mipsCPUData1(clk,reset);
     wire [5:0] func;
 
     //Ram
-    wire [31:0] ramOut;
-    wire [31:0] ramMuxOut;
+    wire [31:0] ramOut; //memData
+    wire [31:0] ramMuxOut; //MDR input
 
     //Jump
     wire [31:0] pcAdd4; 
@@ -45,6 +50,7 @@ module mipsCPUData1(clk,reset);
 ////////// STATE FLAGS ////////////
     wire moc;
 
+    wire irLoad;
     wire pcLoad;
     wire npcLoad;
     wire rfSource;
