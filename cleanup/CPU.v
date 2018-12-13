@@ -52,8 +52,6 @@ module mipsCPUData1(clk,reset);
     wire npcLoad;
     wire rfSource;
     wire jump;
-    wire [1:0] aluSource;
-    wire [5:0] aluCode;
     wire marLoad;
     wire mdrLoad;
     wire immediate;
@@ -61,6 +59,8 @@ module mipsCPUData1(clk,reset);
     wire mdrSource;
     wire pcSelect;
     wire reset;
+    wire [1:0] aluSource;
+    wire [5:0] aluCode;
 
 
 /////////////////////////COMPONENTS////////////////////////////////////
