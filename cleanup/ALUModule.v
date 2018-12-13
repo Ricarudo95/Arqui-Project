@@ -1,17 +1,14 @@
-module ALU(Result, zeroFlag, operation, a, b, mar); 
+module ALU(Result, zeroFlag, operation, a, b); 
     input [31:0] a; 
     input [31:0] b; 
     //Function Code
     input [5:0] operation;
-    //aluCode 
-    //input [2:0] aluCode;
     
     output reg carryFlag;
     output reg negativeFlag;
     output reg overFlowFlag;
     output reg zeroFlag;
-    output reg [31:0] Result; 
-    output reg [31:0] mar;
+    output reg [31:0] Result;
     
 
     integer index;
