@@ -41,24 +41,20 @@ module mipsCPUData1(clk,reset);
 
 
 ////////// STATE FLAGS ////////////
-    wire regWrite;
-    wire aluSource;
-    wire rw;
-    wire mem_to_reg;
-    wire jump;  
-    wire branch; 
-    wire unSign;
+    wire moc;
+
     wire pcLoad;
     wire npcLoad;
     wire rfSource;
-    wire jump;
+    wire regWrite; 
+    wire jump; 
+    wire branch;
+    wire immediate;
+    wire rw;
     wire marLoad;
     wire mdrLoad;
-    wire immediate;
-    wire moc;
     wire mdrSource;
     wire pcSelect;
-    wire reset;
     wire [1:0] aluSource;
     wire [5:0] aluCode;
 
