@@ -6,8 +6,13 @@ module mipsCPUData1(clk,reset);
 
 ////////////// CIRCUIT CONNECTIONS ///////////////
 
+    //MDR
+    wire [31:0] mdrData;
+    //MAR
+    wire [31:0] memAdress;
+
     //Program Counter And Intructions
-    wire[31:0] next;
+    wire [31:0] next;
     wire [31:0] pcOut; 
     wire [31:0] instruction;
     
@@ -18,14 +23,14 @@ module mipsCPUData1(clk,reset);
     wire [4:0] regMuxOut; 
 
     //ALU
-    wire [31:0] aluB; 
+    wire [31:0] aluB;
     wire [31:0] aluOut;
     wire zFlag;
     wire [5:0] func;
 
     //Ram
-    wire [31:0] ramOut;
-    wire [31:0] ramMuxOut;
+    wire [31:0] ramOut; //memData
+    wire [31:0] ramMuxOut; //MDR input
 
     //Jump
     wire [31:0] pcAdd4; 
@@ -45,6 +50,7 @@ module mipsCPUData1(clk,reset);
 ////////// STATE FLAGS ////////////
     wire moc;
 
+    wire irLoad;
     wire pcLoad;
     wire npcLoad;
     wire rfSource;
@@ -78,7 +84,8 @@ control Control_Unit(clk, instruction[31:26], reset, reg_dst, reg_write, aluSour
 
 mux6 funcMux(func, immediate, instruction[5:0], aluCode);
 mux4 Register_Mux(regMuxOut, reg_dst, instruction[20:16], instruction[15:11]); //present
-mux32 ALU_Mux(aluB, aluSource, regOutB, signExtOut);
+//mux32 ALU_Mux(aluB, aluSource, regOutB, signExtOut);
+mux4inputs ALU_Mux(aluB, aluSource, regOutB, signExtOut, MDROut, 32'd0);
 mux32 RAM_Mux(ramMuxOut, mem_to_reg, ramOut, aluOut);
 mux32 Branch_Mux(branchMuxOut, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(next, jump, branchMuxOut, {pcAdd4[31:28], shftLeft28Out});
