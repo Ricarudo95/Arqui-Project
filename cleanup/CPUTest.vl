@@ -93,6 +93,7 @@ module CPUTester();
         
       
 
+<<<<<<< HEAD
 
 clk =0; #5 clk = 1;
 $display("\n---------TEST BENCH 1-----------\n");
@@ -108,6 +109,15 @@ $display("\nOffset: %d", CPU_Test1.signExt.ins );
 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
 #5 clk =0;#5 clk = 1;
 #5 clk =0;#5 clk = 1;#5
+=======
+clk =0; #5 clk = 1;
+$display("Current Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+$display("Current Instruction2: %b", CPU_Test2.Instruction_Memory.Instruction );
+$display("Current Instruction3: %b", CPU_Test3.Instruction_Memory.Instruction );
+#5 clk =0; #5 clk = 1;#5 
+clk =0;#5 clk = 1;#5
+clk =0;#5 clk = 1;#5
+>>>>>>> 521e6871d8e541076f5024c26b5743f4431e7766
 clk =0;#5 clk = 1;#5 
 clk =0;#5 clk = 1;#5
 clk =0;#5 clk = 1;#5
