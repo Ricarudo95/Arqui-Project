@@ -76,13 +76,13 @@ module CPUTester();
             CPU_Test1.ALU_Mux,
             CPU_Test1.Register_Mux,
             CPU_Test1.RAM_Mux,
-            CPU_Test1.Branch_Mux
+            CPU_Test1.Branch_Mux,
 
             CPU_Test2.Jump_Mux,
             CPU_Test2.ALU_Mux,
             CPU_Test2.Register_Mux,
             CPU_Test2.RAM_Mux,
-            CPU_Test2.Branch_Mux
+            CPU_Test2.Branch_Mux,
 
             CPU_Test3.Jump_Mux,
             CPU_Test3.ALU_Mux,
