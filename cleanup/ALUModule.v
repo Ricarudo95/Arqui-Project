@@ -168,22 +168,22 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
                     //Shifts
                         6'b000000: // SLL
                         begin 
-                            Result = a << 1;
+                            Result = b << 1;
                         end
                         
                         6'b000100: // SLLV
                         begin
-                            //{carryFlag, Result} = a << b;
+                            Result = b << a;
                         end
                         
                         6'b000010: // SRL
                         begin 
-                            Result = a >> 1;
+                            Result = b >> 1;
                         end
 
                         6'b000110: // SRLV
                         begin
-                            Result = a >> b;
+                            Result = b >> a;
                         end
 
                         6'b101010: // SLT 0 == true 1 == false because of verilog
