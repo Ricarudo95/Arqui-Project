@@ -375,8 +375,6 @@ module ProgramCounter(PCNext, PCResult, Reset, Clk);
     	        begin
 		PCResult <= PCNext;	
     	        end
-
-		$display("PC=%d",PCResult);
     end
 
 endmodule

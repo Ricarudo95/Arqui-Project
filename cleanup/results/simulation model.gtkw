@@ -1,19 +1,20 @@
 [*]
 [*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
-[*] Thu Dec 13 08:55:58 2018
+[*] Thu Dec 13 12:54:47 2018
 [*]
 [dumpfile] "C:\Users\Ricarudo\Repositories\Arqui-Project\cleanup\results\CPUFileTest.vcd"
-[dumpfile_mtime] "Thu Dec 13 08:30:24 2018"
-[dumpfile_size] 11054
+[dumpfile_mtime] "Thu Dec 13 12:45:01 2018"
+[dumpfile_size] 12577
 [savefile] "C:\Users\Ricarudo\Repositories\Arqui-Project\cleanup\results\simulation model.gtkw"
-[timestart] 72
+[timestart] 0
 [size] 2560 1377
 [pos] -1 -1
-*-3.000000 97 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-3.000000 15 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] CPUTester.
-[treeopen] CPUTester.CPU.
-[sst_width] 197
-[signals_width] 325
+[treeopen] CPUTester.CPU_Test1.
+[treeopen] CPUTester.CPU_Test2.
+[sst_width] 286
+[signals_width] 518
 [sst_expanded] 1
 [sst_vpaned_height] 900
 @28
@@ -22,269 +23,126 @@ CPUTester.clk
 -CONTROL FLAGS
 @200
 -CONTROL FLAGS
+@29
+CPUTester.CPU_Test1.Control_Unit.opcode[5:0]
 @28
-CPUTester.CPU.Control_Unit.opcode[5:0]
-CPUTester.CPU.Control_Unit.aluCode[2:0]
-CPUTester.CPU.Control_Unit.reg_dst
-CPUTester.CPU.Control_Unit.alu_src
-CPUTester.CPU.Control_Unit.mem_to_reg
-CPUTester.CPU.Control_Unit.reg_write
-CPUTester.CPU.Control_Unit.branch
-CPUTester.CPU.Control_Unit.jump
-CPUTester.CPU.Control_Unit.memRead
-CPUTester.CPU.Control_Unit.memWrite
+CPUTester.CPU_Test1.Control_Unit.aluCode[2:0]
+CPUTester.CPU_Test1.Control_Unit.reg_dst
+CPUTester.CPU_Test1.Control_Unit.alu_src
+CPUTester.CPU_Test1.Control_Unit.mem_to_reg
+CPUTester.CPU_Test1.Control_Unit.reg_write
+CPUTester.CPU_Test1.Control_Unit.memRead
+CPUTester.CPU_Test1.Control_Unit.memWrite
+CPUTester.CPU_Test1.Control_Unit.branch
+CPUTester.CPU_Test1.Control_Unit.jump
+CPUTester.CPU_Test1.Control_Unit.unSign
 @1000200
 -CONTROL FLAGS
 @200
 -
-@800201
+@c00200
 -INSTRUCTION MEMORY
-@c00029
-CPUTester.CPU.Instruction_Memory.Instruction[31:0]
 @28
-(0)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(1)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(2)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(3)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(4)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(5)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(6)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(7)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(8)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(9)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(10)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(11)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(12)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(13)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(14)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(15)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(16)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(17)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(18)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(19)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(20)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(21)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(22)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(23)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(24)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(25)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(26)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(27)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(28)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(29)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(30)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-(31)CPUTester.CPU.Instruction_Memory.Instruction[31:0]
-@1401201
--group_end
-@25
-CPUTester.CPU.Instruction_Memory.PC[31:0]
-@1000201
+CPUTester.CPU_Test1.Instruction_Memory.Instruction[31:0]
+@24
+CPUTester.CPU_Test1.Instruction_Memory.PC[31:0]
+@1401200
 -INSTRUCTION MEMORY
 @c00200
 -PROGRAM COUNTER
 @24
-CPUTester.CPU.Program_Counter.PCNext[31:0]
-CPUTester.CPU.Program_Counter.PCResult[31:0]
+CPUTester.CPU_Test1.Program_Counter.PCResult[31:0]
+CPUTester.CPU_Test1.Program_Counter.PCNext[31:0]
 @1401200
 -PROGRAM COUNTER
 @200
 -
-@c00204
+@c00200
 -SIGN EXTEND
-@c00024
-CPUTester.CPU.signExt.ins[15:0]
-@28
-(0)CPUTester.CPU.signExt.ins[15:0]
-(1)CPUTester.CPU.signExt.ins[15:0]
-(2)CPUTester.CPU.signExt.ins[15:0]
-(3)CPUTester.CPU.signExt.ins[15:0]
-(4)CPUTester.CPU.signExt.ins[15:0]
-(5)CPUTester.CPU.signExt.ins[15:0]
-(6)CPUTester.CPU.signExt.ins[15:0]
-(7)CPUTester.CPU.signExt.ins[15:0]
-(8)CPUTester.CPU.signExt.ins[15:0]
-(9)CPUTester.CPU.signExt.ins[15:0]
-(10)CPUTester.CPU.signExt.ins[15:0]
-(11)CPUTester.CPU.signExt.ins[15:0]
-(12)CPUTester.CPU.signExt.ins[15:0]
-(13)CPUTester.CPU.signExt.ins[15:0]
-(14)CPUTester.CPU.signExt.ins[15:0]
-(15)CPUTester.CPU.signExt.ins[15:0]
-@1401204
--group_end
-@c00024
-CPUTester.CPU.signExt.result[31:0]
-@28
-(0)CPUTester.CPU.signExt.result[31:0]
-(1)CPUTester.CPU.signExt.result[31:0]
-(2)CPUTester.CPU.signExt.result[31:0]
-(3)CPUTester.CPU.signExt.result[31:0]
-(4)CPUTester.CPU.signExt.result[31:0]
-(5)CPUTester.CPU.signExt.result[31:0]
-(6)CPUTester.CPU.signExt.result[31:0]
-(7)CPUTester.CPU.signExt.result[31:0]
-(8)CPUTester.CPU.signExt.result[31:0]
-(9)CPUTester.CPU.signExt.result[31:0]
-(10)CPUTester.CPU.signExt.result[31:0]
-(11)CPUTester.CPU.signExt.result[31:0]
-(12)CPUTester.CPU.signExt.result[31:0]
-(13)CPUTester.CPU.signExt.result[31:0]
-(14)CPUTester.CPU.signExt.result[31:0]
-(15)CPUTester.CPU.signExt.result[31:0]
-(16)CPUTester.CPU.signExt.result[31:0]
-(17)CPUTester.CPU.signExt.result[31:0]
-(18)CPUTester.CPU.signExt.result[31:0]
-(19)CPUTester.CPU.signExt.result[31:0]
-(20)CPUTester.CPU.signExt.result[31:0]
-(21)CPUTester.CPU.signExt.result[31:0]
-(22)CPUTester.CPU.signExt.result[31:0]
-(23)CPUTester.CPU.signExt.result[31:0]
-(24)CPUTester.CPU.signExt.result[31:0]
-(25)CPUTester.CPU.signExt.result[31:0]
-(26)CPUTester.CPU.signExt.result[31:0]
-(27)CPUTester.CPU.signExt.result[31:0]
-(28)CPUTester.CPU.signExt.result[31:0]
-(29)CPUTester.CPU.signExt.result[31:0]
-(30)CPUTester.CPU.signExt.result[31:0]
-(31)CPUTester.CPU.signExt.result[31:0]
-@1401204
--group_end
+@24
+CPUTester.CPU_Test1.signExt.ins[15:0]
+CPUTester.CPU_Test1.signExt.result[31:0]
+@1401200
 -SIGN EXTEND
 @c00200
 -SHIFT LEFT 2
 @24
-CPUTester.CPU.shftLeft.in[31:0]
-CPUTester.CPU.shftLeft.result[31:0]
+CPUTester.CPU_Test1.shftLeft.in[31:0]
+CPUTester.CPU_Test1.shftLeft.result[31:0]
 @1401200
 -SHIFT LEFT 2
 @c00200
 -ADDER
-@420
-CPUTester.CPU.adder.entry0[31:0]
 @24
-CPUTester.CPU.adder.entry1[31:0]
-CPUTester.CPU.adder.result[31:0]
+CPUTester.CPU_Test1.adder.entry0[31:0]
+CPUTester.CPU_Test1.adder.entry1[31:0]
+CPUTester.CPU_Test1.adder.result[31:0]
 @200
 -
 @1401200
 -ADDER
-@c00200
+@800200
 -BRANCH MUX
 @24
-CPUTester.CPU.Branch_Mux.zero[31:0]
-CPUTester.CPU.Branch_Mux.one[31:0]
-CPUTester.CPU.Branch_Mux.result[31:0]
+CPUTester.CPU_Test1.Branch_Mux.zero[31:0]
+CPUTester.CPU_Test1.Branch_Mux.one[31:0]
+CPUTester.CPU_Test1.Branch_Mux.result[31:0]
 @28
-CPUTester.CPU.Branch_Mux.s
+CPUTester.CPU_Test1.Branch_Mux.s
 @200
 -
-@1401200
+@1000200
 -BRANCH MUX
 @c00200
 -BRANCH CONDITION AND
-@28
-CPUTester.CPU.simpleAND.branch
-CPUTester.CPU.simpleAND.Z_flag
-CPUTester.CPU.simpleAND.result
 @1401200
 -BRANCH CONDITION AND
 @200
 -
 @c00200
 -PLUS 4 ADDER
-@22
-CPUTester.CPU.addFour.pc[31:0]
-CPUTester.CPU.addFour.result[31:0]
 @1401200
 -PLUS 4 ADDER
 @c00200
 -JUMP SHIFT 2
-@22
-CPUTester.CPU.shftJump.in[25:0]
-CPUTester.CPU.shftJump.result[27:0]
 @200
 -
 @1401200
 -JUMP SHIFT 2
 @c00200
 -JUMP MUX
-@22
-CPUTester.CPU.Jump_Mux.zero[31:0]
-CPUTester.CPU.Jump_Mux.one[31:0]
-CPUTester.CPU.Jump_Mux.result[31:0]
-@28
-CPUTester.CPU.Jump_Mux.s
 @1401200
 -JUMP MUX
 @200
 -
 @c00200
 -REGISTER MUX
-@24
-CPUTester.CPU.Register_Mux.zero[4:0]
-CPUTester.CPU.Register_Mux.one[4:0]
-CPUTester.CPU.Register_Mux.result[4:0]
-@28
-CPUTester.CPU.Register_Mux.s
 @1401200
 -REGISTER MUX
 @800200
 -REGISTER FILE
-@24
-CPUTester.CPU.Register_File.A_Address[4:0]
-CPUTester.CPU.Register_File.B_Address[4:0]
-CPUTester.CPU.Register_File.C_Address[4:0]
-CPUTester.CPU.Register_File.A_Data[31:0]
-CPUTester.CPU.Register_File.B_Data[31:0]
-@420
-CPUTester.CPU.Register_File.C_Data[31:0]
 @1000200
 -REGISTER FILE
 @200
 -
 @c00200
 -ALU MUX
-@24
-CPUTester.CPU.ALU_Mux.zero[31:0]
-CPUTester.CPU.ALU_Mux.one[31:0]
-CPUTester.CPU.ALU_Mux.result[31:0]
-CPUTester.CPU.ALU_Mux.s
 @1401200
 -ALU MUX
-@800200
+@c00200
 -ALU
-@28
-CPUTester.CPU.alu.operation[5:0]
-CPUTester.CPU.alu.aluCode[2:0]
-@420
-CPUTester.CPU.alu.Result[31:0]
-CPUTester.CPU.alu.a[31:0]
-CPUTester.CPU.alu.b[31:0]
-@28
-CPUTester.CPU.alu.zeroFlag
-@1000200
+@1401200
 -ALU
 @200
 -
-@800200
+@c00200
 -RAM
-@24
-CPUTester.CPU.ram.address[31:0]
-@22
-CPUTester.CPU.ram.dataIn[31:0]
-CPUTester.CPU.ram.output_destination[31:0]
 @200
 -
-@1000200
+@1401200
 -RAM
 @800200
 -RAM MUX
-@22
-CPUTester.CPU.RAM_Mux.zero[31:0]
-CPUTester.CPU.RAM_Mux.one[31:0]
-CPUTester.CPU.RAM_Mux.result[31:0]
-@28
-CPUTester.CPU.RAM_Mux.s
 @200
 -
 @1000200

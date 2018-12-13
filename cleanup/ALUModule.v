@@ -28,16 +28,13 @@ module ALU(Result, zeroFlag, operation, a, b, aluCode);
 
             3'b001: //equals
                 begin
-                    $display("Ran through comparator");
                     if($signed(a) == $signed(b))
                     begin
                         zeroFlag = 1'd1;
-                        $display("The values are equal!");
                     end
                     else
                     begin
                         zeroFlag = 1'd0;
-                        $display("The values are not equal");
                     end
                 end
 
