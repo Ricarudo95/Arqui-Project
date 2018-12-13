@@ -2,7 +2,7 @@ module mipsCPUData1(clk,reset);
 
     input  clk;
     input reset;
-  
+
 
 ////////////// CIRCUIT CONNECTIONS ///////////////
 
@@ -41,16 +41,26 @@ module mipsCPUData1(clk,reset);
 
 
 ////////// STATE FLAGS ////////////
-    wire reg_dst;
-    wire reg_write;
+    wire regWrite;
     wire aluSource;
     wire rw;
     wire mem_to_reg;
     wire jump;  
     wire branch; 
-    wire unSign; 
-    wire [2:0] aluCode ;
-
+    wire unSign;
+    wire pcLoad;
+    wire npcLoad;
+    wire rfSource;
+    wire jump;
+    wire [1:0] aluSource;
+    wire [5:0] aluCode;
+    wire marLoad;
+    wire mdrLoad;
+    wire immediate;
+    wire moc;
+    wire mdrSource;
+    wire pcSelect;
+    wire reset;
 
 
 /////////////////////////COMPONENTS////////////////////////////////////
