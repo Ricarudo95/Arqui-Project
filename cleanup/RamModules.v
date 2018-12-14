@@ -1,43 +1,35 @@
-module RAM( clk, address, output_destination, dataIn, rw, mar);
+module MemoryTest1(address, output_destination, dataIn, rw, MOC);
  
-//parameters
- 
-parameter words_no= 32; //arbitrary, we need 5 bits to address them
-parameter bus_width=32;
-parameter address_width=5;
- 
-//ports
-input mar;
-input  clk;
-input  read;
-input write;
-input rw;
-//input mov;
-//input moc;
-input[31:0]   dataIn;
 input[31:0]   address;
+input[31:0]   dataIn;
+input rw;
+
+
 output reg [31:0]  output_destination;
-output reg [31:0] mdrOut;
+output MOC = 1;
   
 //memory declaration
- 
-reg [bus_width-1:0] mem [0:words_no-1];
-//memory of 32 words,each is 32bit
+reg [7:0] Mem[0:511];
+
+//Load Up Memory
+initial begin
+	$readmemb("Input/testcode_mips1.txt", Mem);
+end
  
 // behavior
- always@(posedge clk, rw)
-      begin
- 
-		 if (read==1'b1) 
-		   begin
- 
-			 // to read a specific word, you need to address its number. 
-             output_destination<=mem [address];
-		   end
- 
-			 if (write==1'b1)
-			 mem[address]<=dataIn;
-  end
+always@(posedge rw) begin
+	
+
+ 	if (rw == 1) begin // to read a specific word, you need to address its number. 
+        	MOC = 0;
+		assign output_destination = {Mem[address], Mem[address+1], Mem[address+2], Mem[address+3]};
+		assign mem[address] <= dataIn[31:24];
+		assign mem[address+1] <= dataIn[23:16];
+		assign mem[address+2] <= dataIn[15:8];
+		assign mem[address+3] <= dataIn[7:0];
+		#13;
+		MOC=1;
+  	end
 endmodule
 
 //Loading Memory
