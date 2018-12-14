@@ -115,6 +115,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                     begin
                     Result = ($signed(a) < $signed(b)) ? 1: 0;
                     zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
+                    negativeFlag = (Result[31] == 1)? 1 : 0 ; 
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     end    
 
@@ -122,6 +123,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                     begin
                         Result = ($signed(a) > $signed(b)) ? 1: 0;
                         zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
+                        negativeFlag = (Result[31] == 1)? 1 : 0 ; 
                         //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     end
 
