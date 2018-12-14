@@ -42,7 +42,8 @@ module CPUTester1();
             CPU_Test1.simpleAND,
 
             //Registers
-            CPU_Test1.
+            CPU_Test1.MAR,
+            CPU_Test1.MDR,
 
             //Mux Variables
             CPU_Test1.funcMux,
