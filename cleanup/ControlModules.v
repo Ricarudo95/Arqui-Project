@@ -80,6 +80,8 @@ module control( input clk,
                // $display("State 4: Decode Instruction");
                 marLoad = 0;
                 RW = 0;
+                regWrite = 0;
+                mdrSource = 0;
                 irLoad = 0;
                 immediate = 0;
                 pcSelect=0;
@@ -102,12 +104,13 @@ module control( input clk,
                 end
 
                 6'b001001: begin // add Imidiate unsigned
+                        sign=1;
                         aluCode=6'b100000;
                         state <= 5'd7;
                 end
 
                 6'b011100: begin // CLO, CLZ
-                        state <= 5'd8;
+                        state <= 5'd7;
                 end
 
                 6'b000010: begin // JMP 
@@ -115,6 +118,7 @@ module control( input clk,
                 end
 
                 6'b101011: begin // SW: Save Word
+                        aluCode <= 100000;
                         state <= 5'd8;
                 end
 
@@ -123,14 +127,17 @@ module control( input clk,
                 end
 
                 6'b100011: begin // LW: Load Word
+                        aluCode <= 100000;
                         state <= 5'd9;
                 end
 
                 6'b100000: begin // LB: Load Byte
+                        aluCode <= 100000;
                         state <= 5'd10;
                 end
 
                 6'b100100: begin // LBU: Load Byte Unsigned
+                        aluCode <= 100001;
                         state <= 5'd11;
                 end
 
@@ -194,19 +201,33 @@ module control( input clk,
                 state <= 5'd1;
         end
 
-        5'd7: begin // ADDI
+        5'd7: begin // Load Data Step 1: Load to MAR
                 
+                aluSrc <= 2'b01;
+                aluCode <= 100000;
+                immediate = 1;
 
-                state <= 5'd1;
+                
+                #1; marLoad = 1;
+                state <= 5'd8;
         end
 
-        5'd8: begin // ADDIU 
-               
-
-                state <= 5'd1;
+        5'd8: begin // Load Data Step 2: Read Memory
+                marLoad = 0;
+                aluCode <= 000000;
+                memEnable = 1;
+                RW = 0;
+                state <= 5'd9;
         end
 
-        5'd9: begin // ADDIU 
+        5'd9: begin // Load Data Step 3: Save to Register
+                if (MOC == 1)
+                        begin
+                        memEnable=0;
+                        mdrSource=1;
+                        regWrite = 1;
+                        state = 5'd4;
+                        end
                 
 
                 state <= 5'd1;
