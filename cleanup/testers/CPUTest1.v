@@ -60,7 +60,7 @@ module CPUTester1();
             f = $fopen("output/output1.txt","w");
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1; #5;
-
+                
                 // $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 // $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
                 // $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );

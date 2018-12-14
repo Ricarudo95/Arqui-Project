@@ -54,21 +54,20 @@ module CPUTester3();
 
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;
-                if(index <= 51) begin
-                $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
-                $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
-                $display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
-                $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
-                $display("\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
-                $display("\nOffset: %d", CPU_Test1.signExt.ins );
+                // $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                // $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
+                // $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
+                // $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+                // $fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
+                // $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
 
-                $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
-                $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
-                $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
-                $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
-                $fwrite(f,"\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
-                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
-                end
+                // $fwrite(f,"\nMAR: %b", CPU_Test1.MAR.Result );
+                // $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.Result );
+                // $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.Result );
+                // $fwrite(f,"\nIR: %b", CPU_Test1.IR.Result );
+                // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem );
+
+                // $fwrite(f,"\n ---------CLK CYCLE COMPLETE-----------")
                
             end
 
