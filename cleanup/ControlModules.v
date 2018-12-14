@@ -1,7 +1,7 @@
 module control( input clk,
   input reset, MOC,
   input[5:0] opCode, 
-  output reg unSign, memEnable, irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource, pcSelect,
+  output reg unSign, memEnable, irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, byte, marLoad,mdrLoad, mdrSource, pcSelect,
   output reg[1:0] aluSrc, 
   output reg[5:0] aluCode);  
 
@@ -16,6 +16,7 @@ module control( input clk,
         case(state)
         5'd0: begin
                 //$display("State 0: Reset state");
+                byte=0;
                 pcLoad = 0;
                 npcLoad =0;
                 unSign=0;
@@ -130,6 +131,7 @@ module control( input clk,
                 end
 
                 6'b101000: begin // SB: Save Byte
+                        byte= 1;
                         #1 state <= 5'd10;
                 end
 
@@ -140,12 +142,14 @@ module control( input clk,
                 end
 
                 6'b100000: begin // LB: Load Byte
+                        byte=1;
                         aluCode <= 100000;
                         #1 state <= 5'd17;
                 end
 
                 6'b100100: begin // LBU: Load Byte Unsigned
                         unSign=1;
+                        byte=1;
                         aluCode <= 100001;
                         #1 state <= 5'd7;
                 end
