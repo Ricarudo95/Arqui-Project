@@ -23,7 +23,9 @@ always@(posedge memEnable) begin
 	$display("We got In guys.... rw: %d", rw);
 	if (rw == 0) begin
         	assign MOC = 0;
-		$display("verify memory at 2: %b%b%b%b", Mem[address],Mem[address+1],Mem[address+2],Mem[address+3]);
+		$display("verify memory : %b%b%b%b", Mem[address],Mem[address+1],Mem[address+2],Mem[address+3]);
+		$display("verify next memory : %b%b%b%b", Mem[address+5],Mem[address+6],Mem[address+7],Mem[address+8]);
+
 		output_destination = {Mem[address], Mem[address+1], Mem[address+2], Mem[address+3]};
 		$display("Output: %b",output_destination);
 		#13;

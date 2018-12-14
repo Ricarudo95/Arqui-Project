@@ -92,7 +92,7 @@ mux4 Register_Mux(regMuxOut, rfSource, instruction[20:16], instruction[15:11]); 
 mux4inputs ALU_Mux(aluB, aluSource, regOutB, signExtOut, mdrData, 32'd0);
 mux32 mdrMux(mdrIn, mem_to_reg, memData, aluOut);
 mux32 Branch_Mux(branchSelect, andOut, pcAdd4, branchAddOut);
-mux32 Jump_Mux(next, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
+mux32 Jump_Mux(jumpMuxOut, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
  
 
 //Register File

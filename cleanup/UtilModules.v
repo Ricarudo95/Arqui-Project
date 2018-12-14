@@ -47,13 +47,8 @@ module shftLeft(output reg [31:0] result, input [31:0] in);
 
 endmodule
 
-module register(output reg [31:0] result, input [31:0] in, input load);
-  reg [31:0] hold; 
-  always @(in) begin
-  if(load == 1) begin
-    hold = in;
+module register(output reg [31:0] result, input [31:0] in, input load); 
+  always @(posedge load) begin
+    result = in;
   end
-  result = hold;
-  end
-
 endmodule

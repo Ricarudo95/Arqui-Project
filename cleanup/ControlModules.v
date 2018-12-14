@@ -16,6 +16,8 @@ module control( input clk,
         case(state)
         5'd0: begin
                 //$display("State 0: Reset state");
+                pcLoad = 0;
+                npcLoad =0;
                 memEnable = 0; 
                 pcSelect = 0;
                 state <= 5'd0;
@@ -44,14 +46,19 @@ module control( input clk,
                 aluCode <= 100001;
                 immediate = 1;
                 marLoad = 1;
+                pcLoad = 0;
+                npcLoad =0;
+               
 
                 state <= 5'd2;
                 end
 
         5'd2: begin
                 //$display("State 2: Read Memory");
-                memEnable = 1;
                 marLoad = 0;
+                aluCode <= 000000;
+                memEnable = 1;
+                
                 RW = 0;
                 state <= 5'd3;
         end
@@ -311,20 +318,13 @@ module ProgramCounter(PCNext, PCResult, Reset, Clk, Load);
 		PCResult <= 32'h00000000;
 	end
 
-    always @(posedge Clk)
+    always @(posedge Load)
     begin
     	if (Reset == 1)
     	        begin
-    		PCResult <= 32'h00000000;
+    		PCResult = 32'h00000000;
     	        end
-    	if (Load == 1)
-    	        begin
-		PCResult <= PCNext;	
-    	        end
-        else
-                begin
-		PCResult <= PCResult;	
-    	        end
+        assign PCResult = PCNext;	       
         //$display("PC: Result %d", PCResult);
     end
 
