@@ -44,6 +44,7 @@ module CPUTester1();
             //Registers
             CPU_Test1.MAR,
             CPU_Test1.MDR,
+            CPU_Test1.NPC,
 
             //Mux Variables
             CPU_Test1.funcMux,
