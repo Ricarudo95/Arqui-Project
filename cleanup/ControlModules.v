@@ -64,6 +64,7 @@ module control( input clk,
                 //$display("State 2: Read Memory");
                 npcLoad=0;
                 marLoad = 0;
+                byte=0;
                 memEnable = 1;
                 
                 RW = 0;
@@ -292,6 +293,7 @@ module control( input clk,
                         memEnable=0;
                         npcLoad = 1;
                         pcLoad = 1;
+                        byte=0;
                         #1 state <= 5'd1;
                 end
 

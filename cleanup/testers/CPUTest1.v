@@ -72,17 +72,17 @@ module CPUTester1();
                 $fwrite(f,"\n ---------CLOCK CYCLE: %d START-----------\n", index);
                 
                 $fwrite(f,"\n\nState: %d", CPU_Test1.Control_Unit.state );
-                $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                //$fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Memory.output_destination );
-                $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opCode );
-                $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
-                $fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
-                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
+                //$fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opCode );
+                //$fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+                //$fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
+                //$fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
                 
-                $fwrite(f,"\nMAR: %b", CPU_Test1.MAR.result );
-                $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.result );
-                $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.result );
-                $fwrite(f,"\nIR: %b", CPU_Test1.IR.result );
+                $fwrite(f,"\nMAR: %d", CPU_Test1.MAR.result );
+                //$fwrite(f,"\nMDR: %b", CPU_Test1.MDR.result );
+                //$fwrite(f,"\nNPC: %b", CPU_Test1.NPC.result );
+                //$fwrite(f,"\nIR: %b", CPU_Test1.IR.result );
             end
             $fwrite(memoryFile,"\n----------Memory at End---------------\n");
             for(index = 0; index <= 53; index = index+4) begin

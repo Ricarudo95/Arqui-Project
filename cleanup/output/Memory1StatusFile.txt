@@ -17,7 +17,7 @@ Memory[48]: 00010000  Memory[49]: 00000000  Memory[50]: 11111111  Memory[51]: 11
 Memory[52]: 00000000  Memory[53]: 00000000  Memory[54]: 00000000  Memory[55]: 00000000
 ----------Memory at End---------------
 
-Memory[ 0]: 00000000 Memory[ 1]: 00000001 Memory[ 2]: 00000000 Memory[ 3]: 00101100
+Memory[ 0]: 00100100 Memory[ 1]: 00000001 Memory[ 2]: 00000000 Memory[ 3]: 00101100
 Memory[ 4]: 10010000 Memory[ 5]: 00100010 Memory[ 6]: 00000000 Memory[ 7]: 00000000
 Memory[ 8]: 10010000 Memory[ 9]: 00100011 Memory[10]: 00000000 Memory[11]: 00000010
 Memory[12]: 00000000 Memory[13]: 00000000 Memory[14]: 00101000 Memory[15]: 00100001
@@ -28,6 +28,6 @@ Memory[28]: 00000000 Memory[29]: 00000000 Memory[30]: 00000000 Memory[31]: 00000
 Memory[32]: 10100000 Memory[33]: 00100101 Memory[34]: 00000000 Memory[35]: 00000001
 Memory[36]: 00010000 Memory[37]: 00000000 Memory[38]: 00000000 Memory[39]: 00000010
 Memory[40]: 00000000 Memory[41]: 00000000 Memory[42]: 00000000 Memory[43]: 00000000
-Memory[44]: 00011001 Memory[45]: 00000101 Memory[46]: 00000111 Memory[47]: 00000100
-Memory[48]: 00010000 Memory[49]: 00000000 Memory[50]: 11111111 Memory[51]: 11111111
+Memory[44]: 00011001 Memory[45]: 00000000 Memory[46]: 00000000 Memory[47]: 00000000
+Memory[48]: 00000000 Memory[49]: 00000000 Memory[50]: 11111111 Memory[51]: 11111111
 Memory[52]: 00000000 Memory[53]: 00000000 Memory[54]: 00000000 Memory[55]: 00000000
