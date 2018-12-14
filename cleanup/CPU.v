@@ -50,6 +50,7 @@ module mipsCPUData1(clk,reset);
 ////////// STATE FLAGS ////////////
     wire MOC;
     wire memEnable;
+    wire unSign;
 
     wire irLoad;
     wire pcLoad;
