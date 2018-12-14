@@ -81,7 +81,7 @@ register IR(instruction, memData, irLoad);
 ProgramCounter Program_Counter(next, pcOut, reset, clk, pcLoad);
 
 //Control Unit
-control Control_Unit(clk, reset, MOC, instruction[31:26], memEnable, irLoad, pcLoad, npcLoad, rfSource, regWrite, jump, branch, immediate, rw, marLoad, mdrLoad, mdrSource, pcSelect, aluSource, aluCode);
+control Control_Unit(clk, reset, MOC, instruction[31:26], unSign, memEnable, irLoad, pcLoad, npcLoad, rfSource, regWrite, jump, branch, immediate, rw, marLoad, mdrLoad, mdrSource, pcSelect, aluSource, aluCode);
 
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used

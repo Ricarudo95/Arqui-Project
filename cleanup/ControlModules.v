@@ -272,10 +272,21 @@ module control( input clk,
 
         end
 
-        5'd14: begin // Save Data Step 3: Verify Save
+        5'd14: begin // Jump
                 if
                 state <= 5'd1;
         end
+
+        5'd14: begin // Branch
+                if
+                state <= 5'd1;
+        end
+
+        5'd14: begin // Jump
+                if
+                state <= 5'd1;
+        end
+
 
 
         
