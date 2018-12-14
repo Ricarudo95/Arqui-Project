@@ -91,13 +91,13 @@ mux6 funcMux(func, immediate, instruction[5:0], aluCode);
 mux4 Register_Mux(regMuxOut, rfSource, instruction[20:16], instruction[15:11]); //present
 //mux32 ALU_Mux(aluB, aluSource, regOutB, signExtOut);
 mux4inputs ALU_Mux(aluB, aluSource, regOutB, signExtOut, mdrData, 32'd0);
-mux32 mdrMux(mdrIn, mem_to_reg, memData, aluOut);
+mux32 mdrMux(mdrIn, mdrSource, memData, aluOut);
 mux32 Branch_Mux(branchSelect, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(jumpMuxOut, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
  
 
 //Register File
-RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, mdrIn, mdrSource, clk, regOutA, regOutB );
+RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, mdrIn, regWrite, clk, regOutA, regOutB );
 
 //ALU Modules
 ALU alu(aluOut, zFlag, func, aluA, aluB);

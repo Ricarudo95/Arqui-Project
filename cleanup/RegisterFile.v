@@ -48,10 +48,10 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 			
 	end
 	
-	always @(posedge Clk)
+	always @(posedge Write)
 	begin
 		
-		if (Write == 1 && C_Address != 5'd0) 
+		if (C_Address != 5'd0) 
 		begin
 			Registers[C_Address] <= C_Data;
 		end
