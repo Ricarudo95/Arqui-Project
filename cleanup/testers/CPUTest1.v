@@ -61,21 +61,24 @@ module CPUTester1();
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1; #5;
                 
+                //$fwrite(f,"\nState: %b", CPU_Test1.Control_Unit.state );
                 // $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 // $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
                 // $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
                 // $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 // $fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
                 // $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
-
+                
+                always@(CPU_Test1.Control_Unit.state)
+                begin
                 // $fwrite(f,"\nMAR: %b", CPU_Test1.MAR.Result );
                 // $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.Result );
                 // $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.Result );
                 // $fwrite(f,"\nIR: %b", CPU_Test1.IR.Result );
                 // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem );
+                end
 
                 // $fwrite(f,"\n ---------CLK CYCLE COMPLETE-----------")
-                
                
             end
             $fclose(f);
