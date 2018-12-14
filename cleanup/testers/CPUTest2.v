@@ -67,7 +67,7 @@ module CPUTester2();
                 // $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.Result );
                 // $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.Result );
                 // $fwrite(f,"\nIR: %b", CPU_Test1.IR.Result );
-                // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem );
+                // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem[50:0] );
                 //end
 
                 // $fwrite(f,"\n ---------CLK CYCLE COMPLETE-----------")
