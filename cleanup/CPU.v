@@ -69,6 +69,9 @@ module mipsCPUData1(clk,reset);
 
 /////////////////////////COMPONENTS////////////////////////////////////
 
+//MAR
+register MAR(memAdress, aluOut, marLoad);
+
 //Program Counter
 ProgramCounter Program_Counter(next, pcOut, reset, clk, pcLoad);
 
