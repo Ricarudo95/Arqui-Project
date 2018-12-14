@@ -64,7 +64,7 @@ module mipsCPUData1(clk,reset);
     wire mdrLoad;
     wire mdrSource;
     wire pcSelect;
-    wire [1:0]aluSource;
+    wire [1:0] aluSource;
     wire [5:0] aluCode;
 
 
@@ -74,6 +74,7 @@ module mipsCPUData1(clk,reset);
 register MAR(memAdress, aluOut, marLoad);
 register MDR(mdrData, mdrIn, mdrLoad);
 register NPC(next,jumpMuxOut,npcLoad);
+register IR(instruction, memData, irLoad);
 
 //Program Counter
 ProgramCounter Program_Counter(next, pcOut, reset, clk, pcLoad);
