@@ -55,11 +55,9 @@ module CPUTester1();
             CPU_Test1.Branch_Mux
             );
             f = $fopen("output/output1.txt","w");
-            
-            
             for(index = 1; index <= 130; index = index+1) begin  
-                clk =0; #5 clk = 1;
-                if(index <= 17) begin
+                clk =0; #5 clk = 1; #5;
+
                 
                 /*$display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
@@ -75,7 +73,6 @@ module CPUTester1();
                 $fwrite(f,"\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
                 $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );*/
                 
-                end
                
             end
             $fclose(f);

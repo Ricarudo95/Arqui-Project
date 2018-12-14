@@ -27,6 +27,7 @@ module control( input clk,
                 rfSource = 0;
                 regWrite = 0;
                 jump = 0;
+                branch = 0;
                 RW = 0;
                 marLoad = 0;
                 mdrLoad = 0;
