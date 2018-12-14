@@ -206,21 +206,38 @@ module ALU(Result, zeroFlag, operation, a, b);
                             end
                         end
 
-                        // 6'b100001: // CLO
-                        // begin
-                        //     for(index = 31; index >= 0; index = index-1) begin  
-                        //         if(a[index] == 1'b0) begin
-                        //             var = 1;
-                        //             index = -1;
-                        //         end 
-                        //         if(var == 0) begin
-                        //             counter = counter + 1;
-                        //         end
-                        //     end
-                        //     Result = counter;
-                        // end
-                        
+                        6'b011100: //CLO
+                        begin
+                            //CLO
+                            if(operation == 6'b100001) begin
+                                    for(index = 31; index >= 0; index = index-1) begin  
+                                            if(a[index] == 1'b0) begin
+                                                    var = 1;
+                                                    index = -1;
+                                                end 
+                                                if(var == 0) begin
+                                                    counter = counter + 1;
+                                                end
+                                            end
+                                        Result = counter;
+                                    end
+                                end
 
+                        6'b011101: //CLO
+                        begin
+                            //CLZ
+                            if(operation == 6'b100000) begin
+                                for(index = 31; index >= 0; index = index-1) begin  
+                                    if(a[index] == 1'b1) begin
+                                        var = 1;
+                                        index = -1;
+                                        end 
+                                    if(var == 0) begin
+                                        counter = counter + 1;
+                                    end
+                                end
+                                Result = counter;
+                            end
                     
                         6'b000011: // SRA
                         begin 
