@@ -52,7 +52,6 @@ module mipsCPUData1(clk,reset);
     wire memEnable;
     wire unSign;
 
-    wire nFlag;
     wire irLoad;
     wire pcLoad;
     wire npcLoad;
@@ -102,7 +101,7 @@ mux32 Jump_Mux(jumpMuxOut, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
 RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, mdrIn, regWrite, clk, regOutA, regOutB );
 
 //ALU Modules
-ALU alu(aluOut, zFlag, nFlag, func, aluA, aluB);
+ALU alu(aluOut, zFlag, func, aluA, aluB);
 
 //RAM Module
 MemoryTest1 Memory(memAdress, memData, mdrData, rw, byte, MOC, memEnable);
@@ -114,7 +113,7 @@ shftLeft28 shftJump(shftLeft28Out, instruction[25:0]);
 shftLeft shftLeft(shftLeftOut,signExtOut);
 addplus4 addFour(pcAdd4, pcOut);
 adder adder(branchAddOut, pcAdd4, shftLeftOut);
-AND simpleAND(andOut, branch, zFlag, nFlag);
+AND simpleAND(andOut, branch, zFlag);
 
 
 ////////// MONITOR ////////////
