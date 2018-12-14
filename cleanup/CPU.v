@@ -72,10 +72,6 @@ module mipsCPUData1(clk,reset);
 //Program Counter
 ProgramCounter Program_Counter(next, pcOut, reset, clk, pcLoad);
 
-//reg [511:0] PC = 512'd0;
-//Intruction Memory
-instructMemTest1 Instruction_Memory(instruction, clk, pcOut);
-
 //Control Unit
 control Control_Unit(clk, reset, MOC, instruction[31:26], irLoad, pcLoad, npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad, mdrLoad, mdrSource, pcSelect, aluSource, aluCode);
 
@@ -99,7 +95,7 @@ RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, md
 ALU alu(aluOut, zFlag, instruction[5:0], aluA, aluB);
 
 //RAM Module
-RAM ram(clk, memRead, memWrite, aluOut, memData, regOutB, rw, mar);
+MemoryTest1 Memory(aluOut, memData, mdrData, rw, MOC);
 
 
 //Util Modules
