@@ -99,6 +99,11 @@ module ALU(Result, zeroFlag, operation, a, b);
                 //begin            
                     case (operation)
                     //Move
+                        6'b111111: // MOVN
+                            begin 
+                                Result = a;
+                            end
+                    //Move
                         6'b001011: // MOVN
                             begin 
                                 if(b != 0)
@@ -208,36 +213,31 @@ module ALU(Result, zeroFlag, operation, a, b);
 
                         6'b011100: //CLO
                         begin
-                            //CLO
-                            if(operation == 6'b100001) begin
-                                    for(index = 31; index >= 0; index = index-1) begin  
-                                            if(a[index] == 1'b0) begin
-                                                    var = 1;
-                                                    index = -1;
-                                                end 
-                                                if(var == 0) begin
-                                                    counter = counter + 1;
-                                                end
-                                            end
-                                        Result = counter;
-                                    end
-                                end
-
-                        6'b011101: //CLO
-                        begin
-                            //CLZ
-                            if(operation == 6'b100000) begin
-                                for(index = 31; index >= 0; index = index-1) begin  
-                                    if(a[index] == 1'b1) begin
+                            for(index = 31; index >= 0; index = index-1) begin  
+                                if(a[index] == 1'b0) begin
                                         var = 1;
                                         index = -1;
-                                        end 
+                                    end 
                                     if(var == 0) begin
                                         counter = counter + 1;
                                     end
                                 end
-                                Result = counter;
-                            end
+                            Result = counter;
+                        end
+
+                        6'b011101: //CLZ
+                        begin
+                            for(index = 31; index >= 0; index = index-1) begin  
+                                if(a[index] == 1'b1) begin
+                                    var = 1;
+                                    index = -1;
+                                    end 
+                                    if(var == 0) begin
+                                        counter = counter + 1;
+                                    end
+                                end
+                            Result = counter;
+                        end
                     
                         6'b000011: // SRA
                         begin 
