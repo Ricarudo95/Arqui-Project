@@ -58,6 +58,7 @@ module CPUTester1();
             CPU_Test1.mdrMux,
             CPU_Test1.Branch_Mux
             );
+            CPU_Test1.NPC.result = 32'd4;
             memoryFile = $fopen("output/Memory1StatusFile.txt","w");
             f = $fopen("output/StateChangeTest1.txt","w");
 
@@ -66,7 +67,7 @@ module CPUTester1();
             $fwrite(memoryFile,"\nMemory[%2d]: %8b  Memory[%2d]: %8b  Memory[%2d]: %8b  Memory[%2d]: %8b", index,CPU_Test1.Memory.Mem[index],index+1,CPU_Test1.Memory.Mem[index+1],index+2,CPU_Test1.Memory.Mem[index+2],index+3,CPU_Test1.Memory.Mem[index+3]);
             end
 
-            for(index = 1; index <= 70; index = index+1) begin  
+            for(index = 1; index <= 120; index = index+1) begin  
                 clk =0; #5 clk = 1; #5;
 
                 $fwrite(f,"\n ---------CLOCK CYCLE: %d START-----------\n", index);

@@ -95,7 +95,7 @@ mux4inputs ALU_Mux(aluB, aluSource, regOutB, signExtOut, mdrData, 32'd0);
 mux32 mdrMux(mdrIn, mdrSource, memData, aluOut);
 mux32 Branch_Mux(branchSelect, andOut, pcAdd4, branchAddOut);
 mux32 Jump_Mux(jumpMuxOut, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
- 
+
 
 //Register File
 RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, mdrIn, regWrite, clk, regOutA, regOutB );
@@ -112,7 +112,7 @@ signExtender signExt(signExtOut, instruction[15:0], unSign);
 shftLeft28 shftJump(shftLeft28Out, instruction[25:0]);
 shftLeft shftLeft(shftLeftOut,signExtOut);
 addplus4 addFour(pcAdd4, pcOut);
-adder adder(branchAddOut, pcAdd4, shftLeftOut);
+adder adder(branchAddOut, pcOut, shftLeftOut);
 AND simpleAND(andOut, branch, zFlag);
 
 

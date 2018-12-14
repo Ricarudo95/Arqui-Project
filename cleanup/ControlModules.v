@@ -19,6 +19,7 @@ module control( input clk,
                 byte=0;
                 pcLoad = 0;
                 npcLoad =0;
+                
                 unSign=0;
                 memEnable = 0; 
                 pcSelect = 0;
@@ -31,30 +32,30 @@ module control( input clk,
                 rfSource = 0;
                 regWrite = 0;
                 jump = 0;
-                branch = 0;
                 RW = 0;
                 marLoad = 0;
                 mdrLoad = 0;
                 mdrSource = 0;
-
-                #1 state <= 5'd1;
+                #1
+                
+                #1 
+                branch=0;
+                state <= 5'd1;
                 end
 
         5'd1: begin
                 //$display("State 1: Load PC ro MAR");
                 pcSelect = 1;
-                npcLoad = 1;
+                
                 mdrLoad = 0;
-                pcLoad = 0;
                 unSign=0;
                 
                 aluSrc <= 2'b11;
                 aluCode <= 100001;
                 immediate = 1;
-                pcLoad = 0;
-                npcLoad =0;
                 
-                #1 marLoad = 1;
+                #1 marLoad = 0;
+                npcLoad=0;
                
 
                 #1 state <= 5'd2;
@@ -62,10 +63,16 @@ module control( input clk,
 
         5'd2: begin
                 //$display("State 2: Read Memory");
+                
+                pcSelect = 0;
                 npcLoad=0;
                 marLoad = 0;
                 byte=0;
                 memEnable = 1;
+                npcLoad=1;                
+                #1
+                pcLoad=1;
+                
                 
                 RW = 0;
                 #1 state <= 5'd3;
@@ -74,6 +81,8 @@ module control( input clk,
                // $display("State 3: Load to Instrction Register");
                 if (MOC == 1)
                         begin
+                        npcLoad=0;
+                        pcLoad=0;
                         memEnable=0;
                         #1 irLoad = 1;
                         #1 state = 5'd4;
@@ -200,8 +209,6 @@ module control( input clk,
                 #1
                 marLoad=0;
                 regWrite=1;
-                npcLoad = 1;
-                pcLoad = 1;
                 #1 state <= 5'd1;
         end
 
@@ -221,8 +228,6 @@ module control( input clk,
                 #1 
                 mdrLoad=1;
                 regWrite=1;
-                npcLoad = 1;
-                pcLoad = 1;
                 #1 state = 5'd1;
         end
 
@@ -251,9 +256,6 @@ module control( input clk,
                 memEnable=0;
                 mdrSource=0;
                 regWrite = 1;
-
-                npcLoad = 1;
-                pcLoad = 1;
                 #1 state = 5'd1;
                 
         end
@@ -291,8 +293,6 @@ module control( input clk,
                         
                 if (MOC==1) begin
                         memEnable=0;
-                        npcLoad = 1;
-                        pcLoad = 1;
                         byte=0;
                         #1 state <= 5'd1;
                 end
@@ -302,8 +302,7 @@ module control( input clk,
         5'd14: begin // Jump
                 jump = 1;
 
-                npcLoad = 1;
-                pcLoad = 1;
+                npcLoad =1;
                 #1 state <= 5'd1;
 
         end
@@ -321,13 +320,11 @@ module control( input clk,
                 mdrSource=1;
                 pcSelect=0;
                 aluSrc=2'b00;
-
-                npcLoad = 1;
-                pcLoad = 1;
                 #1 state <= 5'd1;
         end
 
         5'd16: begin // Branch
+                npcLoad = 1;
                 immediate=1;
                 aluSrc=01;
                 branch=1;
