@@ -8,6 +8,7 @@ module CPUTester1();
     reg reset = 1'b0, clk;
     integer index;
     integer f;
+    integer memoryFile;
 
     mipsCPUData1 CPU_Test1(clk, reset);
 
@@ -57,32 +58,37 @@ module CPUTester1();
             CPU_Test1.mdrMux,
             CPU_Test1.Branch_Mux
             );
-            f = $fopen("output/output1.txt","w");
-            for(index = 1; index <= 130; index = index+1) begin  
-                clk =0; #5 clk = 1; #5;
-                
-                //$fwrite(f,"\nState: %b", CPU_Test1.Control_Unit.state );
-                // $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
-                // $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
-                // $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
-                // $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
-                // $fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
-                // $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
-                
-                //always@(CPU_Test1.Control_Unit.state)
-                //begin
-                // $fwrite(f,"\nMAR: %b", CPU_Test1.MAR.Result );
-                // $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.Result );
-                // $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.Result );
-                // $fwrite(f,"\nIR: %b", CPU_Test1.IR.Result );
-                // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem[50:0] );
-                //end
+            memoryFile = $fopen("output/Memory1StatusFile.txt","w");
+            f = $fopen("output/StateChangeTest1.txt","w");
 
-                // $fwrite(f,"\n ---------CLOCK CYCLE COMPLETE-----------")
-               
+            $fwrite(memoryFile,"\n----------Memory at Start Up---------------\n");
+            for(index = 0; index <= 53; index = index+4) begin
+            $fwrite(memoryFile,"\nMemory[%2d]: %8b  Memory[%2d]: %8b  Memory[%2d]: %8b  Memory[%2d]: %8b", index,CPU_Test1.Memory.Mem[index],index+1,CPU_Test1.Memory.Mem[index+1],index+2,CPU_Test1.Memory.Mem[index+2],index+3,CPU_Test1.Memory.Mem[index+3]);
+            end
+
+            for(index = 1; index <= 70; index = index+1) begin  
+                clk =0; #5 clk = 1; #5;
+
+                $fwrite(f,"\n ---------CLOCK CYCLE: %d START-----------\n", index);
+                
+                $fwrite(f,"\n\nState: %d", CPU_Test1.Control_Unit.state );
+                $fwrite(f,"\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                $fwrite(f,"\nCurrent Instruction: %b", CPU_Test1.Memory.output_destination );
+                $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opCode );
+                $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
+                $fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
+                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
+                
+                $fwrite(f,"\nMAR: %b", CPU_Test1.MAR.result );
+                $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.result );
+                $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.result );
+                $fwrite(f,"\nIR: %b", CPU_Test1.IR.result );
+            end
+            $fwrite(memoryFile,"\n----------Memory at End---------------\n");
+            for(index = 0; index <= 53; index = index+4) begin
+            $fwrite(memoryFile,"\nMemory[%2d]: %8b Memory[%2d]: %8b Memory[%2d]: %8b Memory[%2d]: %8b", index,CPU_Test1.Memory.Mem[index],index+1,CPU_Test1.Memory.Mem[index+1],index+2,CPU_Test1.Memory.Mem[index+2],index+3,CPU_Test1.Memory.Mem[index+3]);
             end
             $fclose(f);
-
+            $fclose(memoryFile);
     end
-
 endmodule

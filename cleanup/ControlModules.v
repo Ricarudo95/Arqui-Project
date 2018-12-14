@@ -270,6 +270,7 @@ module control( input clk,
 
         5'd11: begin // Save Data Step 2: Load to MDR
                 marLoad = 0;
+                mdrSource=1;
                 aluSrc <= 2'b00;
                 aluCode <= 111111;
                 immediate = 1;
@@ -289,8 +290,6 @@ module control( input clk,
                         
                 if (MOC==1) begin
                         memEnable=0;
-                        RW=0;
-
                         npcLoad = 1;
                         pcLoad = 1;
                         #1 state <= 5'd1;

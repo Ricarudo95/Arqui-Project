@@ -14,7 +14,7 @@ module ALU(Result, zeroFlag, operation, a, b);
     integer index;
     integer counter = 0;
     integer var = 0;
-    reg [31:0]tempVar;
+    reg [31:0] tempVar;
 
     initial begin
     zeroFlag = 1'b0;
@@ -118,7 +118,7 @@ module ALU(Result, zeroFlag, operation, a, b);
                     //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     end    
 
-                    3'b001111: //Greater than
+                    6'b001111: //Greater than
                     begin
                         Result = ($signed(a) > $signed(b)) ? 1: 0;
                         zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
