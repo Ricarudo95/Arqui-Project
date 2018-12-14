@@ -1,4 +1,4 @@
-module MemoryTest1(address, output_destination, dataIn, rw, MOC, memEnable);
+module MemoryTest1(address, output_destination, dataIn, rw, byte, MOC, memEnable);
  
 input[31:0]   address;
 input[31:0]   dataIn;
@@ -20,26 +20,41 @@ end
 // behavior
 always@(posedge memEnable) begin
 	
-	$display("We got In guys.... rw: %d", rw);
-	if (rw == 0) begin
-        	assign MOC = 0;
-		$display("verify memory : %b%b%b%b", Mem[address],Mem[address+1],Mem[address+2],Mem[address+3]);
-		$display("verify next memory : %b%b%b%b", Mem[address+5],Mem[address+6],Mem[address+7],Mem[address+8]);
+	if(byte==0) begin
+		if (rw == 0) begin
+			assign MOC = 0;
+			output_destination = {Mem[address], Mem[address+1], Mem[address+2], Mem[address+3]};
+			#13;
+			assign MOC=1;
+		end
+		else begin
+			assign MOC = 0;
+			Mem[address] = dataIn[31:24];
+			Mem[address+1] = dataIn[23:16];
+			Mem[address+2] = dataIn[15:8];
+			Mem[address+3] = dataIn[7:0];
+			#13;
+			assign MOC=1;
+		end
+	end
 
-		output_destination = {Mem[address], Mem[address+1], Mem[address+2], Mem[address+3]};
-		$display("Output: %b",output_destination);
-		#13;
-		assign MOC=1;
-	end
 	else begin
-		assign MOC = 0;
-		Mem[address] = dataIn[31:24];
-		Mem[address+1] = dataIn[23:16];
-		Mem[address+2] = dataIn[15:8];
-		Mem[address+3] = dataIn[7:0];
-		#13;
-		assign MOC=1;
+
+		if (rw == 0) begin
+				assign MOC = 0;
+				output_destination = {Mem[address], 24'd0};
+				#7;
+				assign MOC=1;
+			end
+			else begin
+				assign MOC = 0;
+				Mem[address] = dataIn[31:24];
+				#7;
+				assign MOC=1;
+		end
 	end
+
+
 end
 endmodule
 
