@@ -1,5 +1,5 @@
 $date
-	Fri Dec 14 14:31:21 2018
+	Fri Dec 14 14:36:21 2018
 $end
 $version
 	Icarus Verilog
@@ -145,6 +145,7 @@ $upscope $end
 $scope module CPUTester1 $end
 $scope module CPU_Test1 $end
 $scope module simpleAND $end
+$var wire 1 B Nflag $end
 $var wire 1 E Z_flag $end
 $var wire 1 0 branch $end
 $var reg 1 \ result $end
