@@ -50,7 +50,7 @@ module CPUTester3();
             CPU_Test1.Branch_Mux
             );
 
-            f = $fopen("output3.txt","w");
+            f = $fopen("output/output3.txt","w");
 
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;

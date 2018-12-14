@@ -15,7 +15,7 @@ module CPUTester1();
         // To record the workbench we create a file to be read by GTKWave demostrating all inputs and outputs at any given time.
         $dumpfile("results/CPUFileTest1.vcd");
         $dumpvars(0,clk, reset,
-            //Prohram Counter Variables 
+            //Program Counter Variables 
             CPU_Test1.Program_Counter,
 
             
@@ -45,20 +45,22 @@ module CPUTester1();
             CPU_Test1.simpleAND,
 
             //Mux Variables
+            CPU_Test1.funcMux,
+            CPU_Test1.pcMux,
             CPU_Test1.Jump_Mux,
             CPU_Test1.ALU_Mux,
             CPU_Test1.Register_Mux,
-            CPU_Test1.RAM_Mux,
+            CPU_Test1.mdrMux,
             CPU_Test1.Branch_Mux
             );
-            f = $fopen("output1.txt","w");
+            f = $fopen("output/output1.txt","w");
             
             
             for(index = 1; index <= 130; index = index+1) begin  
                 clk =0; #5 clk = 1;
                 if(index <= 17) begin
                 
-                $display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
+                /*$display("\nProgram Counter: %d", CPU_Test1.Program_Counter.PCResult );
                 $display("\nCurrent Instruction: %b", CPU_Test1.Instruction_Memory.Instruction );
                 $display("\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
                 $display("\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
@@ -70,7 +72,7 @@ module CPUTester1();
                 $fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opcode );
                 $fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 $fwrite(f,"\nRegister T Adresss: %d", CPU_Test1.Register_File.B_Address );
-                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
+                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );*/
                 
                 end
                
