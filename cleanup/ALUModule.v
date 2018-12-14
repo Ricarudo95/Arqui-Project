@@ -98,6 +98,33 @@ module ALU(Result, zeroFlag, operation, a, b);
             //3'b000: //Arithmetic
                 //begin            
                     case (operation)
+
+                    6'b011111: //equals
+                        begin
+                            if($signed(a) == $signed(b))
+                            begin
+                            zeroFlag = 1'd1;
+                            end
+                        else
+                            begin
+                            zeroFlag = 1'd0;
+                            end
+                        end
+
+                    6'b110111: //Less than
+                    begin
+                    Result = ($signed(a) < $signed(b)) ? 1: 0;
+                    zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
+                    //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                    end    
+
+                    3'b001111: //Greater than
+                    begin
+                        Result = ($signed(a) > $signed(b)) ? 1: 0;
+                        zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
+                        //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                    end
+
                     //Move
                         6'b111111: // MOVN
                             begin 
