@@ -41,6 +41,9 @@ module CPUTester1();
             CPU_Test1.shftLeft,
             CPU_Test1.simpleAND,
 
+            //Registers
+            CPU_Test1.
+
             //Mux Variables
             CPU_Test1.funcMux,
             CPU_Test1.pcMux,
