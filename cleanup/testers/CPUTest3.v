@@ -70,7 +70,7 @@ module CPUTester3();
                 // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem[50:0] );
                 //end
 
-                // $fwrite(f,"\n ---------CLK CYCLE COMPLETE-----------")
+                // $fwrite(f,"\n ---------CLOCK CYCLE COMPLETE-----------")
                
             end
 
