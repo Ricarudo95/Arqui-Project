@@ -1,7 +1,7 @@
 module control( input clk,
   input reset, MOC,
   input[5:0] opCode, 
-  output reg irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource, pcSelect,
+  output reg memEnable, irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource, pcSelect,
   output reg[1:0] aluSrc, 
   output reg[5:0] aluCode);  
 
@@ -15,7 +15,8 @@ module control( input clk,
         begin
         case(state)
         5'd0: begin
-                $display("State 0: Reset state");
+                //$display("State 0: Reset state");
+                memEnable = 0; 
                 pcSelect = 0;
                 state <= 5'd0;
                 aluSrc <= 2'b00;
@@ -37,10 +38,10 @@ module control( input clk,
                 end
 
         5'd1: begin
-                $display("State 1: Load PC ro MAR");
+                //$display("State 1: Load PC ro MAR");
                 pcSelect = 1;
                 aluSrc <= 2'b11;
-                aluCode <= 001010;
+                aluCode <= 100001;
                 immediate = 1;
                 marLoad = 1;
 
@@ -48,13 +49,14 @@ module control( input clk,
                 end
 
         5'd2: begin
-                $display("State 2: Read Memory");
+                //$display("State 2: Read Memory");
+                memEnable = 1;
                 marLoad = 0;
-                RW = 1;
+                RW = 0;
                 state <= 5'd3;
         end
         5'd3: begin
-                $display("State 3: Load to Instrction Register");
+               // $display("State 3: Load to Instrction Register");
                 if (MOC == 1)
                         begin
                         state = 5'd4;
@@ -63,7 +65,7 @@ module control( input clk,
         end
 
         5'd4: begin
-                $display("State 4: Decode Instruction");
+               // $display("State 4: Decode Instruction");
                 marLoad = 0;
                 RW = 0;
                 irLoad = 0;
@@ -323,7 +325,7 @@ module ProgramCounter(PCNext, PCResult, Reset, Clk, Load);
                 begin
 		PCResult <= PCResult;	
     	        end
-        $display("PC: Result %d", PCResult);
+        //$display("PC: Result %d", PCResult);
     end
 
 endmodule
