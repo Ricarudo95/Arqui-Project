@@ -61,6 +61,7 @@ module mipsCPUData1(clk,reset);
     wire branch;
     wire immediate;
     wire rw;
+    wire byte;
     wire marLoad;
     wire mdrLoad;
     wire mdrSource;
@@ -103,7 +104,7 @@ RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, md
 ALU alu(aluOut, zFlag, func, aluA, aluB);
 
 //RAM Module
-MemoryTest1 Memory(memAdress, memData, mdrData, rw, MOC, memEnable);
+MemoryTest1 Memory(memAdress, memData, mdrData, rw, byte, MOC, memEnable);
 
 
 //Util Modules
