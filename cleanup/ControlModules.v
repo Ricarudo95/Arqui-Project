@@ -1,7 +1,7 @@
 module control( input clk,
   input reset, MOC,
   input[5:0] opCode, 
-  output reg memEnable, irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource, pcSelect,
+  output reg unSign, memEnable, irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource, pcSelect,
   output reg[1:0] aluSrc, 
   output reg[5:0] aluCode);  
 
@@ -18,6 +18,7 @@ module control( input clk,
                 //$display("State 0: Reset state");
                 pcLoad = 0;
                 npcLoad =0;
+                unSign=0;
                 memEnable = 0; 
                 pcSelect = 0;
                 state <= 5'd0;
@@ -44,6 +45,7 @@ module control( input clk,
                 pcSelect = 1;
                 npcLoad = 0;
                 pcLoad = 0;
+                unSign=0;
                 
                 aluSrc <= 2'b11;
                 aluCode <= 100001;
@@ -126,6 +128,7 @@ module control( input clk,
                         state <= 5'd8;
                 end
 
+
                 6'b100011: begin // LW: Load Word
                         aluCode <= 100000;
                         state <= 5'd9;
@@ -137,6 +140,7 @@ module control( input clk,
                 end
 
                 6'b100100: begin // LBU: Load Byte Unsigned
+                        sign=1;
                         aluCode <= 100001;
                         state <= 5'd11;
                 end
@@ -228,30 +232,48 @@ module control( input clk,
                         regWrite = 1;
                         state = 5'd4;
                         end
+        end
+
+        5'd10: begin // Save Data Step 1: Load to MAR
+                aluSrc <= 2'b01;
+                aluCode <= 100000;
+                immediate = 1;
+
                 
-
-                state <= 5'd1;
+                #1; marLoad = 1;
+                state <= 5'd11;
+   
         end
 
-        5'd10: begin // ADDIU 
+        5'd11: begin // Save Data Step 2: Load to MDR
+                marLoad = 0;
+                aluSrc <= 2'b00;
+                aluCode <= 111111;
+                immediate = 1;
+
                 
+                #1; mdrLoad = 1;
+                state <= 5'd12;
 
-                state <= 5'd1;
         end
 
-        5'd11: begin // ADDIU 
-               
+        5'd12: begin // Save Data Step 3: Save to Mem
 
-                state <= 5'd1;
+                mdrLoad = 0;
+                aluCode <= 000000;
+                memEnable = 1;
+                RW = 1;
+                        
+                if (MOC==1) begin
+                        memEnable=0;
+                        RW=0;
+                        state <= 5'd1;
+                end
+
         end
 
-        5'd12: begin // ADDIU 
-               
-                state <= 5'd1;
-        end
-
-        5'd13: begin // ADDIU 
-
+        5'd14: begin // Save Data Step 3: Verify Save
+                if
                 state <= 5'd1;
         end
 
