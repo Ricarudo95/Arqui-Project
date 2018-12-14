@@ -102,7 +102,7 @@ RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, md
 ALU alu(aluOut, zFlag, func, aluA, aluB);
 
 //RAM Module
-MemoryTest1 Memory(aluOut, memData, mdrData, rw, MOC, memEnable);
+MemoryTest1 Memory(memAdress, memData, mdrData, rw, MOC, memEnable);
 
 
 //Util Modules

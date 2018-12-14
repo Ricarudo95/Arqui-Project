@@ -42,12 +42,16 @@ module control( input clk,
         5'd1: begin
                 //$display("State 1: Load PC ro MAR");
                 pcSelect = 1;
+                npcLoad = 0;
+                pcLoad = 0;
+                
                 aluSrc <= 2'b11;
                 aluCode <= 100001;
                 immediate = 1;
-                marLoad = 1;
                 pcLoad = 0;
                 npcLoad =0;
+                
+                #1; marLoad = 1;
                
 
                 state <= 5'd2;
@@ -66,6 +70,7 @@ module control( input clk,
                // $display("State 3: Load to Instrction Register");
                 if (MOC == 1)
                         begin
+                        memEnable=0;
                         state = 5'd4;
                         irLoad = 1;
                         end
@@ -85,218 +90,142 @@ module control( input clk,
                 npcLoad = 1;
                 pcLoad = 1;
 
-                state <= 5'd1;
+                case(opCode)   
+                6'b000000: begin // ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
+                        memEnable=0
+                        rfSource=1
+                        regWrite=1
+                        jump=0
+                        branch=0
+                        immediate=0
+                        RW=0
+                        marLoad=0
+                        mdrLoad=1
+                        mdrSource=1
+                        pcSelect=0
+                        aluSrc=2'b00
 
+                        state <= 5'd6;
+                end
+
+                6'b001000: begin // add Imidiate signed
+                        state <= 5'd7;
+                end
+
+                6'b001001: begin // add Imidiate unsigned
+                        state <= 5'd8;
+                end
+
+                6'b011100: begin // CLO, CLZ
+                        state <= 5'd9;
+                end
+
+                6'b000010: begin // JMP 
+                        state <= 5'd10;
+                end
+
+                6'b101011: begin // SW: Save Word
+                        state <= 5'd8;
+                end
+
+                6'b101000: begin // SB: Save Byte
+                        state <= 5'd8;
+                end
+
+                6'b100011: begin // LW: Load Word
+                        state <= 5'd9;
+                end
+
+                6'b100000: begin // LB: Load Byte
+                        state <= 5'd10;
+                end
+
+                6'b100100: begin // LBU: Load Byte Unsigned
+                        state <= 5'd11;
+                end
+
+                6'b000100: begin // BEQ
+                        state <= 5'd12;
+                end
+
+                6'b000001: begin // BEQZ
+                        state <= 5'd13;
+                end
+
+                6'b000110: begin // BLEZ
+                        state <= 5'd14;
+                end
+
+                6'b000111: begin // BGTZ
+                        state <= 5'd15;
+                end
+
+
+
+
+
+
+
+                endcase
+        end
+        
+
+        5'd5: begin // ARITHMETIC CASE: ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
+
+
+                state <= 5'd1;
         end
 
-        
-
-                // case(opCode)   
-                // 6'b0000000: begin // ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
-                //         reg_dst = 1;
-                //         reg_write = 1;
-                //         alu_src = 0;
-                //         aluCode = 3'b000;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 1;
-                //         jump = 0;  
-                //         branch = 0;
-                //         imidiate = 0;
-                //         $display("Current Instruction: Aritmetic");
-                //         end  
-                // 6'b011100: begin // CLO, CLZ
-                //         reg_dst = 1;
-                //         reg_write = 1;
-                //         alu_src = 0;
-                //         aluCode = 3'b100;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: CLO, CLZ");
-                //         end  
-
-                // 6'b000010: begin // JMP 
-                //         reg_dst = 0;
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b000;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: JUMP");
-                //         end  
-
-                // 6'b101011: begin // SW
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b101;
-                //         memRead = 0;
-                //         memWrite = 1;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: Save Word");
-                //         end
-
-                // 6'b101000: begin // SB
-                //         reg_write = 0;
-                //         alu_src = 1;
-                //         aluCode = 3'b110;
-                //         memRead = 0;
-                //         memWrite = 1;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: Save Byte");
-                //         end
-        
-                // 6'b100011: begin // LW: Load Word
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b101;
-                //         memRead = 0;
-                //         memWrite = 1;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: Load Word");
-                //         end
-
-
-                // 6'b100000: begin // LB: Load Byte
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b101;
-                //         memRead = 0;
-                //         memWrite = 1;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: Load Byte");
-                //         end
-
-                // 6'b100100: begin // LBU: Load Byte Unsigned
-                //         reg_write = 1;
-                //         alu_src = 0;
-                //         aluCode = 3'b101;
-                //         memRead = 1;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=1;
-                //         $display("Current Instruction: Load Byte Unsigned");
-                //         end
-
-                // 6'b000100: begin // BEQ
-                //         reg_dst = 0;
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b001;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 1;
-                //         unSign=0;
-                //         $display("Current Instruction: Branch if Equal");
-                //         end
-
-                // 6'b000001: begin // BEQZ
-                //         reg_dst = 0;
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b001;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 1;
-                //         unSign=0;
-                //         $display("Current Instruction: Branch if Equal to Zero");
-                //         end
-
-                // 6'b000110: begin // BLEZ
-                //         reg_dst = 0;
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b010;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 1;
-                //         unSign=0;
-                //         $display("Current Instruction: Branch if Less Than Zero");
-                //         end
-
-                // 6'b000111: begin // BGTZ
-                //         reg_dst = 0;
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b011;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 1;
-                //         unSign=0;
-                //         $display("Current Instruction: Branch if Greater Than Zero");
-                //         end
+        5'd6: begin // ADDIU 
                 
-                // 6'b001001: begin // add Imidiate unsigned
-                //         reg_dst = 0;
-                //         reg_write = 1;
-                //         alu_src = 1;
-                //         aluCode = 3'b101;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 1;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=1;
-                //         $display("Current Instruction: ADDIU");
-                //         end
+              
+                state <= 5'd1;
+        end
 
-                // 6'b001000: begin // add Imidiate signed
-                //         reg_dst = 0;
-                //         reg_write = 1;
-                //         alu_src = 1;
-                //         aluCode = 3'b101;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 1;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         $display("Current Instruction: ADDI");
-                //         end
+        5'd7: begin // ADDI
                 
 
-                // default: begin  
-                //         reg_dst = 0;
-                //         reg_write = 0;
-                //         alu_src = 0;
-                //         aluCode = 3'b000;
-                //         memRead = 0;
-                //         memWrite = 0;
-                //         mem_to_reg = 0;
-                //         jump = 0;  
-                //         branch = 0;
-                //         unSign=0;
-                //         end  
-                // endcase  
+                state <= 5'd1;
+        end
+
+        5'd8: begin // ADDIU 
+               
+
+                state <= 5'd1;
+        end
+
+        5'd9: begin // ADDIU 
+                
+
+                state <= 5'd1;
+        end
+
+        5'd10: begin // ADDIU 
+                
+
+                state <= 5'd1;
+        end
+
+        5'd11: begin // ADDIU 
+               
+
+                state <= 5'd1;
+        end
+
+        5'd12: begin // ADDIU 
+               
+                state <= 5'd1;
+        end
+
+        5'd13: begin // ADDIU 
+
+                state <= 5'd1;
+        end
+
+
+        
+
+                
         endcase
         end  
   
