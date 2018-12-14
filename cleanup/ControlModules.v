@@ -92,32 +92,22 @@ module control( input clk,
 
                 case(opCode)   
                 6'b000000: begin // ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
-                        memEnable=0
-                        rfSource=1
-                        regWrite=1
-                        jump=0
-                        branch=0
-                        immediate=0
-                        RW=0
-                        marLoad=0
-                        mdrLoad=1
-                        mdrSource=1
-                        pcSelect=0
-                        aluSrc=2'b00
-
                         state <= 5'd6;
                 end
 
                 6'b001000: begin // add Imidiate signed
+                        aluCode=6'b100000;
                         state <= 5'd7;
+                        
                 end
 
                 6'b001001: begin // add Imidiate unsigned
-                        state <= 5'd8;
+                        aluCode=6'b100000;
+                        state <= 5'd7;
                 end
 
                 6'b011100: begin // CLO, CLZ
-                        state <= 5'd9;
+                        state <= 5'd8;
                 end
 
                 6'b000010: begin // JMP 
@@ -171,14 +161,36 @@ module control( input clk,
         
 
         5'd5: begin // ARITHMETIC CASE: ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
-
+                memEnable=0
+                rfSource=1
+                regWrite=1
+                jump=0
+                branch=0
+                immediate=1
+                RW=0
+                marLoad=0
+                mdrLoad=1
+                mdrSource=1
+                pcSelect=0
+                aluSrc=2'b00
 
                 state <= 5'd1;
         end
 
-        5'd6: begin // ADDIU 
+        5'd6: begin // Arithmetic Immidiates
+                memEnable=0
+                rfSource=1
+                regWrite=1
+                jump=0
+                branch=0
+                immediate=0
+                RW=0
+                marLoad=0
+                mdrLoad=1
+                mdrSource=1
+                pcSelect=0
+                aluSrc=2'b01
                 
-              
                 state <= 5'd1;
         end
 
