@@ -13,7 +13,7 @@ endmodule
 
 module AND (output reg result, input branch, condition);
 
-  always @(posedge branch)
+  always @*
   result = branch & condition;
 endmodule
 

@@ -70,562 +70,562 @@ Current Instruction: 00100100000000010000000000101100
 Offset:    44
 
 
-MAR:        180
+MAR:          4
  ---------CLOCK CYCLE:           9 START-----------
 
 
 State:  3
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Current Instruction: 10010000001000100000000000000000
 Offset:    44
 
 
-MAR:        180
+MAR:          4
  ---------CLOCK CYCLE:          10 START-----------
 
 
 State:  3
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Current Instruction: 10010000001000100000000000000000
 Offset:    44
 
 
-MAR:        180
+MAR:          4
  ---------CLOCK CYCLE:          11 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 10010000001000100000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:          4
  ---------CLOCK CYCLE:          12 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  7
+Current Instruction: 10010000001000100000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:          4
  ---------CLOCK CYCLE:          13 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  8
+Current Instruction: 10010000001000100000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         44
  ---------CLOCK CYCLE:          14 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  9
+Current Instruction: 00011001000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         44
  ---------CLOCK CYCLE:          15 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00011001000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         44
  ---------CLOCK CYCLE:          16 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00011001000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:          8
  ---------CLOCK CYCLE:          17 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 10010000001000110000000000000010
+Offset:     0
 
 
-MAR:        180
+MAR:          8
  ---------CLOCK CYCLE:          18 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 10010000001000110000000000000010
+Offset:     0
 
 
-MAR:        180
+MAR:          8
  ---------CLOCK CYCLE:          19 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 10010000001000110000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:          8
  ---------CLOCK CYCLE:          20 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  7
+Current Instruction: 10010000001000110000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:          8
  ---------CLOCK CYCLE:          21 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  8
+Current Instruction: 10010000001000110000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:         46
  ---------CLOCK CYCLE:          22 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  9
+Current Instruction: 00000111000000000000000000000000
+Offset:     2
 
 
-MAR:        180
+MAR:         46
  ---------CLOCK CYCLE:          23 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00000111000000000000000000000000
+Offset:     2
 
 
-MAR:        180
+MAR:         46
  ---------CLOCK CYCLE:          24 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00000111000000000000000000000000
+Offset:     2
 
 
-MAR:        180
+MAR:         12
  ---------CLOCK CYCLE:          25 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000000000000010100000100001
+Offset:     2
 
 
-MAR:        180
+MAR:         12
  ---------CLOCK CYCLE:          26 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000000000000010100000100001
+Offset:     2
 
 
-MAR:        180
+MAR:         12
  ---------CLOCK CYCLE:          27 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 00000000000000000010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         12
  ---------CLOCK CYCLE:          28 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  5
+Current Instruction: 00000000000000000010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         12
  ---------CLOCK CYCLE:          29 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00000000000000000010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         12
  ---------CLOCK CYCLE:          30 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00000000000000000010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         16
  ---------CLOCK CYCLE:          31 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000101000100010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         16
  ---------CLOCK CYCLE:          32 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000101000100010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         16
  ---------CLOCK CYCLE:          33 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 00000000101000100010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         16
  ---------CLOCK CYCLE:          34 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  5
+Current Instruction: 00000000101000100010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         16
  ---------CLOCK CYCLE:          35 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00000000101000100010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         16
  ---------CLOCK CYCLE:          36 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00000000101000100010100000100001
+Offset: 10273
 
 
-MAR:        180
+MAR:         20
  ---------CLOCK CYCLE:          37 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00100100011000111111111111111111
+Offset: 10273
 
 
-MAR:        180
+MAR:         20
  ---------CLOCK CYCLE:          38 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00100100011000111111111111111111
+Offset: 10273
 
 
-MAR:        180
+MAR:         20
  ---------CLOCK CYCLE:          39 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 00100100011000111111111111111111
+Offset: 65535
 
 
-MAR:        180
+MAR:         20
  ---------CLOCK CYCLE:          40 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  6
+Current Instruction: 00100100011000111111111111111111
+Offset: 65535
 
 
-MAR:        180
+MAR:         20
  ---------CLOCK CYCLE:          41 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00100100011000111111111111111111
+Offset: 65535
 
 
-MAR:        180
+MAR:         20
  ---------CLOCK CYCLE:          42 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00100100011000111111111111111111
+Offset: 65535
 
 
-MAR:        180
+MAR:         24
  ---------CLOCK CYCLE:          43 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00011100011000001111111111111101
+Offset: 65535
 
 
-MAR:        180
+MAR:         24
  ---------CLOCK CYCLE:          44 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00011100011000001111111111111101
+Offset: 65535
 
 
-MAR:        180
+MAR:         24
  ---------CLOCK CYCLE:          45 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 00011100011000001111111111111101
+Offset: 65533
 
 
-MAR:        180
+MAR:         24
  ---------CLOCK CYCLE:          46 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State: 16
+Current Instruction: 00011100011000001111111111111101
+Offset: 65533
 
 
-MAR:        180
+MAR:         24
  ---------CLOCK CYCLE:          47 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00011100011000001111111111111101
+Offset: 65533
 
 
-MAR:        180
+MAR:         24
  ---------CLOCK CYCLE:          48 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00011100011000001111111111111101
+Offset: 65533
 
 
-MAR:        180
+MAR:         28
  ---------CLOCK CYCLE:          49 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000000000000000000000000000
+Offset: 65533
 
 
-MAR:        180
+MAR:         28
  ---------CLOCK CYCLE:          50 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000000000000000000000000000
+Offset: 65533
 
 
-MAR:        180
+MAR:         28
  ---------CLOCK CYCLE:          51 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 00000000000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         28
  ---------CLOCK CYCLE:          52 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  5
+Current Instruction: 00000000000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         28
  ---------CLOCK CYCLE:          53 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00000000000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         28
  ---------CLOCK CYCLE:          54 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00000000000000000000000000000000
+Offset:     0
 
 
-MAR:        180
+MAR:         32
  ---------CLOCK CYCLE:          55 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 10100000001001010000000000000001
+Offset:     0
 
 
-MAR:        180
+MAR:         32
  ---------CLOCK CYCLE:          56 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 10100000001001010000000000000001
+Offset:     0
 
 
-MAR:        180
+MAR:         32
  ---------CLOCK CYCLE:          57 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 10100000001001010000000000000001
+Offset:     1
 
 
-MAR:        180
+MAR:         32
  ---------CLOCK CYCLE:          58 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State: 10
+Current Instruction: 10100000001001010000000000000001
+Offset:     1
 
 
-MAR:        180
+MAR:         32
  ---------CLOCK CYCLE:          59 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State: 11
+Current Instruction: 10100000001001010000000000000001
+Offset:     1
 
 
-MAR:        180
+MAR:         45
  ---------CLOCK CYCLE:          60 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State: 12
+Current Instruction: 10100000001001010000000000000001
+Offset:     1
 
 
-MAR:        180
+MAR:         45
  ---------CLOCK CYCLE:          61 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 10100000001001010000000000000001
+Offset:     1
 
 
-MAR:        180
+MAR:         45
  ---------CLOCK CYCLE:          62 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 10100000001001010000000000000001
+Offset:     1
 
 
-MAR:        180
+MAR:         36
  ---------CLOCK CYCLE:          63 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00010000000000000000000000000010
+Offset:     1
 
 
-MAR:        180
+MAR:         36
  ---------CLOCK CYCLE:          64 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00010000000000000000000000000010
+Offset:     1
 
 
-MAR:        180
+MAR:         36
  ---------CLOCK CYCLE:          65 START-----------
 
 
 State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+Current Instruction: 00010000000000000000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:         36
  ---------CLOCK CYCLE:          66 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State: 16
+Current Instruction: 00010000000000000000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:         36
  ---------CLOCK CYCLE:          67 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  1
+Current Instruction: 00010000000000000000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:         36
  ---------CLOCK CYCLE:          68 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  2
+Current Instruction: 00010000000000000000000000000010
+Offset:     2
 
 
-MAR:        180
+MAR:         40
  ---------CLOCK CYCLE:          69 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000000000000000000000000000
+Offset:     2
 
 
-MAR:        180
+MAR:         40
  ---------CLOCK CYCLE:          70 START-----------
 
 
-State:  4
-Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Offset:     x
+State:  3
+Current Instruction: 00000000000000000000000000000000
+Offset:     2
 
 
-MAR:        180
+MAR:         40

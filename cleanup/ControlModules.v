@@ -170,7 +170,7 @@ module control( input clk,
                 end
 
                 6'b000111: begin // BGTZ
-                        aluCode<=001111;
+                        aluCode = 6'b001111;
                         #1 state <= 5'd16;
                 end
 
@@ -328,6 +328,8 @@ module control( input clk,
         end
 
         5'd16: begin // Branch
+                immediate=1;
+                aluSrc=01;
                 branch=1;
                 #1 state <= 5'd1;
         end

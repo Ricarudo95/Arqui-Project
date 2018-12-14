@@ -5,7 +5,7 @@ module ALU(Result, condition, operation, a, b);
     input [5:0] operation;
     
     output reg carryFlag;
-    output reg condition;
+    output reg condition=0;
     output reg negativeFlag;
     output reg overFlowFlag;
     output reg zeroFlag;
@@ -125,7 +125,8 @@ module ALU(Result, condition, operation, a, b);
                         Result = ($signed(a) > $signed(b)) ? 1: 0;
                         zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
                         negativeFlag = (Result[31] == 1)? 1 : 0 ;
-                        condition = (zeroFlag == 0 && negativeFlag==0)? 1:0; 
+                        //condition = (zeroFlag == 0 && negativeFlag==0)? 1:0; 
+                        condition=0;
                         //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
                     end
 
