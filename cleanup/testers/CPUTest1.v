@@ -77,7 +77,7 @@ module CPUTester1();
                 //$fwrite(f,"\nOperation Code: %b", CPU_Test1.Control_Unit.opCode );
                 //$fwrite(f,"\nRegister S Address: %d", CPU_Test1.Register_File.A_Address );
                 //$fwrite(f,"\nRegister T Address: %d", CPU_Test1.Register_File.B_Address );
-                //$fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
+                $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
                 
                 $fwrite(f,"\nMAR: %d", CPU_Test1.MAR.result );
                 //$fwrite(f,"\nMDR: %b", CPU_Test1.MDR.result );
