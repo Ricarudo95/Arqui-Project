@@ -63,7 +63,7 @@ module mipsCPUData1(clk,reset);
     wire mdrLoad;
     wire mdrSource;
     wire pcSelect;
-    wire aluSource;
+    wire [1:0]aluSource;
     wire [5:0] aluCode;
 
 

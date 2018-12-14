@@ -233,7 +233,5 @@ module ALU(Result, zeroFlag, operation, a, b);
                         end
 
                     endcase                
-                //end
-        endcase
-    end
+                end
 endmodule

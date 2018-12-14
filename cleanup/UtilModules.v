@@ -49,8 +49,11 @@ endmodule
 
 module register(output reg [31:0] result, input [31:0] in, input load);
   reg [31:0] hold; 
-  always @(in)
-  hold = (load == in)? in : hold;
-  result <= hold;
+  always @(in) begin
+  if(load == 1) begin
+    hold = in;
+  end
+  result = hold;
+  end
 
 endmodule

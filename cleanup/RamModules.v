@@ -4,9 +4,8 @@ input[31:0]   address;
 input[31:0]   dataIn;
 input rw;
 
-
 output reg [31:0]  output_destination;
-output MOC = 1;
+output reg MOC = 1;
   
 //memory declaration
 reg [7:0] Mem[0:511];
@@ -23,13 +22,14 @@ always@(posedge rw) begin
  	if (rw == 1) begin // to read a specific word, you need to address its number. 
         	MOC = 0;
 		assign output_destination = {Mem[address], Mem[address+1], Mem[address+2], Mem[address+3]};
-		assign mem[address] <= dataIn[31:24];
-		assign mem[address+1] <= dataIn[23:16];
-		assign mem[address+2] <= dataIn[15:8];
-		assign mem[address+3] <= dataIn[7:0];
+		Mem[address] = dataIn[31:24];
+		Mem[address+1] = dataIn[23:16];
+		Mem[address+2] = dataIn[15:8];
+		Mem[address+3] = dataIn[7:0];
 		#13;
 		MOC=1;
-  	end
+  		end
+	end
 endmodule
 
 //Loading Memory

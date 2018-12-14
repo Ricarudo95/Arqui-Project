@@ -1,8 +1,8 @@
 module control( input clk,
   input reset, MOC,
   input[5:0] opCode, 
-  output reg irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource,pcSelect,
-  output reg[1:0] aluSrc; 
+  output reg irLoad, pcLoad,npcLoad, rfSource, regWrite, jump, branch, immediate, RW, marLoad,mdrLoad, mdrSource, pcSelect,
+  output reg[1:0] aluSrc, 
   output reg[5:0] aluCode);  
 
         reg[4:0] state;
@@ -53,7 +53,7 @@ module control( input clk,
                 state <= 5'd3;
         end
         5'd3: begin
-                $display("State 3");
+                $display("State 3: Load to Instrction Register");
                 if (MOC == 1)
                         begin
                         state = 5'd4;
@@ -322,6 +322,7 @@ module ProgramCounter(PCNext, PCResult, Reset, Clk, Load);
                 begin
 		PCResult <= PCResult;	
     	        end
+        $display("PC: Result %d", PCResult);
     end
 
 endmodule

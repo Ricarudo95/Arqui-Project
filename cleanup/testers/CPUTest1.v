@@ -20,7 +20,7 @@ module CPUTester1();
 
             
             //Instruction Memory Variables
-            CPU_Test1.Instruction_Memory, 
+            CPU_Test1.Memory, 
 
             //Control Unit Variables
             CPU_Test1.Control_Unit, 
@@ -30,9 +30,6 @@ module CPUTester1();
 
             //Register File Variables
             CPU_Test1.Register_File,
-
-            //RAM Variables
-            CPU_Test1.ram,
 
             //Adder Variables
             CPU_Test1.addFour,
