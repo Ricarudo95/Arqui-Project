@@ -69,7 +69,12 @@ module CPUTester1();
                 // $fwrite(f,"\nOffset: %d\n\n", CPU_Test1.signExt.ins );
 
                 // $fwrite(f,"\nMAR: %b", CPU_Test1.MAR.Result );
+                // $fwrite(f,"\nMDR: %b", CPU_Test1.MDR.Result );
+                // $fwrite(f,"\nNPC: %b", CPU_Test1.NPC.Result );
+                // $fwrite(f,"\nIR: %b", CPU_Test1.IR.Result );
                 // $fwrite(f,"\nMemory Address: %b", CPU_Test1.Instruction_Memory.Mem );
+
+                // $fwrite(f,"\n ---------CLK CYCLE COMPLETE-----------")
                 
                
             end
