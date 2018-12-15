@@ -43,8 +43,7 @@ module mipsCPUData1(clk,reset);
     wire [31:0] shftLeftOut;
     wire [31:0] branchAddOut;
     wire [31:0] branchSelect;
-    wire andOut; 
-  
+    wire andOut;
 
 
 ////////// STATE FLAGS ////////////

@@ -30,7 +30,7 @@ module signExtender (output reg [31:0] result, input [15:0] ins, input unSign);
 
   always @(ins)
   
-  if (ins[15] == 1 || unSign == 1'b0) begin
+  if ((ins[15] == 1) || (unSign == 1'b0)) begin
     result = {tempOnes, ins};
   end else begin
     result = {tempZero, ins};

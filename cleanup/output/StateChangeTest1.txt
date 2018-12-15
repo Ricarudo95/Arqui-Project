@@ -4,5398 +4,7198 @@
 
 State:  1
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           2 START-----------
 
 
 State:  2
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           3 START-----------
 
 
 State:  3
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           4 START-----------
 
 
 State:  3
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           5 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           6 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           7 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           8 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:           9 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          10 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          11 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          12 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          13 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          14 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          15 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          16 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          17 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          18 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          19 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          20 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          21 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          22 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          23 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          24 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          25 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          26 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          27 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          28 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          29 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          30 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          31 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          32 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          33 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          34 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          35 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          36 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          37 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          38 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          39 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          40 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          41 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          42 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          43 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          44 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          45 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          46 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          47 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          48 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          49 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          50 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          51 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          52 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          53 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          54 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          55 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          56 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          57 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          58 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          59 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          60 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          61 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          62 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          63 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          64 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          65 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          66 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          67 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          68 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          69 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          70 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          71 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          72 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          73 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          74 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          75 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          76 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          77 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          78 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          79 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          80 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          81 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          82 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          83 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          84 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          85 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          86 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          87 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          88 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          89 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          90 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          91 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          92 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          93 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          94 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          95 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          96 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          97 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          98 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:          99 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         100 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         101 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         102 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         103 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         104 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         105 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         106 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         107 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         108 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         109 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         110 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         111 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         112 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         113 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         114 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         115 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         116 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         117 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         118 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         119 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         120 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         121 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         122 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         123 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         124 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         125 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         126 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         127 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         128 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         129 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         130 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         131 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         132 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         133 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         134 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         135 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         136 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         137 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         138 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         139 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         140 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         141 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         142 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         143 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         144 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         145 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         146 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         147 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         148 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         149 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         150 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         151 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         152 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         153 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         154 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         155 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         156 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         157 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         158 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         159 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         160 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         161 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         162 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         163 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         164 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         165 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         166 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         167 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         168 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         169 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         170 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         171 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         172 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         173 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         174 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         175 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         176 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         177 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         178 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         179 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         180 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         181 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         182 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         183 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         184 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         185 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         186 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         187 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         188 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         189 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         190 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         191 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         192 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         193 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         194 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         195 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         196 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         197 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         198 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         199 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         200 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         201 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         202 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         203 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         204 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         205 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         206 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         207 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         208 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         209 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         210 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         211 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         212 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         213 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         214 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         215 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         216 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         217 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         218 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         219 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         220 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         221 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         222 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         223 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         224 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         225 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         226 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         227 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         228 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         229 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         230 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         231 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         232 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         233 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         234 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         235 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         236 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         237 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         238 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         239 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         240 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         241 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         242 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         243 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         244 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         245 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         246 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         247 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         248 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         249 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         250 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         251 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         252 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         253 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         254 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         255 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         256 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         257 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         258 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         259 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         260 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         261 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         262 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         263 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         264 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         265 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         266 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         267 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         268 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         269 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         270 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         271 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         272 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         273 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         274 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         275 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         276 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         277 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         278 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         279 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         280 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         281 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         282 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         283 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         284 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         285 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         286 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         287 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         288 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         289 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         290 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         291 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         292 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         293 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         294 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         295 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         296 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         297 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         298 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         299 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         300 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         301 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         302 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         303 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         304 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         305 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         306 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         307 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         308 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         309 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         310 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         311 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         312 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         313 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         314 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         315 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         316 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         317 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         318 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         319 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         320 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         321 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         322 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         323 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         324 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         325 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         326 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         327 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         328 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         329 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         330 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         331 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         332 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         333 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         334 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         335 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         336 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         337 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         338 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         339 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         340 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         341 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         342 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         343 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         344 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         345 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         346 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         347 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         348 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         349 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         350 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         351 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         352 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         353 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         354 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         355 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         356 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         357 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         358 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         359 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         360 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         361 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         362 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         363 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         364 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         365 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         366 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         367 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         368 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         369 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         370 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         371 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         372 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         373 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         374 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         375 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         376 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         377 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         378 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         379 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         380 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         381 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         382 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         383 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         384 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         385 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         386 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         387 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         388 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         389 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         390 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         391 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         392 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         393 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         394 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         395 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         396 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         397 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         398 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         399 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         400 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         401 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         402 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         403 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         404 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         405 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         406 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         407 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         408 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         409 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         410 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         411 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         412 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         413 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         414 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         415 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         416 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         417 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         418 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         419 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         420 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         421 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         422 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         423 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         424 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         425 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         426 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         427 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         428 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         429 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         430 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         431 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         432 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         433 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         434 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         435 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         436 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         437 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         438 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         439 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         440 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         441 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         442 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         443 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         444 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         445 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         446 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         447 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         448 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         449 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         450 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         451 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         452 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         453 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         454 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         455 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         456 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         457 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         458 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         459 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         460 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         461 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         462 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         463 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         464 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         465 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         466 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         467 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         468 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         469 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         470 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         471 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         472 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         473 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         474 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         475 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         476 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         477 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         478 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         479 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         480 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         481 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         482 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         483 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         484 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         485 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         486 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         487 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         488 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         489 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         490 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         491 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         492 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         493 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         494 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         495 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         496 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         497 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         498 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         499 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         500 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         501 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         502 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         503 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         504 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         505 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         506 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         507 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         508 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         509 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         510 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         511 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         512 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         513 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         514 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         515 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         516 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         517 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         518 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         519 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         520 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         521 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         522 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         523 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         524 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         525 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         526 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         527 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         528 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         529 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         530 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         531 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         532 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         533 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         534 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         535 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         536 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         537 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         538 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         539 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         540 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         541 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         542 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         543 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         544 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         545 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         546 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         547 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         548 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         549 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         550 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         551 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         552 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         553 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         554 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         555 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         556 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         557 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         558 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         559 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         560 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         561 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         562 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         563 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         564 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         565 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         566 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         567 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         568 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         569 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         570 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         571 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         572 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         573 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         574 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         575 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         576 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         577 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         578 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         579 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         580 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         581 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         582 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         583 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         584 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         585 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         586 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         587 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         588 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         589 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         590 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         591 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         592 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         593 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         594 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         595 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         596 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         597 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         598 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         599 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  ---------CLOCK CYCLE:         600 START-----------
 
 
 State:  4
 Current Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Register S Address:  x
+Register T Address:  x
 Offset:     x
 
 
 MAR:          x
+IR: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
