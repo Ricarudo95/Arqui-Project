@@ -17,7 +17,7 @@ module mipsCPUData1(clk,reset);
     wire [31:0] instruction;
     
     //Register
-    wire [31:0] aluA;
+    wire [31:0] marInput;
     wire [31:0] regOutA; 
     wire [31:0] regOutB;
     wire [4:0] regMuxOut; 
@@ -73,10 +73,10 @@ module mipsCPUData1(clk,reset);
 /////////////////////////COMPONENTS////////////////////////////////////
 
 //MAR and MDR
-register MAR(memAdress, aluOut, marLoad);
-register MDR(mdrData, mdrIn, mdrLoad);
-register NPC(next,jumpMuxOut,npcLoad);
-register IR(instruction, memData, irLoad);
+register MAR(memAdress, marInput, marLoad,clk);
+register MDR(mdrData, mdrIn, mdrLoad,clk);
+register NPC(next,jumpMuxOut,npcLoad,clk);
+register IR(instruction, memData, irLoad,clk);
 
 //Program Counter
 ProgramCounter Program_Counter(next, pcOut, reset, clk, pcLoad);
@@ -87,7 +87,7 @@ control Control_Unit(clk, reset, MOC, instruction[31:26], unSign, memEnable, irL
 //Mux Connections
 //muxA BasicMux(muxAout, HILO, instruction[25:21], LO, HI); //not used
 
-mux32 pcMux(aluA, pcSelect, regOutA, pcOut );
+mux32 pcMux(marInput, pcSelect, aluOut, pcOut);
 mux6 funcMux(func, immediate, instruction[5:0], aluCode);
 mux4 Register_Mux(regMuxOut, rfSource, instruction[20:16], instruction[15:11]); //present
 //mux32 ALU_Mux(aluB, aluSource, regOutB, signExtOut);
@@ -101,7 +101,7 @@ mux32 Jump_Mux(jumpMuxOut, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
 RegisterFile Register_File(instruction[25:21], instruction[20:16], regMuxOut, mdrIn, regWrite, clk, regOutA, regOutB );
 
 //ALU Modules
-ALU alu(aluOut, zFlag, func, aluA, aluB);
+ALU alu(aluOut, zFlag, func, regOutA, aluB);
 
 //RAM Module
 MemoryTest1 Memory(memAdress, memData, mdrData, rw, byte, MOC, memEnable);

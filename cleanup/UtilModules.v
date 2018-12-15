@@ -1,8 +1,7 @@
 //File Contaning all add modules
 
 module addplus4 (output [31:0] result, input [31:0] pc);
-  
-  assign result = pc + 4;
+    assign result = pc + 4;
 endmodule
 
 module adder (output reg [31:0] result, input [31:0] entry1, entry0);
@@ -31,10 +30,10 @@ module signExtender (output reg [31:0] result, input [15:0] ins, input unSign);
 
   always @(ins)
   
-  if (ins[15] == 0 || unSign == 1'b1) begin
-    result = {tempZero, ins};
-  end else begin
+  if (ins[15] == 1 || unSign == 1'b0) begin
     result = {tempOnes, ins};
+  end else begin
+    result = {tempZero, ins};
   end
 
 endmodule
@@ -47,8 +46,9 @@ module shftLeft(output reg [31:0] result, input [31:0] in);
 
 endmodule
 
-module register(output reg [31:0] result, input [31:0] in, input load); 
-  always @(posedge load) begin
-    result = in;
+module register(output reg [31:0] result, input [31:0] in, input load, clk); 
+  always @(posedge clk) begin
+    if(load==1)
+      result = in;
   end
 endmodule

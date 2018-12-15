@@ -19,10 +19,9 @@ module control( input clk,
                 byte=0;
                 pcLoad = 0;
                 npcLoad =0;
-                
+                pcSelect=1;
                 unSign=0;
                 memEnable = 0; 
-                pcSelect = 0;
                 state <= 5'd0;
                 aluSrc <= 2'b00;
                 immediate = 0;
@@ -36,46 +35,32 @@ module control( input clk,
                 marLoad = 0;
                 mdrLoad = 0;
                 mdrSource = 0;
-                #1
-                
-                #1 
                 branch=0;
                 state <= 5'd1;
                 end
 
         5'd1: begin
-                //$display("State 1: Load PC ro MAR");
-                pcSelect = 1;
-                
-                mdrLoad = 0;
-                unSign=0;
-                
-                aluSrc <= 2'b11;
-                aluCode <= 100001;
-                immediate = 1;
-                
-                #1 marLoad = 0;
+                //$display("State 1: Load PC to MAR");
+                pcSelect = 1;                
+                marLoad = 1;
                 npcLoad=0;
-               
-
-                #1 state <= 5'd2;
+                state <= 5'd2;
                 end
 
         5'd2: begin
                 //$display("State 2: Read Memory");
                 
-                pcSelect = 0;
+                
                 npcLoad=0;
                 marLoad = 0;
                 byte=0;
                 memEnable = 1;
                 npcLoad=1;                
-                #1
                 pcLoad=1;
                 
                 
                 RW = 0;
-                #1 state <= 5'd3;
+                state <= 5'd3;
         end
         5'd3: begin
                // $display("State 3: Load to Instrction Register");
@@ -84,14 +69,15 @@ module control( input clk,
                         npcLoad=0;
                         pcLoad=0;
                         memEnable=0;
-                        #1 irLoad = 1;
-                        #1 state = 5'd4;
+                        irLoad = 1;
+                        state = 5'd4;
                         
                         end
         end
 
         5'd4: begin
                // $display("State 4: Decode Instruction");
+
                 marLoad = 0;
                 RW = 0;
                 regWrite = 0;
@@ -105,82 +91,83 @@ module control( input clk,
 
                 case(opCode)   
                 6'b000000: begin // ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
-                        #1 state <= 5'd5;
+                        state <= 5'd5;
                 end
 
                 6'b001000: begin // add Imidiate signed
                         aluCode=6'b100000;
-                        #1 state <= 5'd6;
+                        state <= 5'd6;
                         
                 end
 
                 6'b001001: begin // add Imidiate unsigned
                         unSign=1;
                         aluCode=6'b100001;
-                        #1 state <= 5'd6;
+                        state <= 5'd6;
                 end
 
                 6'b011100: begin // CLO
                         aluCode = 6'b011100;
-                        #1 state <= 5'd15;
+                        state <= 5'd15;
                 end
 
                 6'b011101: begin // CLZ
                         aluCode = 6'b011101;
-                        #1 state <= 5'd15;
+                        state <= 5'd15;
                 end
                 
 
                 6'b000010: begin // JMP 
-                        #1 state <= 5'd10;
+                        state <= 5'd10;
                 end
 
                 6'b101011: begin // SW: Save Word
                         aluCode <= 100000;
-                        #1 state <= 5'd10;
+                        state <= 5'd10;
                 end
 
                 6'b101000: begin // SB: Save Byte
                         byte= 1;
-                        #1 state <= 5'd10;
+                        state <= 5'd10;
                 end
 
 
                 6'b100011: begin // LW: Load Word
                         aluCode <= 100000;
-                        #1 state <= 5'd7;
+                        state <= 5'd7;
                 end
 
                 6'b100000: begin // LB: Load Byte
                         byte=1;
                         aluCode <= 100000;
-                        #1 state <= 5'd17;
+                        state <= 5'd17;
                 end
 
                 6'b100100: begin // LBU: Load Byte Unsigned
                         unSign=1;
                         byte=1;
                         aluCode <= 100001;
-                        #1 state <= 5'd7;
+                        state <= 5'd7;
                 end
 
                 6'b000100: begin // BEQ
                         aluCode <=000001;
-                        #1 state <= 5'd16;
+                        state <= 5'd16;
 
                 end
 
                 6'b000001: begin // BEQZ
-                        #1 state <= 5'd16;
+                        state <= 5'd16;
                 end
 
                 6'b000110: begin // BLEZ
-                        #1 state <= 5'd16;
+                        state <= 5'd16;
                 end
 
                 6'b000111: begin // BGTZ
+                        unSign=0;
                         aluCode = 6'b001111;
-                        #1 state <= 5'd16;
+                        state <= 5'd16;
                 end
 
 
@@ -206,10 +193,10 @@ module control( input clk,
                 pcSelect=0;
                 aluSrc=2'b00;
 
-                #1
+
                 marLoad=0;
                 regWrite=1;
-                #1 state <= 5'd1;
+                state <= 5'd1;
         end
 
         5'd6: begin // Arithmetic Immidiates
@@ -225,10 +212,10 @@ module control( input clk,
                 pcSelect=0;
                 aluSrc=2'b01;
                 
-                #1 
+                
                 mdrLoad=1;
                 regWrite=1;
-                #1 state = 5'd1;
+                state = 5'd1;
         end
 
         5'd7: begin // Load Data Step 1: Load to MAR
@@ -236,9 +223,9 @@ module control( input clk,
                 aluSrc <= 2'b01;
                 aluCode <= 100000;
                 immediate = 1;
-                #1 marLoad = 1;
+                marLoad = 1;
 
-                #1 state <= 5'd8;
+                state <= 5'd8;
         end
 
         5'd8: begin // Load Data Step 2: Read Memory
@@ -246,17 +233,17 @@ module control( input clk,
                 memEnable = 1;
                 RW = 0;
                 if (MOC == 1) begin
-                #1 state <= 5'd9;
+                state <= 5'd9;
                 end
         end
 
         5'd9: begin // Load Data Step 3: Save to Register
                 
-                #1 mdrLoad=1;
+                mdrLoad=1;
                 memEnable=0;
                 mdrSource=0;
                 regWrite = 1;
-                #1 state = 5'd1;
+                state = 5'd1;
                 
         end
 
@@ -266,8 +253,8 @@ module control( input clk,
                 immediate = 1;
 
                 
-                #1 marLoad = 1;
-                #1 state <= 5'd11;
+                marLoad = 1;
+                state <= 5'd11;
    
         end
 
@@ -279,8 +266,8 @@ module control( input clk,
                 immediate = 1;
 
                 
-                #1; mdrLoad = 1;
-                #1 state <= 5'd12;
+                mdrLoad = 1;
+                state <= 5'd12;
 
         end
 
@@ -294,7 +281,7 @@ module control( input clk,
                 if (MOC==1) begin
                         memEnable=0;
                         byte=0;
-                        #1 state <= 5'd1;
+                        state <= 5'd1;
                 end
 
         end
@@ -303,7 +290,7 @@ module control( input clk,
                 jump = 1;
 
                 npcLoad =1;
-                #1 state <= 5'd1;
+                state <= 5'd1;
 
         end
 
@@ -320,15 +307,17 @@ module control( input clk,
                 mdrSource=1;
                 pcSelect=0;
                 aluSrc=2'b00;
-                #1 state <= 5'd1;
+                state <= 5'd1;
         end
 
         5'd16: begin // Branch
-                npcLoad = 1;
+                unSign=0;
                 immediate=1;
                 aluSrc=01;
                 branch=1;
-                #1 state <= 5'd1;
+                
+                npcLoad = 1;
+                state <= 5'd1;
         end
 
 
