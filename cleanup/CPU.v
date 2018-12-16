@@ -74,7 +74,7 @@ module mipsCPUData1(clk,reset);
 //MAR and MDR
 register MAR(memAdress, marInput, marLoad,clk);
 register MDR(mdrData, mdrIn, mdrLoad,clk);
-register NPC(next,jumpMuxOut,npcLoad,clk);
+register NPC(next, jumpMuxOut,npcLoad,clk);
 register IR(instruction, memData, irLoad,clk);
 
 //Program Counter

@@ -30,10 +30,10 @@ module signExtender (output reg [31:0] result, input [15:0] ins, input unSign);
 
   always @(ins)
   
-  if ((ins[15] == 1) || (unSign == 1'b0)) begin
-    result = {tempOnes, ins};
-  end else begin
+  if (ins[15] == 0 || unSign == 1'b1) begin
     result = {tempZero, ins};
+  end else begin
+    result = {tempOnes, ins};
   end
 
 endmodule
@@ -41,13 +41,12 @@ endmodule
 module shftLeft(output reg [31:0] result, input [31:0] in);
 
   always @(in)
-
   result = in << 2;
 
 endmodule
 
 module register(output reg [31:0] result, input [31:0] in, input load, clk); 
-  always @(posedge clk) begin
+  always @(posedge clk or load) begin
     if(load==1)
       result = in;
   end
