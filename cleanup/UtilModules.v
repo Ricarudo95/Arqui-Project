@@ -46,8 +46,7 @@ module shftLeft(output reg [31:0] result, input [31:0] in);
 endmodule
 
 module register(output reg [31:0] result, input [31:0] in, input load, clk); 
-  always @(posedge clk or load) begin
-    if(load==1)
+  always @(posedge load) begin
       result = in;
   end
 endmodule

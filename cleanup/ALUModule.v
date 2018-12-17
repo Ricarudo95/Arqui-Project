@@ -5,7 +5,7 @@ module ALU(Result, condition, operation, a, b);
     input [5:0] operation;
     
     output reg carryFlag;
-    output reg condition=0;
+    output reg condition;
     output reg negativeFlag;
     output reg overFlowFlag;
     output reg zeroFlag;
@@ -19,6 +19,7 @@ module ALU(Result, condition, operation, a, b);
 
     initial begin
     zeroFlag = 1'b0;
+    condition=0;
     end
 
     always@(a or b or operation) 
@@ -122,11 +123,21 @@ module ALU(Result, condition, operation, a, b);
 
                     6'b001111: //Greater than
                     begin
-                        Result = ($signed(a) > $signed(b)) ? 1: 0;
-                        zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
-                        negativeFlag = (Result[31] == 1)? 1 : 0 ;
-                        condition = (zeroFlag == 0 && negativeFlag==0)? 1:0; 
+                        $display("Whats happeining in here");
+                        $display("The question is %d grater than %d", $signed(a), $signed(b));
+                        // Result = ($signed(a) > $signed(b)) ? 0: 1;
+                        // zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
+                        // negativeFlag = (Result[31] == 1)? 1 : 0 ;
+                        // condition = (zeroFlag == 0 && negativeFlag==0)? 1:0; 
                         //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                        if ($signed(a) > $signed(b)) begin
+                            $display("It works");
+                            condition=1;
+                        end
+                        else begin
+                            $display("It dont work");
+                            condition=0;
+                        end
                     end
 
                     //Move
