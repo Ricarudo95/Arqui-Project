@@ -168,7 +168,7 @@ module control( input clk,
 
                 6'b000111: begin // BGTZ
                         $display("Did we even get here?");
-                        aluCode = 6'b001111;
+                        aluCode = 6'b001101;
                         #1 state = 5'd16;
                 end
 

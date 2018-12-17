@@ -140,6 +140,25 @@ module ALU(Result, condition, operation, a, b);
                         end
                     end
 
+                    6'b001101: //Greater than Zero
+                    begin
+                        $display("Whats happeining in here");
+                        $display("The question is %d grater than %d", $signed(a), $signed(b));
+                        // Result = ($signed(a) > $signed(b)) ? 0: 1;
+                        // zeroFlag = (Result == 0) ? 1'b1 : 1'b0;
+                        // negativeFlag = (Result[31] == 1)? 1 : 0 ;
+                        // condition = (zeroFlag == 0 && negativeFlag==0)? 1:0; 
+                        //overFlowFlag = (a[31] != b[31])? 0 : (b[31] == Result[31]) ? 0: 1 ;
+                        if ($signed(a) > 0) begin
+                            $display("It works");
+                            condition=1;
+                        end
+                        else begin
+                            $display("It dont work");
+                            condition=0;
+                        end
+                    end
+
                     //Move
                         6'b111111: // MOVN
                             begin 
