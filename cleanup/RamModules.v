@@ -102,13 +102,13 @@ always@(posedge memEnable) begin
 
 		if (rw == 0) begin
 				assign MOC = 0;
-				output_destination = {Mem[address], 24'd0};
+				output_destination = {24'd0, Mem[address]};
 				#7;
 				assign MOC=1;
 			end
 			else begin
 				assign MOC = 0;
-				Mem[address] = dataIn[31:24];
+				Mem[address] = dataIn[7:0];
 				#7;
 				assign MOC=1;
 		end
@@ -162,13 +162,13 @@ always@(posedge memEnable) begin
 
 		if (rw == 0) begin
 				assign MOC = 0;
-				output_destination = {Mem[address], 24'd0};
+				output_destination = {24'd0, Mem[address]};
 				#7;
 				assign MOC=1;
 			end
 			else begin
 				assign MOC = 0;
-				Mem[address] = dataIn[31:24];
+				Mem[address] = dataIn[7:0];
 				#7;
 				assign MOC=1;
 		end

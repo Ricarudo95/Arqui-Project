@@ -130,6 +130,7 @@ module control( input clk,
 
                 6'b101000: begin // SB: Save Byte
                         byte= 1;
+                        aluCode <= 6'b100000;
                         #1 state <= 5'd10;
                 end
 
@@ -142,7 +143,7 @@ module control( input clk,
                 6'b100000: begin // LB: Load Byte
                         byte=1;
                         aluCode <= 6'b100000;
-                        #1 state <= 5'd17;
+                        #1 state <= 5'd7;
                 end
 
                 6'b100100: begin // LBU: Load Byte Unsigned
