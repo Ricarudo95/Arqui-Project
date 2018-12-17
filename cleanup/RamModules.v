@@ -48,7 +48,7 @@ always@(posedge memEnable) begin
 			end
 			else begin
 				assign MOC = 0;
-				Mem[address] = dataIn[31:24];
+				Mem[address] = dataIn[7:0];
 				#7;
 				assign MOC=1;
 		end
