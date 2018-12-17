@@ -42,7 +42,7 @@ always@(posedge memEnable) begin
 
 		if (rw == 0) begin
 				assign MOC = 0;
-				output_destination = {Mem[address], 24'd0};
+				output_destination = {24'd0, Mem[address]};
 				#7;
 				assign MOC=1;
 			end

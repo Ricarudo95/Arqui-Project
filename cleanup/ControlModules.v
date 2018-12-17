@@ -41,6 +41,7 @@ module control( input clk,
         5'd1: begin
                 //$display("State 1: Load PC to MAR");
                 pcSelect = 1;
+                regWrite=0;
                 marLoad=1;
                 npcLoad = 0;
                 mdrLoad = 0;
@@ -184,18 +185,13 @@ module control( input clk,
         5'd5: begin // ARITHMETIC CASE: ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
                 memEnable=0;
                 rfSource=1;
-                jump=0;
                 branch=0;
                 immediate=0;
                 RW=0;
-                
                 mdrLoad=1;
                 mdrSource=1;
                 pcSelect=0;
                 aluSrc=2'b00;
-
-                #1
-                marLoad=0;
                 regWrite=1;
                 #1 state <= 5'd1;
         end
@@ -208,6 +204,7 @@ module control( input clk,
                 branch=0;
                 immediate=1;
                 RW=0;
+                
                 mdrSource=1;
                 pcSelect=0;
                 aluSrc=2'b01;

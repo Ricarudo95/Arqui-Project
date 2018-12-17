@@ -53,7 +53,7 @@ module RegisterFile(A_Address, B_Address, C_Address, C_Data, Write, Clk, A_Data,
 		
 		if (C_Address != 5'd0) 
 		begin
-			Registers[C_Address] <= C_Data;
+			#1 Registers[C_Address] <= C_Data;
 		end
 	end
 	
