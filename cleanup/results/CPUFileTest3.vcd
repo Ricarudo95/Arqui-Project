@@ -1,5 +1,5 @@
 $date
-	Mon Dec 17 00:29:57 2018
+	Mon Dec 17 00:30:25 2018
 $end
 $version
 	Icarus Verilog
@@ -7,13 +7,13 @@ $end
 $timescale
 	1s
 $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $var reg 1 ! clk $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $var reg 1 " reset $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Program_Counter $end
 $var wire 1 ! Clk $end
@@ -24,7 +24,7 @@ $var reg 32 % PCResult [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Memory $end
 $var wire 32 & address [31:0] $end
@@ -37,7 +37,7 @@ $var reg 32 , output_destination [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Control_Unit $end
 $var wire 1 ! clk $end
@@ -66,7 +66,7 @@ $var reg 1 < unSign $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module alu $end
 $var wire 32 = a [31:0] $end
@@ -85,7 +85,7 @@ $var integer 32 I var [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Register_File $end
 $var wire 5 J A_Address [4:0] $end
@@ -99,7 +99,7 @@ $var reg 32 O B_Data [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module addFour $end
 $var wire 32 P pc [31:0] $end
@@ -107,7 +107,7 @@ $var wire 32 Q result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module adder $end
 $var wire 32 R entry1 [31:0] $end
@@ -116,7 +116,7 @@ $var reg 32 T result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module signExt $end
 $var wire 16 U ins [15:0] $end
@@ -127,7 +127,7 @@ $var reg 16 X tempZero [15:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module shftJump $end
 $var wire 26 Y in [25:0] $end
@@ -135,7 +135,7 @@ $var reg 28 Z result [27:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module shftLeft $end
 $var wire 32 [ in [31:0] $end
@@ -143,7 +143,7 @@ $var reg 32 \ result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module simpleAND $end
 $var wire 1 0 branch $end
@@ -152,7 +152,7 @@ $var reg 1 ] result $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module MAR $end
 $var wire 1 ! clk $end
@@ -162,7 +162,7 @@ $var reg 32 _ result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module MDR $end
 $var wire 1 ! clk $end
@@ -172,7 +172,7 @@ $var reg 32 a result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module NPC $end
 $var wire 1 ! clk $end
@@ -182,7 +182,7 @@ $var reg 32 c result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module IR $end
 $var wire 1 ! clk $end
@@ -192,7 +192,7 @@ $var reg 32 e result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module funcMux $end
 $var wire 6 f one [5:0] $end
@@ -202,7 +202,7 @@ $var reg 6 h result [5:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module pcMux $end
 $var wire 32 i one [31:0] $end
@@ -212,7 +212,7 @@ $var reg 32 k result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Jump_Mux $end
 $var wire 32 l one [31:0] $end
@@ -222,7 +222,7 @@ $var reg 32 n result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module ALU_Mux $end
 $var wire 32 o three [31:0] $end
@@ -234,7 +234,7 @@ $var reg 32 t result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Register_Mux $end
 $var wire 5 u one [4:0] $end
@@ -244,7 +244,7 @@ $var reg 5 w result [4:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module mdrMux $end
 $var wire 32 x one [31:0] $end
@@ -254,7 +254,7 @@ $var reg 32 z result [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
-$scope module CPUTester1 $end
+$scope module CPUTester3 $end
 $scope module CPU_Test1 $end
 $scope module Branch_Mux $end
 $var wire 32 { zero [31:0] $end
@@ -293,7 +293,7 @@ bx g
 bx f
 bx e
 bx d
-b100 c
+bx c
 b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx b
 bx a
 bx `
@@ -356,7 +356,7 @@ bx (
 x'
 bx &
 b0 %
-b100 $
+bx $
 x#
 0"
 0!
@@ -416,6 +416,8 @@ b100100000000010000000000101100 ,
 b100100000000010000000000101100 d
 b100100000000010000000000101100 y
 0+
+b100 $
+b100 c
 1)
 04
 17

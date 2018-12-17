@@ -2613,104 +2613,104 @@ Register T Address:  0 , 00000
 Offset:     0
 
 
-MAR:         44
+MAR:         48
 IR: 00000000000000000000000000000000
  ---------CLOCK CYCLE:         219 START-----------
 
 
 State:  3
-Current Instruction: 00011001000000000000000000000000
+Current Instruction: 00101100000000001111111111111111
 Register S Address:  0 , 00000
 Register T Address:  0 , 00000
 Offset:     0
 
 
-MAR:         44
+MAR:         48
 IR: 00000000000000000000000000000000
  ---------CLOCK CYCLE:         220 START-----------
 
 
 State:  3
-Current Instruction: 00011001000000000000000000000000
+Current Instruction: 00101100000000001111111111111111
 Register S Address:  0 , 00000
 Register T Address:  0 , 00000
 Offset:     0
 
 
-MAR:         44
+MAR:         48
 IR: 00000000000000000000000000000000
  ---------CLOCK CYCLE:         221 START-----------
 
 
 State:  4
-Current Instruction: 00011001000000000000000000000000
-Register S Address:  8 , 01000
+Current Instruction: 00101100000000001111111111111111
+Register S Address:  0 , 00000
 Register T Address:  0 , 00000
-Offset:     0
+Offset: 65535
 
 
-MAR:         44
-IR: 00011001000000000000000000000000
+MAR:         48
+IR: 00101100000000001111111111111111
  ---------CLOCK CYCLE:         222 START-----------
 
 
-State: 16
-Current Instruction: 00011001000000000000000000000000
-Register S Address:  8 , 01000
+State:  4
+Current Instruction: 00101100000000001111111111111111
+Register S Address:  0 , 00000
 Register T Address:  0 , 00000
-Offset:     0
+Offset: 65535
 
 
-MAR:         44
-IR: 00011001000000000000000000000000
+MAR:         48
+IR: 00101100000000001111111111111111
  ---------CLOCK CYCLE:         223 START-----------
 
 
-State:  1
-Current Instruction: 00011001000000000000000000000000
-Register S Address:  8 , 01000
+State:  4
+Current Instruction: 00101100000000001111111111111111
+Register S Address:  0 , 00000
 Register T Address:  0 , 00000
-Offset:     0
+Offset: 65535
 
 
-MAR:         44
-IR: 00011001000000000000000000000000
+MAR:         48
+IR: 00101100000000001111111111111111
  ---------CLOCK CYCLE:         224 START-----------
 
 
-State:  2
-Current Instruction: 00011001000000000000000000000000
-Register S Address:  8 , 01000
+State:  4
+Current Instruction: 00101100000000001111111111111111
+Register S Address:  0 , 00000
 Register T Address:  0 , 00000
-Offset:     0
+Offset: 65535
 
 
 MAR:         48
-IR: 00011001000000000000000000000000
+IR: 00101100000000001111111111111111
  ---------CLOCK CYCLE:         225 START-----------
 
 
-State:  3
+State:  4
 Current Instruction: 00101100000000001111111111111111
-Register S Address:  8 , 01000
+Register S Address:  0 , 00000
 Register T Address:  0 , 00000
-Offset:     0
+Offset: 65535
 
 
 MAR:         48
-IR: 00011001000000000000000000000000
+IR: 00101100000000001111111111111111
  ---------CLOCK CYCLE:         226 START-----------
 
 
-State:  3
+State:  4
 Current Instruction: 00101100000000001111111111111111
-Register S Address:  8 , 01000
+Register S Address:  0 , 00000
 Register T Address:  0 , 00000
-Offset:     0
+Offset: 65535
 
 
 MAR:         48
-IR: 00011001000000000000000000000000
+IR: 00101100000000001111111111111111
  ---------CLOCK CYCLE:         227 START-----------
 
 

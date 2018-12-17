@@ -153,16 +153,18 @@ module control( input clk,
                 end
 
                 6'b000100: begin // BEQ
-                        aluCode <=6'b000001;
+                        aluCode <=6'b011111;
                         #1 state <= 5'd16;
 
                 end
 
                 6'b000001: begin // BEQZ
+                        aluCode <=6'b011011;
                         #1 state = 5'd16;
                 end
 
-                6'b000110: begin // BLEZ
+                6'b010011: begin // BLEZ
+                        aluCode <=6'b011111;
                         #1 state = 5'd16;
                 end
 

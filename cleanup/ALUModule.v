@@ -101,16 +101,20 @@ module ALU(Result, condition, operation, a, b);
                 //begin            
                     case (operation)
 
-                    6'b011111: //equals
+                    6'b011111: //always
                         begin
-                            if($signed(a) == $signed(b))
-                            begin
-                            zeroFlag = 1'd1;
-                            end
+                            if(1)
+                            condition=1;
                         else
-                            begin
-                            zeroFlag = 1'd0;
-                            end
+                            condition=0;
+                        end
+                    
+                    6'b011011: //equal 0
+                        begin
+                            if($signed(a) == 0)
+                            condition=1;
+                        else
+                            condition=0;
                         end
 
                     6'b110111: //Less than
@@ -158,6 +162,21 @@ module ALU(Result, condition, operation, a, b);
                             condition=0;
                         end
                     end
+
+                    6'b010011: //Less than Zero or equal
+                    begin
+                        $display("Whats happeining in here");
+                        $display("The question is %d less than %d", $signed(a), $signed(b));
+                        if ($signed(a) <= 0) begin
+                            $display("It works");
+                            condition=1;
+                        end
+                        else begin
+                            $display("It dont work");
+                            condition=0;
+                        end
+                    end
+
 
                     //Move
                         6'b111111: // MOVN
