@@ -143,6 +143,7 @@ module control( input clk,
                 6'b100000: begin // LB: Load Byte
                         byte=1;
                         aluCode <= 6'b100000;
+                        //changed from 17
                         #1 state <= 5'd7;
                 end
 
