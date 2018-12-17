@@ -279,6 +279,7 @@ module control( input clk,
                         
                 if (MOC==1) begin
                         memEnable=0;
+                        //removing this byte leads to infinite loop again
                         byte=0;
                         #1 state <= 5'd1;
                 end
