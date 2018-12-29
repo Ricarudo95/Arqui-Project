@@ -19,7 +19,7 @@ end
  
 // behavior
 always@(posedge memEnable) begin
-	
+	#1;
 	if(byte==0) begin
 		if (rw == 0) begin
 			assign MOC = 0;
