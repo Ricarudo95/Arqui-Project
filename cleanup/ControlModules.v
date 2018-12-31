@@ -50,6 +50,7 @@ module control( input clk,
                 aluSrc = 2'b11;
                 aluCode = 6'b000000;
                 immediate = 1;
+                byte = 0;
                 
                 #1 state <= 5'd2;
                 end
@@ -59,7 +60,7 @@ module control( input clk,
                 pcLoad=1;
                 npcLoad=1;
                 marLoad = 0;
-                byte=0;
+                //byte=0;
                 memEnable = 1;
                 
                 RW = 0;
@@ -280,7 +281,7 @@ module control( input clk,
                 if (MOC==1) begin
                         memEnable=0;
                         //removing this byte leads to infinite loop again
-                        byte=0;
+                        //byte=0;
                         #1 state <= 5'd1;
                 end
 
