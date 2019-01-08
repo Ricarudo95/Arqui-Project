@@ -181,7 +181,7 @@ module ALU(Result, condition, operation, a, b);
                     //Move
                         6'b111111: // MOVN
                             begin 
-                                Result = a;
+                                Result = b;
                             end
                     //Move
                         6'b001011: // MOVN
