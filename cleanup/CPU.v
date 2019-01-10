@@ -161,6 +161,7 @@ module mipsCPUData2(clk,reset);
     wire [31:0] pcAdd4; 
     wire [27:0] shftLeft28Out;
     wire [31:0] jumpMuxOut;
+    wire [31:0] jumpRegisterMuxIn;
 
 
     //Branch
@@ -182,6 +183,7 @@ module mipsCPUData2(clk,reset);
     wire rfSource;
     wire regWrite; 
     wire jump; 
+    wire jumpRFlag;
     wire branch;
     wire immediate;
     wire rw;
@@ -218,7 +220,9 @@ mux4 Register_Mux(regMuxOut, rfSource, instruction[20:16], instruction[15:11]); 
 mux4inputs ALU_Mux(aluB, aluSource, regOutB, signExtOut, mdrData, 32'd0);
 mux32 mdrMux(mdrIn, mdrSource, memData, aluOut);
 mux32 Branch_Mux(branchSelect, andOut, pcAdd4, branchAddOut);
-mux32 Jump_Mux(jumpMuxOut, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
+//rewired for JR tester 2
+mux32 Jump_Mux(jumpRegisterMuxIn, jump, branchSelect, {pcAdd4[31:28], shftLeft28Out});
+mux32 JR_Mux(jumpMuxOut, jumpRFlag, jumpRegisterMuxIn, regOutA);
 
 
 //Register File
