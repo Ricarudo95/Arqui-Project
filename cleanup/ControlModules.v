@@ -94,7 +94,13 @@ module control( input clk,
 
                 case(opCode)   
                 6'b000000: begin // ADD, ADDU, SUB, SUBU, SLT, SLTU, AND, OR, NOR, SLL, SLLV, SRL, SRLV, SRA, 
-                        #1 state <= 5'd5;
+                        #1 
+                        if begin
+                        state <= 5'd17;
+                        end
+                        else begin
+                        state <= 5'd5;
+                        end
                 end
 
                 6'b001000: begin // add Imidiate signed
@@ -318,6 +324,13 @@ module control( input clk,
                 aluSrc = 2'b01;
                 npcLoad=1;
                 #1 state <= 5'd1;
+        end
+
+         5'd14: begin // Jump
+                jump = 1;
+
+                #1 state <= 5'd1;
+
         end
 
 
